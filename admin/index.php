@@ -62,7 +62,7 @@
                             <li>
                                 <a href="#" class="serv-btn">E-commerce <i class="fas fa-chevron-down"></i></a>
                                     <ul  class="serv-show">
-                                        <li><a href="#"><i class="fas fa-angle-right"></i> Tour</a></li>
+                                        <li><a href="index.php?ctrl=tour"><i class="fas fa-angle-right"></i> Tour</a></li>
                                     </ul>
                                 
                             </li>
