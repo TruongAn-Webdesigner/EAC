@@ -54,7 +54,7 @@
                                     <ul  class="feat-show">
                                         <li><a href="index.php?ctrl=place"><i class="fas fa-angle-right"></i> Place</a></li>
                                         <li><a href="#"><i class="fas fa-angle-right"></i> Review</a></li>
-                                        <li><a href="#"><i class="fas fa-angle-right"></i> Tips note</a></li>
+                                        <li><a href="index.php?ctrl=tipnote"><i class="fas fa-angle-right"></i> Tips note</a></li>
                                     </ul>
                                 
                             </li>
