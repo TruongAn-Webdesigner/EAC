@@ -8,6 +8,7 @@
     <!-- css -->
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/statistical.css">
+    <link rel="stylesheet" href="css/tour.css">
 
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
