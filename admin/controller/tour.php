@@ -1,8 +1,8 @@
 <?php
-$action='index';
-if(isset($_GET['action'])){
-    $action=$_GET['action'];
-}
+    $action='index';
+    if(isset($_GET['act'])){
+        $action=$_GET['act'];
+    }
 switch ($action) {
     case 'index':
         # code...
