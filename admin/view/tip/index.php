@@ -1,11 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    hihihi
-</body>
-</html>
+
+<h2>TIPS NOTE</h2>
+<div class="boxadd">
+    <form action="">
+        <input type="submit"value="Thêm">
+        <input type="submit"value="Xóa">
+        <input type="submit"value="Sửa">
+    </form>
+</div>
+
+<div class="boxtip">
+    <div class="box_count_tip"><a href="index.php?ctrl=tipnote&act=ct">Box count tip</a></div>
+    <div class="box_count_view_tip"><a href="index.php?ctrl=tipnote&act=ct">Box count view tip</a></div>
+    <div class="rank_tip"><a href="index.php?ctrl=tipnote&act=ct">Rank tip</a></div>
+</div>
+</div>
