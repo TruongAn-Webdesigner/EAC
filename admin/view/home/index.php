@@ -1,7 +1,7 @@
 
             <div class="full">
                     <div class="top_ad_right">
-                        
+
                     </div>
                 </div>
 
@@ -14,18 +14,18 @@
                                     <div class="review_statis_left bgblue">
                                         <i class="fas fa-plane-departure"></i>
                                     </div>
-                                    
+
                                     <div class="content_rv_st">
                                         <div class="title_rv"> Số Lượng tour</div>
                                         <div class="text_rv">
-                                        <?php   
+                                        <?php
                                             foreach ($rv1 as $rv1) {
                                                 echo'<p>'.$rv1['count(*)'].'</p>';
                                             }
                                         ?></div>
                                     </div>
 
-                                   
+
                                 </div>
 
                                 <div class="box_review_statis mr1">
@@ -35,9 +35,18 @@
 
                                     <div class="content_rv_st">
                                         <div class="title_rv">Tổng Tiền</div>
-                                        <div class="text_rv"></div>
+                                        <div class="text_rv">
+
+                                          <?php
+                                                $tong=0;
+                                                foreach ($rv2 as $rv2) {
+                                                    $tong+=$rv2['tong'];
+                                                }
+                                                echo'<p>'.$tong.'</p>';
+                                            ?>
+                                        </div>
                                     </div>
-                                    
+
                                 </div>
 
                                 <div class="box_review_statis mr1">
@@ -48,16 +57,16 @@
                                     <div class="content_rv_st">
                                         <div class="title_rv">Số khách hàng</div>
                                         <div class="text_rv">
-                                            <?php   
+                                            <?php
                                                 foreach ($rv3 as $rv3) {
                                                     echo'<p>'.$rv3['tongKH'].'</p>';
                                                 }
                                             ?>
                                         </div>
                                     </div>
-                                    
+
                                 </div>
-                                
+
                                 <div class="box_review_statis">
                                     <div class="review_statis_left bgred">
                                          <i class="fas fa-eye"></i>
@@ -67,11 +76,9 @@
                                         <div class="title_rv">view</div>
                                         <div class="text_rv">100</div>
                                     </div>
-                                    
+
                                 </div>
                             </div>
-                        <!-- end review statis -->        
+                        <!-- end review statis -->
                     </div>
                 </div>
-
-
