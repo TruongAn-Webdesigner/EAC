@@ -216,8 +216,8 @@
                                                             <th scope="col">Email</th>
                                                             <th scope="col">SDT</th>
                                                             <th scope="col">Position</th>
-                                                            <th scope="col">edit</th>
-                                                            <th scope="col">del</th>
+                                                            <th scope="col">Edit</th>
+                                                            <th scope="col">Del</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
@@ -227,8 +227,8 @@
                                                             <td>Otto</td>
                                                             <td>@mdo</td>
                                                             <td>@mdo</td>
-                                                            <td>@mdo</td>
-                                                            <td>@mdo</td>
+                                                            <td><button type="button" class="btn btn-outline-success">Success</button></td>
+                                                            <td><button type="button" class="btn btn-outline-danger">Danger</button></td>
                                                         </tr>
                                                         <tr>
                                                             <td scope="row"><img src="../site/img/london.jpg" width=80px height=80px style="border-radius: 50px;"></td>
@@ -236,8 +236,8 @@
                                                              <td>Thornton</td>
                                                             <td>@mdo</td>
                                                             <td>@mdo</td>
-                                                            <td>@mdo</td>
-                                                            <td>@fat</td>
+                                                            <td><button type="button" class="btn btn-outline-success">Success</button></td>
+                                                            <td><button type="button" class="btn btn-outline-danger">Danger</button></td>
                                                         </tr>
                                                         <tr>
                                                             <td scope="row"><img src="../site/img/london.jpg" width=80px height=80px style="border-radius: 50px;"></td>
@@ -245,8 +245,8 @@
                                                             <td>the Bird</td>
                                                             <td>@mdo</td>
                                                             <td>@mdo</td>
-                                                            <td>@mdo</td>
-                                                            <td>@twitter</td>
+                                                            <td><button type="button" class="btn btn-outline-success">Success</button></td>
+                                                            <td><button type="button" class="btn btn-outline-danger">Danger</button></td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
