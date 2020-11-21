@@ -9,9 +9,11 @@ body{
 }
 
 .ad_left{
-    float: left;
+   position: fixed;
+   top: 0;
+   left: 0;
+   bottom: 0; 
     width: 15%;
-    height: 722px;
     background-color:#5e5e5e;
 }
 
@@ -61,7 +63,7 @@ body{
     color:#8e8e8e;
     text-decoration: none;
     padding-left: 10%;
-    font-size: 22px;
+    font-size: 19px;
     display: block;
     width: 90%;
     transition:all 0.5s;
@@ -121,7 +123,7 @@ body{
     .ad_right{
         width: 85%;
         min-height: 722px;
-        float: left;
+        float: right;
         background-color: #e8edf2;
     }
 
