@@ -5,7 +5,7 @@
 
 .review_statis{
     width: 100%;
-    min-height: 600px;
+    min-height: 150px;
     margin-top: 50px;
 }
 
@@ -13,8 +13,12 @@
     float: left;
     width: calc(97%/4);
     height: 110px;
-    border-radius: 10px; 
+    border-radius: 10px;
     background-color: white;
+}
+
+.box_review_statis p{
+    margin: 0;
 }
 
 .mr1{
@@ -28,7 +32,7 @@
     line-height: 110px;
     font-size: 50px;
     border-radius: 10px 0 0 10px;
-    text-align: center; 
+    text-align: center;
 }
 
 .review_statis_left i{
@@ -76,3 +80,53 @@
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: bold;
 }
+
+
+/* statis rank */
+    .statis_rank{
+        width: 100%;
+        min-height: 500px;
+    }
+
+    .mr2{
+        margin-right: 2%;
+    }
+
+    .box_rank{
+        margin-bottom: 100px;
+        float: left;
+        width: 49%;
+        height: 500px;
+        border-radius: 10px;
+        background-color:white;
+    }
+
+    .title_box_rank{
+        width: 100%;
+        height: 110px;
+        border-radius: 10px 10px 0 0;
+        line-height:30px;
+        font-size: 15px;
+    }
+
+    .title_box_rank span{
+        font-size: 55px;
+        padding: 50px 0 0 ;
+        color: black;
+    }
+
+    .text_title_rank{
+        width: 100%;
+        height: 90px;
+        padding-top: 30px;
+        color: gray;
+    }
+
+    .content_box_rank{
+        width: 100%;
+        height: 300px;
+        background-color:#79616f;
+        margin-top: 40px;
+    }
+
+/*  end statis_rank */
