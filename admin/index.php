@@ -17,6 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet"><!-- font-family: 'Noto Sans JP', sans-serif; -->
     <link href="https://fonts.googleapis.com/css2?family=Tinos&display=swap" rel="stylesheet"><!-- font-family: 'Tinos', serif; -->
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet"><!-- font-family: 'Josefin Sans', sans-serif; -->
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet"><!-- font-family: 'Varela Round', sans-serif; -->
 
     <!-- font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
