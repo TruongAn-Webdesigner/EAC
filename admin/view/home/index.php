@@ -200,8 +200,8 @@
 
                                     <div class="title_view_ad">
                                         <div class="text_view_ad">
-                                            <span>Rank User</span> <br>
-                                             xếp hàng người dùng đi nhiều tour
+                                            <span>Admin</span> <br>
+                                            Danh Sách Các Tài Khoản Admin
                                         </div>
                                     </div>
 
