@@ -72,7 +72,7 @@ body{
   }
 
   .content_db ul li a:hover{
-      transform: translateY(-10px);
+      transform: translatex(15px);
   }
 
 
