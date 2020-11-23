@@ -1,8 +1,8 @@
 
-    <h2 class="tour">Place</h2>
-    <div class="boxcenter">
-        <div class="box">
-            <div class="img">
+    <h2 class="tourt">Địa điểm</h2>
+    <div class="boxcentert">
+        <div class="boxt">
+            <div class="imgt">
                 <img src="view/img/lisa.jpg" alt="">              
             </div>
             <div class="tentour">
@@ -11,8 +11,8 @@
             
             
         </div>
-        <div class="box">
-            <div class="img">
+        <div class="boxt">
+            <div class="imgt">
                 <img src="view/img/lisa.jpg" alt="">              
             </div>
             <div class="tentour">
@@ -20,8 +20,8 @@
             </div>
         
         </div>
-        <div class="box">
-            <div class="img">
+        <div class="boxt">
+            <div class="imgt">
                 <img src="view/img/lisa.jpg" alt="">              
             </div>
             <div class="tentour">
@@ -29,8 +29,8 @@
             </div>
         
         </div>
-        <div class="box">
-            <div class="img">
+        <div class="boxt">
+            <div class="imgt">
                 <img src="view/img/lisa.jpg" alt="">              
             </div>
             <div class="tentour">
