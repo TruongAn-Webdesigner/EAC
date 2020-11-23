@@ -2,9 +2,9 @@
 <h2>TIPS NOTE</h2>
 <div class="boxadd">
     <form action="">
-        <input type="submit"value="Thêm">
-        <input type="submit"value="Xóa">
-        <input type="submit"value="Sửa">
+        <input type="submit"value="Add">
+        <input type="submit"value="Delete">
+        <input type="submit"value="Edit">
     </form>
 </div>
 
