@@ -5,7 +5,7 @@
             <div class="img">
                 <img src="view/img/lisa.jpg" alt="">              
             </div>
-            <div class="name">
+            <div class="tentour">
                 <a href="index.php?ctrl=tour&act=tour">G-Dragon - Without You ft. Rosé (Color Coded Lyrics)</a>               
             </div>
             
@@ -15,7 +15,7 @@
             <div class="img">
                 <img src="view/img/lisa.jpg" alt="">              
             </div>
-            <div class="name">
+            <div class="tentour">
                 <a href="index.php?ctrl=tour&act=tour">G-Dragon - Without You ft. Rosé (Color Coded Lyrics)</a>               
             </div>
         
@@ -24,7 +24,7 @@
             <div class="img">
                 <img src="view/img/lisa.jpg" alt="">              
             </div>
-            <div class="name">
+            <div class="tentour">
                 <a href="index.php?ctrl=tour&act=tour">G-Dragon - Without You ft. Rosé (Color Coded Lyrics)</a>               
             </div>
         
@@ -33,7 +33,7 @@
             <div class="img">
                 <img src="view/img/lisa.jpg" alt="">              
             </div>
-            <div class="name">
+            <div class="tentour">
                 <a href="index.php?ctrl=tour&act=tour">G-Dragon - Without You ft. Rosé (Color Coded Lyrics)</a>               
             </div>
         
