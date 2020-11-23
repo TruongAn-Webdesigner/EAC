@@ -13,11 +13,11 @@ body{
     min-height: 1000px;
     background-color: #f8f8f8;
 }
-.boxcenter{
+.boxcentert{
     width: 90%;
     margin: 0 auto;
 }
-.box{
+.boxt{
     width: calc(23% - 10px);
     float: left;
     margin-top: 20px;
@@ -26,58 +26,64 @@ body{
     min-height: 300px;
     box-shadow: 2px 2px 2px 3px rgb(226, 225, 225);
 }
-.tour{
+.tourt{
     width: 100%;
     float: left;
     text-align: center;
 }
-.back{
+.backt{
     width: calc(100% - 110px);
     float: left;
     margin: 0px 55px;
 }
-.goback, .sua{
+.gobackt, .suat{
     width: 100px;
     height: 30px;
     border: 2px solid #5e5e5e;
     font-weight: bold;
+    border-radius: 8px ;
 }
-.add{
+.addt{
     width: calc(100% - 110px);
     float: left;
     margin: 20px 55px;
+    
 }
-.but{
+.butt{
     width: 100px;
-    height: 30px;
+    height: 40px;
     border: 2px solid #5e5e5e;
     font-weight: bold;
+    border-radius: 8px ;
 }
-.but a{
+.butt a{
     text-decoration: none;
     color: black;
+    font-size: 15pt;
 }
-.sua a{
+.suat a{
     text-decoration: none;
     color: black;
+    font-size: 10pt;
+    padding: 5px;
 }
-.xoa{   
+.xoat{   
     width: 100%;   
     text-align: center;
 }
-.img{
+.imgt{
     width: 100%;
     height: 200px;
 }
 
-.img img{
+.imgt img{
     width: 100%;
     height: 200px;
 }
 .tentour{
-    padding: 10px;
-    width: calc(100% - 20px);
+    width: 100%;
     height: 100px;
+    text-align: center;
 }
 .tentour a{
     text-decoration: none;color: black;font-weight: bold;font-size: 12pt;
