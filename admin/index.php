@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/statistical.css">
     <link rel="stylesheet" href="css/tour.css">
+    <link rel="stylesheet" href="css/place.css">
+    <link rel="stylesheet" href="css/add.css">
+    <link rel="stylesheet" href="css/tip.css">
 
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -31,9 +34,23 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.js"></script>
+
 </head>
 <body>
 
+    <?php
+        session_start();
+
+        if(!isset($_SESSION['admin']))//kiem tra xem co dang nhap chua
+
+        {
+
+        header('location:login.php');
+
+        }
+    ?>
     <div class="full">
         <!-- ad_left -->
         <div class="ad_left">
@@ -59,7 +76,7 @@
                                 <a href="#"  class="feat-btn">Data <i class="fas fa-chevron-down"></i></a>
                                     <ul  class="feat-show">
                                         <li><a href="index.php?ctrl=place"><i class="fas fa-angle-right"></i> Place</a></li>
-                                        <li><a href="#"><i class="fas fa-angle-right"></i> Review</a></li>
+                                        <li><a href="index.php?ctrl=review"><i class="fas fa-angle-right"></i> Review</a></li>
                                         <li><a href="index.php?ctrl=tipnote"><i class="fas fa-angle-right"></i> Tips note</a></li>
                                     </ul>
                                 
@@ -99,15 +116,27 @@
 
         <!-- ad_right -->
             <div class="ad_right">
-            <?php
-        
+                <div class="full">
+                    <div class="top_ad_right">
+                        <?php 
+                            include_once 'model/login.php';
+
+                            $mail=$_SESSION['admin'];
+                            $admin=getad($mail);
+                            
+                            foreach($admin as $ad){
+                                echo''.$ad['name_ad'].'';
+                            }
+                        ?>
+                    </div>
+                </div>
+            <?php       
             $ctrl='home';
             if(isset($_GET['ctrl'])){
                 $ctrl = $_GET['ctrl'];
             }
 
             include 'controller/'.$ctrl.'.php';
-
         ?>
             </div>
         <!-- end ad_right -->
@@ -116,6 +145,8 @@
 
 
       <!-- java script -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
 
       <script>
     $('.btn').click(function(){
