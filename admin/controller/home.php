@@ -9,10 +9,11 @@
     switch($action){
         case 'index':
         $rv1 = getCountTour();
+        $rv2 = getTongTien();
         $rv3 = getCountKH();
         include 'view/home/index.php';
         break;
     }
-    
-    
+
+
 ?>
