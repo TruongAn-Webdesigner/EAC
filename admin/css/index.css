@@ -134,13 +134,43 @@ body{
         background-color: white;
         margin-bottom: 50px ;
     }
-
-    /* ta */
-
-    /*Phan cua Ty*/
-   
-
-  /* end ad_right */
-
-
-  
+    .profile{
+        float: right;
+        margin: 10px 10px;
+    }
+    .dropdown{
+        display: inline-block;
+        text-align: center;
+        position: absolute;
+        float: right;
+    }
+    .dropdown ul{
+        
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .dropdown ul li{
+        background: white;
+        position: relative;
+        list-style: none;
+        display: inline-block;
+    }
+    .dropdown ul li a{
+        display: block;
+        padding: 0 50px;
+        color: black;
+        text-decoration: none;
+        line-height: 50px;
+        font-size: 20px;
+        
+    }
+    
+    
+    .dropdown ul ul{
+        position: absolute;
+        display: none;
+    }
+    .dropdown ul li:hover > ul{
+        display: block;
+    }
