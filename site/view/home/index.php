@@ -228,7 +228,7 @@
                 <div class="mySlides fade-animation">
                     <div class="img_header position">
                         <div class="box_image">
-                                <img src="img/london.jpg" alt="">
+                                <img src="img/rice.jpg" alt="">
                             <div class="number_header">
                                 <sup>04</sup>/04
                             </div>
@@ -349,26 +349,34 @@
                                 <i class="fa fa-chevron-right next" aria-hidden="true"></i>
                                 </div>
                             </div> 
-                            
-                                        <div class="tr">
-
-                                            <div class="box_tv">
-                                                <div class="box_img_tv">
-                                                    <div class="img">
-
-                                                    </div>
-                                                </div>
-                                                <div class="box_name_rating">
-                                                <div class="name_tv">
-                                                    <a href="">aaefaef</a>
-                                                </div>
-                                                <div class="rating_tv">
-                                                    rating
-                                                </div>
+                            <div class="tr">
+                                    <?php
+                                        foreach($allReview as $ar){
+                                            echo'
+                                        <div class="box_tv">
+                                            <div class="box_img_tv">
+                                                <div class="img_tv">
+                                                    <img src="img/'.$ar['img_dd'].'" alt=""> 
                                                 </div>
                                             </div>
 
-                                            <div class="box_tv">
+                                            <div class="box_name_rating">
+                                                <div class="name_tv">
+                                                    <a href="index.php?ctrl=wewillgo&act=content&idcontent='.$ar['id_dd'].'">'.$ar['name_dd'].'</a>
+                                                </div>
+                                                <div class="rating_tv">
+                                                   
+                                                </div>
+                                            </div>
+                                        </div>
+                                            ';
+                                        }
+                                    ?>
+                                       
+
+
+
+                                            <!-- <div class="box_tv">
                                                 <div class="box_img_tv">
                                                     <div class="img">
 
@@ -384,7 +392,7 @@
                                                 </div>
                                             </div>
 
-                                            <div class="box_tv">
+                                           <div class="box_tv">
                                                 <div class="box_img_tv">
                                                     <div class="img">
 
@@ -398,7 +406,7 @@
                                                     
                                                 </div>
                                                 </div>
-                                            </div>
+                                            </div> 
 
                                             <div class="box_tv">
                                                 <div class="box_img_tv">
@@ -433,12 +441,10 @@
                                                     <div class="rating_tv">
                                                         
                                                     </div>
-                                            </div>
+                                            </div> -->
                                             
                                     
-                                        </div>
-
-
+                                </div>
                             </div>
                             
                            
@@ -492,9 +498,9 @@
                         <div class="single-item-rtl">
                                 <div class="box_left_bp"> 
                                         <div class="box_text_bp">
-                                                ewf
+                                                Viet Nam
                                             <div class="box_text_small_bp">
-                                                    lalalal alalala la lalala   
+                                                beauti & peaceful country
                                             </div>
 
                                             <div class="quotes">
@@ -515,7 +521,7 @@
                                         </div>
 
                                         <div class="icon_bp_2">
-                                        <a href="http://" data-toggle="tooltip-abc" data-placement="right" title="Vinh Ha Long">
+                                        <a href="index.php?ctrl=wewillgo&act=contentbestplace" data-toggle="tooltip-abc" data-placement="right" title="Vinh Ha Long">
                                             <i class="fas fa-map-marker-alt"></i>
                                         </a>
                                         </div>
@@ -551,7 +557,7 @@
             <div class="bannerhome">
             <div class="boxcenter_big">
                <div class="img_banner">
-                    
+                    <img src="img/sea.jpg" alt="">
                </div>
                </div>
             </div>
@@ -565,7 +571,7 @@
             <div class="boxcenter">
                 <div class="tips">
                         <div class="title_tips">
-                            <span>Tips Note</span> <br>
+                            <span>Things to do</span> <br>
                             Duis vitae velit mollis, congue nisi dignissim, pellentesque lorem
                         </div>      
                          
@@ -576,74 +582,74 @@
                                     <img src="img/field.jpg" alt="">
                                 </div>
                                 <div class="name_tips">
-
+                                Some things
                                 </div>
                             </div>
 
                             <div class="box_tips">
                                 <div class="box_img_tips">
-                                    
+                                    <img src="img/field.jpg" alt="">
                                 </div>
                                 <div class="name_tips">
-                                    
+                                Some things
                                 </div>
                             </div>
                             
                             <div class="box_tips">
                             <div class="box_img_tips">
-                                    
+                            <img src="img/field.jpg" alt="">
                                     </div>
                                     <div class="name_tips">
-                                    
+                                    Some things
                                 </div>
                             </div>
 
                             <div class="box_tips">
                             <div class="box_img_tips">
-                                    
+                            <img src="img/field.jpg" alt="">
                                     </div>
                                     <div class="name_tips">
-                                    
+                                    Some things
                                 </div>
                             </div>
 
                             <div class="box_tips">
                                 <div class="box_img_tips">
-                                    
+                                <img src="img/field.jpg" alt="">
                                 </div>
 
                                 <div class="name_tips">
-                                    
+                                Some things
                                 </div>
                             </div>
                             
                             <div class="box_tips">
                                 <div class="box_img_tips">
-                                    
+                                <img src="img/field.jpg" alt="">
                                     </div>
                                     
                                     <div class="name_tips">
-                                        
+                                    Some things
                                     </div>
                             </div>
 
                             <div class="box_tips">
                             <div class="box_img_tips">
-                                    
+                            <img src="img/field.jpg" alt="">
                                     </div>
                                     
                                     <div class="name_tips">
-                                        
+                                    Some things
                                     </div>
                             </div>
                                 
                             <div class="box_tips">
                             <div class="box_img_tips">
-                                    
+                            <img src="img/field.jpg" alt="">
                                     </div>
                                     
                                     <div class="name_tips">
-                                        
+                                    Some things
                                     </div>     
                             </div>
                             
