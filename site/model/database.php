@@ -3,7 +3,7 @@
    function getConnection(){
         //khai bao server
         $host='localhost';
-        $dbname='eac';
+        $dbname='demo_eac';
         $userName='root';
         $passWord='';
 /*         $options= array(PDO::MYSQL_ATTR_INIT_COMMAND=> "SET NAMES uf8",
