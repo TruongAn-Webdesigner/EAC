@@ -17,4 +17,18 @@
           return query($sql);
         }
 
+        function getRankTour(){
+          $sql="SELECT * ,COUNT(*) AS 'tongKH' FROM (( tour JOIN chitiettour ON tour.id_tour =chitiettour.id_tour ) JOIN danhsachkh ON chitiettour.id_chitiet = danhsachkh.id_ct) GROUP BY id_ct ORDER BY tongKH DESC";
+          return query($sql);
+        }
+
+        function getRankKH(){
+          $sql="SELECT *,COUNT(*) AS tongCD FROM ((khachhang JOIN danhsachkh ON khachhang.id_kh = danhsachkh.id_kh )INNER JOIN chitiettour ON danhsachkh.id_ct = chitiettour.id_chitiet) GROUP BY danhsachkh.id_kh ORDER BY tongCD DESC";
+          return query($sql);
+        }
+
+
+
+
+
 ?>
