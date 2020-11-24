@@ -1,6 +1,6 @@
 
 <?php
-    
+    include_once 'model/tip.php';
     $action='index';
     if(isset($_GET['act'])){
         $action=$_GET['act'];
@@ -8,7 +8,8 @@
 
     switch($action){
         case 'index':
-            include_once 'view/tip/index.php';
+            $tip = getAllTip();
+            include 'view/tip/index.php';
         break;
 
         case 'ct':
