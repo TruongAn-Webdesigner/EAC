@@ -42,12 +42,64 @@
     <div class="roww">
         <div class="bg_background">
             <div class="box_img_background">
-                <img src="img/vinh ha long.jpg" alt="">
+                <div class="boxcenter">
+                    <div class="bg_3box">
+                        <div class="box_img_3box">
+                            <div class="container">
+                                <p class="typewriter">
+                                    <span class="typewriter-text" data-text='[ "You want to discover?. ", "This is your first time?. ", "No Problem.","We will help you think!." ]'></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="bg_hot_item">
+                <div class="boxcenter">
+                    <div class="box_hot_item">
+                        <div class="hot_item1">
+                            <div class="hot_img_item">
+                                <img src="img/vinh ha long.jpg" alt="">
+                            </div>
+                            <div class="hot_text_item">
+                                <div class="hot_text1">
+                                    <span>Đà</span> Nẵng
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hot_item2">
+                            <div class="hot_img_item">
+                                <img src="img/field.jpg" alt="">
+                            </div>
+                            <div class="hot_text_item">
+                                <div class="hot_text2">
+                                    Tp. <span>HCM</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="hot_item3">
+                            <div class="hot_img_item">
+                                <img src="img/london.jpg" alt="">
+                            </div>
+                            <div class="hot_text_item">
+                                <div class="hot_text3">
+                                   <span>Vịnh</span>   Hạ Long
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
-
+    <div class="roww">
+        
+</div>
 
 
 
@@ -77,21 +129,32 @@
                                      
                                     <div class="box_item">
                                         <div class="center">
-                                        
-                                        <div class="fr_box">
+                                        <?php
+                                            foreach($topFeauture as $tf){
+                                                echo '
+                                                <div class="fr_box">
                                             
-                                            <div class="fr_img">
-                                                <div class="bg">
-                                                    <img src="img/field.jpg" alt="">
+                                                <div class="fr_img">
+                                                    <div class="bg">
+                                                        <img src="img/'.$tf['img_dd'].'" alt="">
+                                                    </div>
                                                 </div>
+    
+                                                <div class="fr_name">
+                                                    <a href="index.php?ctrl=wewillgo&act=content&idcontent='.$tf['id_dd'].'">
+                                                    <span>'.$tf['name_dd'].'</span>
+                                                    </a>
+                                                
+                                                </div>
+    
                                             </div>
-
-                                            <div class="fr_name"><span>MIKE1</span> /CFO</div>
-
-                                        </div>
+                                                ';
+                                            }
+                                        ?>
+                                        
 
                                         
-                                        <div class="fr_box">
+                                        <!-- <div class="fr_box">
                                             
                                             <div class="fr_img">
                                                 <div class="bg"></div>
@@ -133,7 +196,9 @@
                                             <div class="fr_name"><span>MIKE5</span> /CFO</div>
 
                                             </div>
-                                        </div>
+                                        </div> -->
+
+                                        
                                         </div>
                                     </div>
                         </div>
@@ -147,22 +212,10 @@
 
 <!-- phan 3 box -->
 
-<div class="roww">
-        <div class="bg_3box">
-        
-            <div class="box_img_3box">
-                <div class="container">
-                    <p class="typewriter">
-                        You
-                        <span class="typewriter-text" data-text='[ "are traveler?. ", "want to discover?. ", "can join us now!. " ]'></span>
-                    </p>
-                </div>
-            </div>
-        </div>
-</div>
+
 
 <article>
-    <div class="roww">
+    <!-- <div class="roww">
         <div class="boxcenter">
             <div class="bg_review">
                 <div class="box_review">
@@ -402,18 +455,108 @@
                                                     <i class="far fa-star"></i>
                                                 </div>
                                             </div>
+
+                                           
                                            
                                        </div>
 
                                        
                                        
                                    </div>
+
+                                   
                     </div>
                 </div>
             </div>
         </div>
+    </div> -->
+    <div class="roww">
+        <div class="bg_review">
+            <div class="boxcenter"> 
+                <div class="bg_box_review">
+                    
+                    <div class="bg_in-box_review">
+                            <div class="title_wwwg_review">
+                            DISCOVER
+                            </div>
+                        <?php
+                            foreach($allPlace as $ap){
+                                echo'
+                                <div class="bg_box_item">
+                            
+                                <div class="bg_img_item">
+                                    <img src="img/'.$ap['img_dd'].'" alt="">
+                                </div>
+                                <div class="bg_text_item">
+                                    
+                                   <div class="title_kv_item">
+                                       <div class="kv_item">
+                                            '.$ap['name_kv'].'
+                                       </div>
+                                   </div>
+                                    <div class="title_text_item">
+                                        <div class="text_item">
+                                        <a href="index.php?ctrl=wewillgo&act=content&idcontent='.$ap['id_dd'].'">'.$ap['name_dd'].'</a> 
+                                        </div>
+                                    </div>
+                                    <div class="date_item">
+                                        <div class="float_date">
+                                            '.$ap['ngaydang'].'
+                                        </div>
+                                    </div>
+                                   
+                                   
+                    
+                                    <div class="title_view_item">
+                                        <div class="view_item"></div>
+                                        <div class="rating_item">
+                                            rating:   '.$ap['rating'].'
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                                ';
+                            }
+                        ?>
+                        
+                        
+<!--                         <div class="bg_box_item">
+                            
+                        </div>  
+
+                        <div class="bg_box_item">
+                            
+                        </div>  
+
+                        <div class="bg_box_item">
+                            
+                        </div>  
+
+                        <div class="bg_box_item">
+                            
+                        </div>
+
+                        <div class="bg_box_item">
+                            
+                        </div>   -->
+                    </div>
+                    
+<!--                     <div class="title_wwwg_review">
+
+                        <div class="title_r_review">
+                            R
+                            <div class="title_plus_review">
+                                eview 
+                            </div>   
+                        </div>
+                        
+                    </div> -->
+
+                </div>
+            </div>
+        </div>
     </div>
-    
 </article> 
  
 <!-- <article>
