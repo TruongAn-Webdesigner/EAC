@@ -18,7 +18,7 @@
                 $num = $kq->rowCount();
                 if($num>0){
                     $_SESSION['admin']=$user;
-                    header('location:../admin/index.php');
+                    header('location:index.php');
                 }else{
                     echo 
                     '<script>
