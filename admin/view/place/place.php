@@ -1,17 +1,54 @@
-                <div class="full place ml20">
-                    <h1>PLACE</h1>
-                    <div class=" btn">
-                    <a href="#" class="add_place">Add Place</a>
-                    <a href="#" class="add_place">Edit Place</a>
-                    <a href="#" class="add_place">Delete Place</a>
-                    </div>
-                    
-                    <div class="full">
-                        <div class="box-place">
-                            <a href="index.php?ctrl=place&act=ct" class="box_place1"></a>
-                            <a href="index.php?ctrl=place&act=ct" class="box_place2"></a>
-                            <a href="index.php?ctrl=place&act=ct" class="box_place3"></a>
-                            <a href="index.php?ctrl=place&act=ct" class="box_place4"></a>
+
+
+                <div class="full">
+                    <div class="boxcenter_statis">
+                        <div class="title_place">
+                            Place
                         </div>
                     </div>
                 </div>
+
+                <div class="full">
+                    <div class="boxcenter_statis">
+                        <div class="box_place">
+                            
+                            <div class="full">
+                                <div class="btn_place">
+                                    <a href="index.php?ctrl=place&act=add">Add Place </a>
+                                </div>
+                            </div>
+
+                            <div class="full">
+                                <div class="content_place">
+                                    
+                                        <?php
+                                        
+                                            foreach($kv as $kv){
+                                                echo'
+                                                <div class="box_kv">
+                                                    <div class="img_kv">
+                                                        <img src="../site/img/'.$kv['img_kv'].'" alt="">
+                                                    </div>
+            
+                                                    <div class="name_kv">
+                                                        '.$kv['name_kv'].'
+                                                    </div>
+            
+                                                    <div class="btn_kv">
+                                                        <button type="button" class="btn btn-outline-success">EDIT</button>
+                                                        <button type="button" class="btn btn-outline-danger">DEL</button>
+                                                    </div>
+                                                </div>
+                                                ';
+                                            }
+
+                                        ?>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
