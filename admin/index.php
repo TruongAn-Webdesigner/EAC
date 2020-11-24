@@ -25,6 +25,10 @@
     <!-- font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 
+    <!-- link font awesome -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <!-- jiqueri -->
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
@@ -124,10 +128,27 @@
                             $mail=$_SESSION['admin'];
                             $admin=getad($mail);
                             
-                            foreach($admin as $ad){
+                            /* foreach($admin as $ad){
                                 echo''.$ad['name_ad'].'';
+                            } */
+                            foreach ($admin as $ad) {
+                                echo'
+                                <div class="dropdown">
+                                    <ul>
+                                        <img src="../site/img/'.$ad['img_ad'].'"width="60px" alt="">
+                                        <li><a href="#">'.$ad['name_ad'].'<i class="fa fa-caret-down" style="font-size:17px;color:black"></i></a>
+                                            <ul>
+                                               
+                                                <li><a href="#">Changes Pass</a></li>
+                                                <li><a href="#">Log Out</a></li>
+                                            </ul>
+                                        </li>   
+                                    </ul>
+                                </div>
+                                ';
                             }
                         ?>
+                        
                     </div>
                 </div>
             <?php       
