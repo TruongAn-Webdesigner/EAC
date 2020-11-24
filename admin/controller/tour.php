@@ -1,11 +1,16 @@
 <?php
+
+    include_once 'model/place.php';
+    include_once 'model/tour.php';
+
     $action='index';
     if(isset($_GET['act'])){
         $action=$_GET['act'];
     }
-switch ($action) {
+    switch ($action) {
     case 'index':
-        # code...
+        $kv=getAllKV();
+        $dd=getAlldd();
         include 'view/tour/place.php';
         break;
     case 'tour':
