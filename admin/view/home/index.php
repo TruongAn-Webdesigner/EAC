@@ -1,10 +1,4 @@
 
-            <div class="full">
-                    <div class="top_ad_right">
-
-                    </div>
-                </div>
-
                 <div class="full">
                     <div class="boxcenter_statis">
                         <!-- review statis -->
@@ -102,32 +96,31 @@
                                                                 <table class="table table-striped">
                                                                         <thead>
                                                                             <tr>
-                                                                            <th scope="col">#</th>
-                                                                            <th scope="col">First</th>
-                                                                            <th scope="col">Last</th>
-                                                                            <th scope="col">Handle</th>
+                                                                            <th scope="col">id Tour</th>
+                                                                            <th scope="col">Tên Tour</th>
+                                                                            <th scope="col">Ngày Đi</th>
+                                                                            <th scope="col">Ngày Về</th>
+                                                                            <th scope="col">Giá</th>
+                                                                            <th scope="col">Số Người Đặt</th>
                                                                             </tr>
                                                                         </thead>
                                                                         <tbody>
-                                                                            <tr>
-                                                                            <th scope="row">1</th>
-                                                                            <td>Mark</td>
-                                                                            <td>Otto</td>
-                                                                            <td>@mdo</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                            <th scope="row">2</th>
-                                                                            <td>Jacob</td>
-                                                                            <td>Thornton</td>
-                                                                            <td>@fat</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                            <th scope="row">3</th>
-                                                                            <td>Larry</td>
-                                                                            <td>the Bird</td>
-                                                                            <td>@twitter</td>
-                                                                            </tr>
+                                                                            <?php
 
+                                                                                foreach($rankTour as $rank){
+                                                                                    echo'
+                                                                                        <tr>
+                                                                                            <th scope="row">'.$rank['id_tour'].'</th>
+                                                                                            <td>'.$rank['name_tour'].'</td>
+                                                                                            <td>'.$rank['ngaydi'].'</td>
+                                                                                            <td>'.$rank['ngayve'].'</td>
+                                                                                            <td>'.$rank['price_ct'].'</td>
+                                                                                            <td>'.$rank['tongKH'].'</td>
+                                                                                        </tr>
+                                                                                    ';
+                                                                                }
+                                                                            ?>
+                                                                           
                                                                         </tbody>
                                                                     </table>
                                                             </div>
@@ -153,31 +146,26 @@
                                                                     <table class="table table-striped">
                                                                             <thead>
                                                                                 <tr>
-                                                                                <th scope="col">#</th>
-                                                                                <th scope="col">First</th>
-                                                                                <th scope="col">Last</th>
-                                                                                <th scope="col">Handle</th>
+                                                                                <th scope="col">id khách hàng</th>
+                                                                                <th scope="col">Tên Khách Hàng</th>
+                                                                                <th scope="col">Số Điện Thoại</th>
+                                                                                <th scope="col">Tổng Số Tour</th>
                                                                                 </tr>
                                                                             </thead>
                                                                             <tbody>
-                                                                                <tr>
-                                                                                <th scope="row">1</th>
-                                                                                <td>Mark</td>
-                                                                                <td>Otto</td>
-                                                                                <td>@mdo</td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                <th scope="row">2</th>
-                                                                                <td>Jacob</td>
-                                                                                <td>Thornton</td>
-                                                                                <td>@fat</td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                <th scope="row">3</th>
-                                                                                <td>Larry</td>
-                                                                                <td>the Bird</td>
-                                                                                <td>@twitter</td>
-                                                                                </tr>
+                                                                                <?php
+
+                                                                                    foreach($rankKH as $rank){
+                                                                                        echo'
+                                                                                            <tr>
+                                                                                                <th scope="row">'.$rank['id_kh'].'</th>
+                                                                                                <td>'.$rank['name_kh'].'</td>
+                                                                                                <td>'.$rank['sdt_kh'].'</td>
+                                                                                                <td>'.$rank['tongCD'].'</td>
+                                                                                            </tr>
+                                                                                        ';
+                                                                                    }
+                                                                                ?>
                                                                             </tbody>
                                                                         </table>
                                                                 </div>
@@ -216,38 +204,26 @@
                                                             <th scope="col">Email</th>
                                                             <th scope="col">SDT</th>
                                                             <th scope="col">Position</th>
-                                                            <th scope="col">Edit</th>
                                                             <th scope="col">Del</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
-                                                        <tr>
-                                                            <td scope="row"><img src="../site/img/london.jpg" width=80px height=80px style="border-radius: 50px;"></td>
-                                                            <td>Mark</td>
-                                                            <td>Otto</td>
-                                                            <td>@mdo</td>
-                                                            <td>@mdo</td>
-                                                            <td><button type="button" class="btn btn-outline-success">Success</button></td>
-                                                            <td><button type="button" class="btn btn-outline-danger">Danger</button></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td scope="row"><img src="../site/img/london.jpg" width=80px height=80px style="border-radius: 50px;"></td>
-                                                             <td>Jacob</td>
-                                                             <td>Thornton</td>
-                                                            <td>@mdo</td>
-                                                            <td>@mdo</td>
-                                                            <td><button type="button" class="btn btn-outline-success">Success</button></td>
-                                                            <td><button type="button" class="btn btn-outline-danger">Danger</button></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td scope="row"><img src="../site/img/london.jpg" width=80px height=80px style="border-radius: 50px;"></td>
-                                                            <td>Larry</td>
-                                                            <td>the Bird</td>
-                                                            <td>@mdo</td>
-                                                            <td>@mdo</td>
-                                                            <td><button type="button" class="btn btn-outline-success">Success</button></td>
-                                                            <td><button type="button" class="btn btn-outline-danger">Danger</button></td>
-                                                        </tr>
+                                                       <?php
+                                                       
+                                                            foreach ($ad as $ad){
+                                                                echo'
+                                                                    <tr>
+                                                                        <td scope="row"><img src="../site/img/'.$ad['img_ad'].'" width=80px height=80px style="border-radius: 50px;"></td>
+                                                                        <td>'.$ad['name_ad'].'</td>
+                                                                        <td>'.$ad['email'].'</td>
+                                                                        <td>'.$ad['sdt'].'</td>
+                                                                        <td>'.$ad['position'].'</td>
+                                                                        <td><button type="button" class="btn btn-outline-danger"><a href="index.php?ctrl=home&act=del&id='.$ad['id_ad'].'">DEL</a></button></td>
+                                                                    </tr>
+                                                                ';
+                                                            }                             
+
+                                                       ?>
                                                     </tbody>
                                                 </table>
                                             </div>
