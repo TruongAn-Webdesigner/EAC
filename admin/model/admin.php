@@ -7,7 +7,6 @@ include_once('database.php');
         return execute($sql);
     }
 
-
     function getAdmin(){
         $sql="SELECT * FROM `admin`";
         return query($sql);

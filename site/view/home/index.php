@@ -577,116 +577,33 @@
                          
                     <div class="full">
                         <div class="content_tips">
-                            <div class="box_tips">
-                                <div class="box_img_tips">
-                                    <img src="img/field.jpg" alt="">
-                                </div>
-                                <div class="name_tips">
-                                Some things
-                                </div>
-                            </div>
-
-                            <div class="box_tips">
-                                <div class="box_img_tips">
-                                    <img src="img/field.jpg" alt="">
-                                </div>
-                                <div class="name_tips">
-                                Some things
-                                </div>
-                            </div>
-                            
-                            <div class="box_tips">
-                            <div class="box_img_tips">
-                            <img src="img/field.jpg" alt="">
-                                    </div>
-                                    <div class="name_tips">
-                                    Some things
-                                </div>
-                            </div>
-
-                            <div class="box_tips">
-                            <div class="box_img_tips">
-                            <img src="img/field.jpg" alt="">
-                                    </div>
-                                    <div class="name_tips">
-                                    Some things
-                                </div>
-                            </div>
-
-                            <div class="box_tips">
-                                <div class="box_img_tips">
-                                <img src="img/field.jpg" alt="">
-                                </div>
-
-                                <div class="name_tips">
-                                Some things
-                                </div>
-                            </div>
-                            
-                            <div class="box_tips">
-                                <div class="box_img_tips">
-                                <img src="img/field.jpg" alt="">
-                                    </div>
+                        <?php
+                            foreach($tip as $tip){
+                                echo'
+                                        <div class="box_tips">
+                                            <div class="box_img_tips">
+                                                <img src="img/'.$tip['img_tip'].'" alt="">
+                                            </div>
+                                            <div class="name_tips">
+                                            '.$tip['name_tip'].'
+                                            </div>
+                                        </div>
                                     
-                                    <div class="name_tips">
-                                    Some things
-                                    </div>
-                            </div>
+                                ';
+                            }
 
-                            <div class="box_tips">
-                            <div class="box_img_tips">
-                            <img src="img/field.jpg" alt="">
-                                    </div>
-                                    
-                                    <div class="name_tips">
-                                    Some things
-                                    </div>
-                            </div>
-                                
-                            <div class="box_tips">
-                            <div class="box_img_tips">
-                            <img src="img/field.jpg" alt="">
-                                    </div>
-                                    
-                                    <div class="name_tips">
-                                    Some things
-                                    </div>     
-                            </div>
-                            
-                        </div>
-                            
+                        ?>  
+                        </div>                                    
                     </div>
                  
                 </div>
                 <div class="more_tips">
-                                <a href="http://" data-toggle="tooltip" data-placement="right" title="Tooltip on right">More</a>
+                                <a href="#" data-toggle="tooltip" data-placement="right" title="Tooltip on right">More</a>
                             </div>
             </div>      
         </div>
     <!-- end tips -->
 
-<!-- logo hotel -->
-
-
-
-<div class="full">
-
-            <div class="hotel">
-                <div class="boxcenter_big">
-                    <div class="logo_ht">
-                        <div class="boxlogo">
-                        
-                        </div>
-                        <div class="boxlogo"></div>
-                        <div class="boxlogo"></div>
-                        <div class="boxlogo"></div>
-                        <div class="boxlogo"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    <!-- end logo hotel -->
 
 
 

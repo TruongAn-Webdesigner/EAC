@@ -18,7 +18,7 @@
         }
 
         function getRankTour(){
-          $sql="SELECT * ,COUNT(*) AS 'tongKH' FROM (( tour JOIN chitiettour ON tour.id_tour =chitiettour.id_tour ) JOIN danhsachkh ON chitiettour.id_chitiet = danhsachkh.id_ct) GROUP BY id_ct ORDER BY tongKH DESC";
+          $sql="SELECT * ,COUNT(*) AS 'tongKH' FROM (( diadiem JOIN chitiettour ON diadiem.id_dd =chitiettour.id_dd ) JOIN danhsachkh ON chitiettour.id_chitiet = danhsachkh.id_ct) GROUP BY id_ct ORDER BY `tongKH` desc";
           return query($sql);
         }
 
@@ -26,6 +26,11 @@
           $sql="SELECT *,COUNT(*) AS tongCD FROM ((khachhang JOIN danhsachkh ON khachhang.id_kh = danhsachkh.id_kh )INNER JOIN chitiettour ON danhsachkh.id_ct = chitiettour.id_chitiet) GROUP BY danhsachkh.id_kh ORDER BY tongCD DESC";
           return query($sql);
         }
+
+        function getAllTopFeautureById($id){
+          $sql="SELECT * FROM noidungbocuc INNER JOIN diadiem on diadiem.id_dd=noidungbocuc.id_dd WHERE diadiem.id_dd='$id'";
+          return query($sql);
+      }
 
 
 

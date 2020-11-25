@@ -23,6 +23,7 @@
         $row = $result->fetch(PDO::FETCH_ASSOC);
         return $row;
     }
+    
     function execute($sql){
         $connect = getConnection();
         $result = $connect-> exec($sql);

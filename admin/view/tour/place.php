@@ -50,6 +50,10 @@
                             <span>Địa Điểm</span> <br>
                             Danh Sách Các Địa Điểm 
                         </div>
+
+                        <div class="search">
+                            <input type="text">  </input>
+                        </div>
                         
                         <div class="btn_tour">
                                 <select class="form-control form-control-lg fl ">
@@ -62,7 +66,7 @@
                                     ?>
                                 </select>
                                 <div class="btn_place">
-                                    <a href="index.php?ctrl=place&act=add">Add Place </a>
+                                    <a href="index.php?ctrl=tour&act=add">Add Place </a>
                                 </div>
                         </div>
 
@@ -90,11 +94,11 @@
                                                 echo'
                                                     <tr>
                                                         <td scope="row">'.$dd['id_dd'].'</td>
-                                                        <td>'.$dd['name_dd'].'</td>
+                                                        <td><a href="index.php?ctrl=noidung&id='.$dd['id_dd'].'">'.$dd['name_dd'].'</a></td>
                                                         <td>'.$dd['rating_dd'].'</td>
                                                         <td>'.$dd['name_kv'].'</td>
-                                                        <td><button type="button" class="btn btn-outline-success">Success</button></td>
-                                                        <td><button type="button" class="btn btn-outline-danger">Danger</button></td>
+                                                        <td><button type="button" class="btn btn-outline-success"><a href="index.php?ctrl=tour&act=edit&id='.$dd['id_dd'].'">Edit</a></button></td>
+                                                        <td><button type="button" class="btn btn-outline-danger"><a href="index.php?ctrl=tour&act=del&id='.$dd['id_dd'].'">Del</a></button></td>
                                                     </tr>
    
                                                 ';

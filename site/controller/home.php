@@ -10,6 +10,7 @@
     switch($action){
         case 'index':
         $allReview=getAllTopFeauture();
+        $tip= getAllTip();
         include 'view/home/index.php';
         break;
     }

@@ -2,12 +2,12 @@
         <div class="boxcenter_add">
             <div class="content_form">
                 <div class="left_content">
-                    <form action="index.php?ctrl=place&act=update" method='post' enctype="multipart/form-data">
+                    <form action="index.php?ctrl=tipnote&act=update" method='post' enctype="multipart/form-data">
                         
                         <?php
 
-                            $id = $kv['id_kv'];
-                            $name =$kv['name_kv'];
+                            $id = $kv['id_tip'];
+                            $name =$kv['name_tip'];
 
                         ?>
 
