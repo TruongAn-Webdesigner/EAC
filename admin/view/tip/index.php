@@ -29,7 +29,7 @@
                         
                         <div class="btn_tip">
                                 <div class="btn_place ">
-                                    <a href="index.php?ctrl=place&act=add">Add Place </a>
+                                    <a href="index.php?ctrl=tipnote&act=add">Add Place </a>
                                 </div>
                         </div>
 
@@ -56,8 +56,8 @@
                                                     <tr>
                                                         <td scope="row">'.$dd['id_tip'].'</td>
                                                         <td>'.$dd['name_tip'].'</td>
-                                                        <td><button type="button" class="btn btn-outline-success">Edit</button></td>
-                                                        <td><button type="button" class="btn btn-outline-danger">Del</button></td>
+                                                        <td><button type="button" class="btn btn-outline-success"><a href="index.php?ctrl=tipnote&act=edit&id='.$dd['id_tip'].'">Edit</a></button></td>
+                                                        <td><button type="button" class="btn btn-outline-danger"><a href="index.php?ctrl=tipnote&act=del&id='.$dd['id_tip'].'">Del</a></button></td>
                                                     </tr>
    
                                                 ';
