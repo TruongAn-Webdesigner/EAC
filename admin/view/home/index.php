@@ -96,7 +96,6 @@
                                                                 <table class="table table-striped">
                                                                         <thead>
                                                                             <tr>
-                                                                            <th scope="col">id Tour</th>
                                                                             <th scope="col">Tên Tour</th>
                                                                             <th scope="col">Ngày Đi</th>
                                                                             <th scope="col">Ngày Về</th>
@@ -110,8 +109,7 @@
                                                                                 foreach($rankTour as $rank){
                                                                                     echo'
                                                                                         <tr>
-                                                                                            <th scope="row">'.$rank['id_tour'].'</th>
-                                                                                            <td>'.$rank['name_tour'].'</td>
+                                                                                            <td>'.$rank['name_dd'].'</td>
                                                                                             <td>'.$rank['ngaydi'].'</td>
                                                                                             <td>'.$rank['ngayve'].'</td>
                                                                                             <td>'.$rank['price_ct'].'</td>
