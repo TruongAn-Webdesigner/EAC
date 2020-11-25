@@ -140,7 +140,7 @@
                                             <ul>
                                                
                                                 <li><a href="#">Changes Pass</a></li>
-                                                <li><a href="#">Log Out</a></li>
+                                                <li><a href="logout.php">Log Out</a></li>
                                             </ul>
                                         </li>   
                                     </ul>
