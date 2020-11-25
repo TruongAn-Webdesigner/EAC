@@ -8,8 +8,28 @@
         }
 
 
-   /*      function addKV($name_kv,$img){
-          $sql="INSERT INTO khuvuc( name_kv, img_kv) VALUES ('$name_kv','$img')";
+        function addTour($name,$id_kv,$img){
+          $sql="INSERT INTO  diadiem ( name_dd,id_kv ,img_dd) VALUES ('$name','$id_kv','$img')";
           return execute($sql);
-        } */
+        }
+
+        function getDDID($id){
+          $sql="SELECT * FROM `diadiem` WHERE id_dd='$id'";
+          return queryOne($sql);
+      }
+
+      function  updateTourhinh($id,$name,$img,$id_kv){
+        $sql = "update diadiem set name_dd='$name', img_dd='$img',id_kv='$id_kv' where id_dd='$id'";
+          execute($sql);
+      }
+
+        function updateTour($id,$name,$id_kv){
+          $sql = "update diadiem set name_dd='$name' ,id_kv='$id_kv' where id_dd='$id'";
+          execute($sql);
+      }
+
+      function deleteTour($id){
+         $sql="delete from diadiem where id_dd='$id'";
+       return execute($sql);
+    }
 ?>
