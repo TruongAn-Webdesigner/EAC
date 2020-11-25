@@ -135,20 +135,32 @@
                                 echo'
                                 <div class="dropdown">
                                     <ul>
-                                        <img src="../site/img/'.$ad['img_ad'].'"width="60px" alt="">
+                                    <img src="../site/img/'.$ad['img_ad'].'"width="60px"  style="border-radius: 50px;  alt="">
                                         <li><a href="#">'.$ad['name_ad'].'<i class="fa fa-caret-down" style="font-size:17px;color:black"></i></a>
-                                            <ul>
-                                               
-                                                <li><a href="#">Changes Pass</a></li>
-                                                <li><a href="logout.php">Log Out</a></li>
-                                            </ul>
+                                            
+                                        <div class="nav_ad_con">
+                                                 <ul>                                              
+                                                    <li><a href="#">Changes Pass</a></li>
+                                                    <li><a href="logout.php">Log Out</a></li>
+                                                </ul>
+                                           </div>
+                                        
                                         </li>   
                                     </ul>
                                 </div>
                                 ';
                             }
                         ?>
-                        
+                        <!-- <div class="dropdown">
+                            <ul>
+                                <li><a href="#">My Name</a>
+                                    <ul>
+                                        <li><a href="#">Changes Password</a></li>
+                                        <li><a href="#">Log Out</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div> -->
                     </div>
                 </div>
             <?php       
