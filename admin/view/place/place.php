@@ -35,8 +35,8 @@
                                                     </div>
             
                                                     <div class="btn_kv">
-                                                        <button type="button" class="btn btn-outline-success">EDIT</button>
-                                                        <button type="button" class="btn btn-outline-danger">DEL</button>
+                                                        <button type="button" class="btn btn-outline-success"><a href="index.php?ctrl=place&act=edit&id='.$kv['id_kv'].'">EDIT</a></button>
+                                                        <button type="button" class="btn btn-outline-danger"><a href="index.php?ctrl=place&act=del&id='.$kv['id_kv'].'">DEL</a></button>
                                                     </div>
                                                 </div>
                                                 ';
