@@ -84,11 +84,11 @@
                             <div class="single-item">
                                 
                                     <div class="box_img_slick">
-                                        <img src="img/field.jpg" alt=""> 
+                                        <img src="img/'.$tr['img_right1'].'" alt=""> 
                                     </div>
         
                                     <div class="box_img_slick">
-                                        <img src="img/vinh ha long.jpg" alt="">
+                                        <img src="img/'.$tr['img_right2'].'" alt="">
                                     </div>
                                 
                                 
