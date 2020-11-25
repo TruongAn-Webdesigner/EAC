@@ -139,17 +139,17 @@ body{
         margin: 10px 10px;
     }
     .dropdown{
-        display: inline-block;
         text-align: center;
-        position: absolute;
         float: right;
     }
+    
     .dropdown ul{
         
         list-style: none;
         padding: 0;
         margin: 0;
     }
+
     .dropdown ul li{
         background: white;
         position: relative;
@@ -167,10 +167,42 @@ body{
     }
     
     
-    .dropdown ul ul{
+    .nav_ad_con{
+        width: 250px;
+        background-color: bisque;
         position: absolute;
         display: none;
     }
-    .dropdown ul li:hover > ul{
+
+    .dropdown ul li:hover > .nav_ad_con{
         display: block;
+    }
+
+    .nav_ad_con ul{
+        width: 100%;
+    }
+
+    .nav_ad_con ul li{
+        width: 100%;
+    }
+
+    .nav_ad_con a{
+        transition: all 0.5s;
+    }
+
+    .nav_ad_con a:hover{
+        background-color: black;
+        color: white;
+    }
+
+
+
+    button.btn a {
+        color: black;
+        font-size: 1vw;
+    }
+
+    button.btn:hover a{
+        text-decoration: none;
+        Color: white;
     }
