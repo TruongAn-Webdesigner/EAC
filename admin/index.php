@@ -69,7 +69,7 @@
                 <div class="dashboarid">
 
                     <div class="title_db">
-                        DASHBOARID
+                        DASHBOARD
                     </div>
 
                     <div class="content_db">
