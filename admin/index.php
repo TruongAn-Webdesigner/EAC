@@ -136,7 +136,7 @@
                                 <div class="dropdown">
                                     <ul>
                                     <img src="../site/img/'.$ad['img_ad'].'"width="60px"  style="border-radius: 50px;  alt="">
-                                        <li><a href="#">'.$ad['name_ad'].'<i class="fa fa-caret-down" style="font-size:17px;color:black"></i></a>
+                                        <li><a href="#">'.$ad['name_ad'].' <i class="fa fa-caret-down" style="font-size:17px;color:black"></i></a>
                                             
                                         <div class="nav_ad_con">
                                                  <ul>                                              
