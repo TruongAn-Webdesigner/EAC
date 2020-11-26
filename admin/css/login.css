@@ -1,67 +1,4 @@
-/* body{
-    margin: 0;
-    padding: 0;
-    background: #182C61;
-}
 
-.box{
-    width: 320px;
-    padding: 40px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    background: black;
-    text-align: center;
-}
-.box h2{
-    color: white;
-    text-transform: uppercase;
-    font-weight: 500;
-
-}
-.box input[type="text"],.box input[type="password"]{
-    border: 0;
-    background: none;
-    display: block;
-    margin: 20px auto;
-    text-align: center;
-    border: 2px solid #39AECF;
-    padding: 15px 10px;
-    width: 200px;
-    outline: none;
-    color: white;
-    border-radius: 20px;
-    transition: 0.5s;
-}
-.box input[type="text"]:focus,.box input[type="password"]:focus{
-    width: 250px;
-    border-color: #216477;
-
-}
-.box input[type="submit"]{
-    border: 0;
-    background: none;
-    display: block;
-    margin: 20px auto;
-    text-align: center;
-    border: 2px solid #216477;
-    padding: 15px 40px;
-    outline: none;
-    color: white;
-    border-radius: 20px;
-    transition: 0.5s;
-    cursor: pointer;
-}
-
- */
-
- 
-
-
-
-/*//////////////////////////////////////////////////////////////////
-[ FONT ]*/
 
 @font-face {
     font-family: Ubuntu-Regular;
@@ -235,7 +172,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(0,0,0,0.65);
+    background-color: rgba(0,0,0,0.4);
   }
   
   .wrap-login100 {
