@@ -275,11 +275,11 @@
     -moz-transition: all 0.4s;
     transition: all 0.4s;
   
-    background: #d41872;
-    background: -webkit-linear-gradient(left, #a445b2, #d41872, #fa4299);
-    background: -o-linear-gradient(left, #a445b2, #d41872, #fa4299);
-    background: -moz-linear-gradient(left, #a445b2, #d41872, #fa4299);
-    background: linear-gradient(left, #a445b2, #d41872, #fa4299);
+    background: #0392a5;
+    background: -webkit-linear-gradient(left, #0e95a7, #13bbd1, #16def8);
+    background: -o-linear-gradient(left, #0e95a7, #13bbd1, #16def8);
+    background: -moz-linear-gradient(left,#0e95a7, #13bbd1, #16def8);
+    background: linear-gradient(left, #0e95a7, #13bbd1, #16def8);
   }
   
   .focus-input100::after {
@@ -307,7 +307,7 @@
   
   .input100:focus + .focus-input100::after {
     left: 23px;
-    color: #d41872;
+    color: #0392a5;
   }
   
   .input100:focus + .focus-input100::before {
@@ -316,7 +316,7 @@
   
   .has-val.input100 + .focus-input100::after {
     left: 23px;
-    color: #d41872;
+    color: #0392a5;
   }
   
   .has-val.input100 + .focus-input100::before {
@@ -360,11 +360,11 @@
     height: 42px;
     border-radius: 21px;
   
-    background: #d41872;
-    background: -webkit-linear-gradient(left, #a445b2, #d41872, #fa4299);
-    background: -o-linear-gradient(left, #a445b2, #d41872, #fa4299);
-    background: -moz-linear-gradient(left, #a445b2, #d41872, #fa4299);
-    background: linear-gradient(left, #a445b2, #d41872, #fa4299);
+    background: #0392a5;
+    background: -webkit-linear-gradient(left,  #0e95a7, #13bbd1, #36c6da);
+    background: -o-linear-gradient(left, #0e95a7, #13bbd1, #16def8);
+    background: -moz-linear-gradient(left,  #0e95a7, #13bbd1, #16def8);
+    background: linear-gradient(left,  #0e95a7, #13bbd1,  #16def8);
     position: relative;
     z-index: 1;
   
