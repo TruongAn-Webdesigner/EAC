@@ -132,11 +132,11 @@ $(document).ready(function(){
     $('.tr').slick({
        
 infinite: true,
-  slidesToShow: 4,
+  slidesToShow: 3,
   slidesToScroll: 1,
   autoplay: true,
   autoplaySpeed: 2000,
-  adaptiveHeight:false,
+  adaptiveHeight:true,
   dots:true,
   dotClass:'slick-dots',
   nextArrow:$('.next'),
