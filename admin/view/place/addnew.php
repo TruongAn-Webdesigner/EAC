@@ -7,11 +7,11 @@
                         <div class="form_group">
 
                             <div class="form_content">
-                                <input type="text" readonly name='id' placeholder='id Tự Động Tăng' >
+                                <input type="text" readonly name='id' placeholder='ID tự động tăng' >
                             </div>
 
                             <div class="form_content">
-                                <input type="text" name='name' placeholder='Mời Nhập Tên Khu Vực'>
+                                <input type="text" name='name' placeholder='Mời nhập tên khu vực'>
                             </div>
                             <div class="file">
                                 <label for="file">Chosse File</label>
