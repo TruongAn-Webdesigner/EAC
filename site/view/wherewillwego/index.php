@@ -25,7 +25,7 @@
                     </div>
                     <div class="menu_link">
                         <div class="link_right">
-                            <a href="http://">login</a>
+                            <a href="http://">Login</a>
                         </div>
                     </div>
 
