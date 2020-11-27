@@ -19,13 +19,13 @@
                     <div class="logo_wwwg">
                             <a href="index.php">EAC</a>
                         
-                            <a href="http://">where will we go</a>
+                            <a href="http://">Where will we go</a>
                             <a href="http://">Tips</a>
                             
                     </div>
                     <div class="menu_link">
                         <div class="link_right">
-                            <a href="http://">login</a>
+                            <a href="http://">Login</a>
                         </div>
                     </div>
 
@@ -75,7 +75,7 @@
                             </div>
                             <div class="hot_text_item">
                                 <div class="hot_text2">
-                                    Tp. <span>HCM</span>
+                                    TP. <span>HCM</span>
                                 </div>
                             </div>
                         </div>

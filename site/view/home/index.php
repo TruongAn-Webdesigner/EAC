@@ -20,7 +20,7 @@
                         <div class="img_header position">
                             
                             <div class="box_image">
-                                <img src="img/flower.png" alt="">
+                                <img src="img/rice.jpg" alt="">
                                 <div class="number_header">
                                     <sup>01</sup>/04
                                 </div>
@@ -228,7 +228,7 @@
                 <div class="mySlides fade-animation">
                     <div class="img_header position">
                         <div class="box_image">
-                                <img src="img/rice.jpg" alt="">
+                                <img src="img/flower.png" alt="">
                             <div class="number_header">
                                 <sup>04</sup>/04
                             </div>
@@ -302,9 +302,6 @@
                                     <li>
                                         <a href="index.php?ctrl=wewillgo">Where will we go?</a>
                                         <a href="http://">Tips note</a>
-                                        <a href="http://">Review</a>
-                                        <a href="http://">bal blaa</a>
-                                        
                                     </li>
                                 </ul>
                                 
