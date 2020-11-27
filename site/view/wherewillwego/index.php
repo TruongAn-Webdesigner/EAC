@@ -75,7 +75,7 @@
                             </div>
                             <div class="hot_text_item">
                                 <div class="hot_text2">
-                                    Tp. <span>HCM</span>
+                                    TP. <span>HCM</span>
                                 </div>
                             </div>
                         </div>
