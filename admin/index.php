@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EAC Travel</title>
 
+
     <!-- css -->
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/statistical.css">
@@ -12,6 +13,7 @@
     <link rel="stylesheet" href="css/place.css">
     <link rel="stylesheet" href="css/add.css">
     <link rel="stylesheet" href="css/tip.css">
+    <link rel="stylesheet" href="css/content.css">
 
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
