@@ -40,7 +40,16 @@
         </div>
     </div>
  -->
-
+ <script>
+$(document).ready(function(){
+  $("#timkiem").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#search tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
 <div class="full">
     <div class="boxcenter_statis">
         <div class="box_view_place">
@@ -52,7 +61,7 @@
                         </div>
 
                         <div class="search">
-                            <input type="text">  </input>
+                        <input id="timkiem" type="text" placeholder="Search..">
                         </div>
                         
                         <div class="btn_tour">
@@ -86,7 +95,7 @@
                                             <th scope="col">Del</th>
                                         </tr>
                                     </thead>
-                                    <tbody>
+                                    <tbody id="search">
 
                                         <?php
 
