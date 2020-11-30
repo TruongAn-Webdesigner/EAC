@@ -12,7 +12,7 @@
             <header>
             <div class="bg_header">
                 <div class="box_time">
-                        <div class="float_text">
+                        <div class="float_time">
                             <h1 id="time"></h1>
                         </div>
                     </div>
@@ -20,7 +20,7 @@
                         <div class="img_header position">
                             
                             <div class="box_image">
-                                <img src="img/rice.jpg" alt="">
+                                <img src="img/fleidnew.jpg" alt="">
                                 <div class="number_header">
                                     <sup>01</sup>/04
                                 </div>
@@ -36,7 +36,7 @@
 
                                         <div class="big_text">
                                             <div class="float_text">
-                                                Viet Nam
+                                                Việt Nam
                                             </div>
                                         </div>
                                     
@@ -91,20 +91,20 @@
                 <div class="mySlides fade-animation">
                     <div class="img_header position">
                         <div class="box_image">
-                                <img src="img/london.jpg" alt="">
+                                <img src="img/hanoistreet.jpg" alt="">
                             <div class="number_header">
                                 <sup>02</sup>/04
                             </div>
                             <div class="text_header">
                                 <div class="small_text">
                                     <div class="float_text">
-                                        Peaceful countryful2
+                                        Peaceful countryful
                                     </div>
                                 </div>
 
                                 <div class="big_text">
                                     <div class="float_text">
-                                        Viet Nam
+                                        Hà Nội
                                     </div>
                                 </div>
 
@@ -158,20 +158,20 @@
                     <div class="mySlides fade-animation">
                         <div class="img_header position">
                             <div class="box_image">
-                                <img src="img/field.jpg" alt="">
+                                <img src="img/vinhhalong.jpg" alt="">
                             <div class="number_header">
                                 <sup>03</sup>/04
                             </div>
                             <div class="text_header">
                                 <div class="small_text">
                                     <div class="float_text">
-                                        Peaceful countryful3
+                                        Peaceful countryful
                                     </div>
                                 </div>
 
                                 <div class="big_text">
                                     <div class="float_text">
-                                        Viet Nam
+                                        Vịnh Hạ Long
                                     </div>
                                 </div>
                             </div>
@@ -228,20 +228,20 @@
                 <div class="mySlides fade-animation">
                     <div class="img_header position">
                         <div class="box_image">
-                                <img src="img/flower.png" alt="">
+                                <img src="img/forest.jpg" alt="">
                             <div class="number_header">
                                 <sup>04</sup>/04
                             </div>
                             <div class="text_header">
                                 <div class="small_text">
                                     <div class="float_text">
-                                        Peaceful countryful2
+                                        Peaceful countryful
                                     </div>
                                 </div>
 
                                 <div class="big_text">
                                     <div class="float_text">
-                                        Viet Nam
+                                        Đà Nẵng
                                     </div>
                                 </div>
 
@@ -301,7 +301,7 @@
                                 <ul>
                                     <li>
                                         <a href="index.php?ctrl=wewillgo">Where will we go?</a>
-                                        <a href="http://">Tips note</a>
+                                        <a href="index.php?ctrl=tip">Tips note</a>
                                     </li>
                                 </ul>
                                 
@@ -331,13 +331,15 @@
 
     <!-- top review -->
     
-        <div class="full">
-            <div class="boxcenter_big">
+        <div class="full position">
+            <div class="box_behind_tr"></div>
+                <div class="boxcenter_big">
                     <div class="top_review">
                         <div class="title_tv">
                                 <span>TOP REVIEW</span><br> 
-                                Duis vitae velit mollis, congue nisi dignissim, pellentesque lorem
-                            </div> 
+                                Hãy cùng khám phá những địa điểm đầy hấp dẫn nào!.
+                            </div>
+                            
                             <div class="box_next_back_tv">
                                 <div class="next_tv">
                                 <i class="fa fa-chevron-left prev" aria-hidden="true"></i>
@@ -463,9 +465,21 @@
     <div class="full">
             <div class="bannerhome">
                <div class="img_banner">
-
-
-
+                   
+                        <div class="clippy1"></div>                       
+                        <div class="clippy2"></div>
+                    <div class="box_text_hello">
+                        <div class="title_hello">
+                            hello!
+                        </div>
+                        <div class="text_hello">
+                            Đằng ấy ơi! Đằng ấy đã sẵn sàng để vui chơi
+                            các vùng đất Việt Nam chưa? Hãy chuẩn
+                            bị bắt đầu và khám phá những điều mới lạ
+                            thú vị qua các khu địa điểm đậm chất quê hương nhé.
+                            <div class="clippy3"></div>
+                        </div>
+                   </div>
                </div>
             </div>
         </div>
@@ -475,12 +489,12 @@
 
         <div class="full">
             <div class="box_best_place">
+                <div class="box_behind_place"></div>
                 <div class="title_pl">
                     <span>The best place</span>
                     <div class="title_small_bp">
-                        Duis vitae velit mollis, congue nisi dignissim, pellentesque lorem
-                    </div>
-                   
+                        Những địa điểm nổi bật nhất thời gian gần đây
+                    </div>      
                 </div>
                 <div class="line">
 
@@ -497,7 +511,7 @@
                                         <div class="box_text_bp">
                                                 Viet Nam
                                             <div class="box_text_small_bp">
-                                                beauti & peaceful country
+                                                beauty & peaceful country
                                             </div>
 
                                             <div class="quotes">
@@ -510,7 +524,7 @@
                                     <img src="img/vn-map.png" alt="">
                                         <div class="icon_bp_1">
                                            
-                                        <a href="http://" data-toggle="tooltip-abc" data-placement="right" title="Ha Noi">
+                                        <a href="http://" data-toggle="tooltip-abc" data-placement="right" title="Hà Nội">
                                             <i class="fas fa-map-marker-alt"></i>
                                         </a>
                                    
@@ -518,13 +532,13 @@
                                         </div>
 
                                         <div class="icon_bp_2">
-                                        <a href="index.php?ctrl=wewillgo&act=contentbestplace" data-toggle="tooltip-abc" data-placement="right" title="Vinh Ha Long">
+                                        <a href="index.php?ctrl=wewillgo&act=contentbestplace" data-toggle="tooltip-abc" data-placement="right" title="Vịnh Hạ Long">
                                             <i class="fas fa-map-marker-alt"></i>
                                         </a>
                                         </div>
 
                                         <div class="icon_bp_3">
-                                        <a href="http://" data-toggle="tooltip-abc" data-placement="right" title="Da Nang">
+                                        <a href="http://" data-toggle="tooltip-abc" data-placement="right" title="Đà Nẵng">
                                             <i class="fas fa-map-marker-alt"></i>
                                         </a>
                                         </div>
@@ -546,56 +560,90 @@
 
 
     <!-- banner home -->
- 
-        <div class="full">
-           
-        
-            
-            <div class="bannerhome">
-            <div class="boxcenter_big">
-               <div class="img_banner">
-                    <img src="img/sea.jpg" alt="">
-               </div>
-               </div>
-            </div>
-            </div>
+
    
 
     <!-- end banner home -->
 
     <!-- tips note -->
         <div class="full">
-            <div class="boxcenter">
+            <div class="boxcenter_big">
                 <div class="tips">
-                        <div class="title_tips">
-                            <span>Things to do</span> <br>
-                            Duis vitae velit mollis, congue nisi dignissim, pellentesque lorem
-                        </div>      
+                    <div class="title_tips">
+                        <span>Things to do</span> <br>
+                        Hãy cùng tìm hiểu những điều bạn cần làm trước khi đi nhé.
+                    </div>      
                          
-                    <div class="full">
-                        <div class="content_tips">
-                        <?php
-                            foreach($tip as $tip){
-                                echo'
-                                        <div class="box_tips">
-                                            <div class="box_img_tips">
-                                                <img src="img/'.$tip['img_tip'].'" alt="">
-                                            </div>
-                                            <div class="name_tips">
-                                            '.$tip['name_tip'].'
-                                            </div>
-                                        </div>
-                                    
-                                ';
-                            }
+                    
+                    <div class="content_tips">
+                        <div class="box_tips1">
+                            <div class="box_img_tips">
+                                <img src="img/bana2.jpg" alt="">
+                            </div>
 
-                        ?>  
-                        </div>                                    
-                    </div>
+                            <div class="name_tips">
+                                <div class="text_tips_home">
+                                    lalala
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box_tips2">
+                            <div class="box_img_tips">
+                                <img src="img/bana2.jpg" alt="">
+                            </div>
+
+                            <div class="name_tips">
+                            <div class="text_tips_home">
+                                    lalala
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="box_tips3">
+                            <div class="box_img_tips3">
+                                <img src="img/bana2.jpg" alt="">
+                            </div>
+
+                            <div class="name_tips">
+                            <div class="text_tips_home">
+                                    lalala
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box_tips4">
+                            <div class="box_img_tips4">
+                                <img src="img/bana2.jpg" alt="">
+                            </div>
+
+                            <div class="name_tips">
+                            <div class="text_tips_home">
+                                    lalala
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="box_tips5">
+                            <div class="box_img_tips">
+                                <img src="img/bana2.jpg" alt="">
+                            </div>
+
+                            <div class="name_tips">
+                            <div class="text_tips_home">
+                                    lalala
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>                                    
+                    
                  
                 </div>
                 <div class="more_tips">
-                                <a href="#" data-toggle="tooltip" data-placement="right" title="Tooltip on right">More</a>
+                                <a href="index.php?ctrl=tip" data-toggle="tooltip" data-placement="right" title="Tooltip on right">More</a>
                             </div>
             </div>      
         </div>

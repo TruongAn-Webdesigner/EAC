@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Where will we go</title>
-    <link rel="stylesheet" href="css/wherewillwego.css">
+    <title>Tips note</title>
+    <link rel="stylesheet" href="css/tip.css">
     
 </head>
 <body>
@@ -18,14 +18,14 @@
 
                     <div class="logo_wwwg">
                             <a href="index.php">EAC</a>
-                        
+
                             <a href="index.php?ctrl=wewillgo">where will we go</a>
                             <a href="index.php?ctrl=tip">Tips</a>
                             
                     </div>
                     <div class="menu_link">
                         <div class="link_right">
-                            <a href="http://">Login</a>
+                            <a href="http://">login</a>
                         </div>
                     </div>
 
@@ -42,62 +42,13 @@
     <div class="roww">
         <div class="bg_background">
             <div class="box_img_background">
-                <div class="boxcenter">
-                    <div class="bg_3box">
-                        <div class="box_img_3box">
-                            <div class="container">
-                                <p class="typewriter">
-                                    <span class="typewriter-text" data-text='[ "You want to discover?. ", "This is your first time?. ", "No Problem.","We will help you think!." ]'></span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div> 
+                <img src="img/tip.jpg" alt="">
+               
             </div>
 
-            <div class="bg_hot_item">
-                <div class="boxcenter">
-                    <div class="box_hot_item">
-                        <div class="hot_item1">
-                            <div class="hot_img_item">
-                                <img src="img/vinh ha long.jpg" alt="">
-                            </div>
-                            <div class="hot_text_item">
-                                <div class="hot_text1">
-                                    <span>Đà</span> Nẵng
-                                </div>
-                            </div>
-                        </div>
+           
 
-                        <div class="hot_item2">
-                            <div class="hot_img_item">
-                                <img src="img/field.jpg" alt="">
-                            </div>
-                            <div class="hot_text_item">
-                                <div class="hot_text2">
-                                    TP. <span>HCM</span>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="hot_item3">
-                            <div class="hot_img_item">
-                                <img src="img/london.jpg" alt="">
-                            </div>
-                            <div class="hot_text_item">
-                                <div class="hot_text3">
-                                   <span>Vịnh</span>   Hạ Long
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="roww">
+</div>
         
 </div>
 
@@ -107,16 +58,14 @@
     <div class="roww">
         <div class="boxcenter position">
             <div class="bg_feature">
-
-
                 <div class="bg_feature_item">
             
                     <div class="slick_picture">
                                     <div class="text_feature">
-                                        Feature review 
+                                        Tips note 
                                     </div>
                                     <div class="small_text_tip">
-                                    Cùng tìm hiểu những khu vực đáng để đi nhất bạn nhé.
+                                        Cùng tìm hiểu những mẹo cần lưu ý cho chuyến hành trình bạn nhé.
                                     </div>
                         <div class="box_picture">
             
@@ -143,9 +92,7 @@
                                                     <a href="index.php?ctrl=wewillgo&act=content&idcontent='.$tf['id_dd'].'">
                                                     <span>'.$tf['name_dd'].'</span>
                                                     </a>
-                                                
                                                 </div>
-    
                                             </div>
                                                 ';
                                             }
@@ -473,15 +420,7 @@
         <div class="bg_review">
             <div class="boxcenter"> 
                 <div class="bg_box_review">
-                        <!-- Search form -->
-                        <div class="md-form active-purple-2 mb-3">
-                          
-                            <div class="icon_search">
-                                <i class="fas fa-search"></i>
-                            </div>
-                            <input class="form-control" type="text" placeholder="Search" aria-label="Search">
-                        </div>
-
+                    
                     <div class="bg_in-box_review">
                             <div class="title_wwwg_review">
                             DISCOVER
