@@ -19,7 +19,7 @@
                     <div class="logo_wwwg">
                             <a href="index.php">EAC</a>
                         
-                            <a href="http://">where will we go</a>
+                            <a href="index.php?ctrl=wewillgo">where will we go</a>
                             <a href="index.php?ctrl=tip">Tips</a>
                             
                     </div>
