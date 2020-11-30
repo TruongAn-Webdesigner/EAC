@@ -20,7 +20,7 @@
                             <a href="index.php">EAC</a>
                         
                             <a href="http://">where will we go</a>
-                            <a href="http://">Tips</a>
+                            <a href="index.php?ctrl=tip">Tips</a>
                             
                     </div>
                     <div class="menu_link">
@@ -116,9 +116,8 @@
                                         Feature review 
                                     </div>
                                     <div class="small_text_tip">
-                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at it's layout. The point of using 
-                    Lorem Ipsum is that it has a more-or-less normal distribution of letters,
-                    </div>
+                                    Cùng tìm hiểu những khu vực đáng để đi nhất bạn nhé.
+                                    </div>
                         <div class="box_picture">
             
                                         <div class="boxnextback">
@@ -474,7 +473,15 @@
         <div class="bg_review">
             <div class="boxcenter"> 
                 <div class="bg_box_review">
-                    
+                        <!-- Search form -->
+                        <div class="md-form active-purple-2 mb-3">
+                          
+                            <div class="icon_search">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+                        </div>
+
                     <div class="bg_in-box_review">
                             <div class="title_wwwg_review">
                             DISCOVER
