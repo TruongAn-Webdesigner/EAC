@@ -1,5 +1,5 @@
 <div class="full">
-        <div class="boxcenter">
+        <div class="boxcenter_add">
             <div class="content_form">
                 <div class="left_content">
                     <form action="index.php?ctrl=tour&act=insert" method='post' enctype="multipart/form-data">
