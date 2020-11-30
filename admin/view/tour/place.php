@@ -103,7 +103,7 @@ $(document).ready(function(){
                                                 echo'
                                                     <tr>
                                                         <td scope="row">'.$dd['id_dd'].'</td>
-                                                        <td><a href="index.php?ctrl=noidung&id='.$dd['id_dd'].'">'.$dd['name_dd'].'</a></td>
+                                                        <td><a href="index.php?ctrl=noidung&id='.$dd['id_dd'].'" class="tendd">'.$dd['name_dd'].'</a></td>
                                                         <td>'.$dd['rating_dd'].'</td>
                                                         <td>'.$dd['name_kv'].'</td>
                                                         <td><button type="button" class="btn btn-outline-success"><a href="index.php?ctrl=tour&act=edit&id='.$dd['id_dd'].'">Edit</a></button></td>
