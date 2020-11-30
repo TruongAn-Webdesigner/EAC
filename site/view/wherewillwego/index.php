@@ -25,7 +25,7 @@
                     </div>
                     <div class="menu_link">
                         <div class="link_right">
-                            <a href="http://">login</a>
+                            <a href="http://">Login</a>
                         </div>
                     </div>
 
@@ -75,7 +75,7 @@
                             </div>
                             <div class="hot_text_item">
                                 <div class="hot_text2">
-                                    Tp. <span>HCM</span>
+                                    TP. <span>HCM</span>
                                 </div>
                             </div>
                         </div>
