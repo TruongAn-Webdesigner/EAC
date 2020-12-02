@@ -522,6 +522,7 @@
                         
                                 <div class="box_right_bp position">
                                     <img src="img/vn-map.png" alt="">
+                                    
                                         <div class="icon_bp_1">
                                            
                                         <a href="http://" data-toggle="tooltip-abc" data-placement="right" title="Hà Nội">
@@ -530,15 +531,15 @@
                                    
                                             
                                         </div>
-
+                                        
                                         <div class="icon_bp_2">
-                                        <a href="index.php?ctrl=wewillgo&act=contentbestplace" data-toggle="tooltip-abc" data-placement="right" title="Vịnh Hạ Long">
+                                        <a href="index.php?ctrl=wewillgo&act=content&idcontent=7" data-toggle="tooltip-abc" data-placement="right" title="Vịnh Hạ Long">
                                             <i class="fas fa-map-marker-alt"></i>
                                         </a>
                                         </div>
 
                                         <div class="icon_bp_3">
-                                        <a href="http://" data-toggle="tooltip-abc" data-placement="right" title="Đà Nẵng">
+                                        <a href="index.php?ctrl=wewillgo&act=content&idcontent=1" data-toggle="tooltip-abc" data-placement="right" title="Bà Nà Hills">
                                             <i class="fas fa-map-marker-alt"></i>
                                         </a>
                                         </div>
