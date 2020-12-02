@@ -124,11 +124,77 @@
                                     <img src="img/'.$tr['img_noidung2'].'" alt=""> 
                                 </div>
                             </div>
-                        <h5>My thinking</h5>
-                            <div class="box_text_content3">
                             
-                                '.$tr['noidung3'].'
-                            </div>
+                            <h5>Food</h5>
+                                <div class="box_text_content3">
+                                    '.$tr['noidung4'].' 
+                                </div>
+                                <div class="big_box_img_content_food">
+
+                                        <div class="box_content_food_all1">
+                                            <div class="box_img_food1">
+                                                <div class="bg_position_img_food"></div>
+                                                <div class="bg_img_food">
+                                                    <img src="img/tomhum.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="text_food1">
+                                                <div class="text_content_food_all2">
+                                                    <div class="text_style_1">Hai san</div>
+                                                    <div class="text_style_2">Viet nam</div>
+                                                    <div class="small_content_food_all">
+                                                        la la la la 1
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                   
+                                    
+
+                                    <div class="box_content_food_all1">
+                                        <div class="box_img_food2">
+                                            <div class="bg_position_img_food"></div>
+                                                    <div class="bg_img_food">
+                                                        <img src="img/tomhum.png" alt="">
+                                                    </div>
+                                            </div>
+                                        <div class="text_food2">
+                                            <div class="text_content_food_all2">
+                                                <div class="text_style_1">Hai san</div>
+                                                <div class="text_style_2">Viet nam</div>
+                                                <div class="small_content_food_all">
+                                                    la la la la 2
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                <div class="box_content_food_all1">
+                                    <div class="box_img_food3">
+                                        <div class="bg_position_img_food"></div>
+                                                    <div class="bg_img_food">
+                                                        <img src="img/tomhum.png" alt="">
+                                                    </div>
+                                        </div>
+                                    <div class="text_food3">
+                                            <div class="text_content_food_all2">
+                                                <div class="text_style_1">Hai san</div>
+                                                <div class="text_style_2">Viet nam</div>
+                                                <div class="small_content_food_all">
+                                                    la la la la 3
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h5>My Thinking</h5>
+                                <div class="box_text_content3">
+                                
+                                    '.$tr['noidung4'].'
+                                </div>
 
                         </div>
                                 ';
