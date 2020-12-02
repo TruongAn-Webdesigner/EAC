@@ -89,7 +89,7 @@
                                                 </div>
     
                                                 <div class="fr_name">
-                                                    <a href="index.php?ctrl=wewillgo&act=content&idcontent='.$tf['id_dd'].'">
+                                                    <a href="index.php?ctrl=content-tip&act=contenttip&idcontenttip='.$tf['id_dd'].'">
                                                     <span>'.$tf['name_dd'].'</span>
                                                     </a>
                                                 </div>
