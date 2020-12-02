@@ -13,6 +13,7 @@
         $tip= getAllTip();
         include 'view/home/index.php';
         break;
+
     }
 
 
