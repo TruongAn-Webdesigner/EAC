@@ -17,7 +17,7 @@ switch($action){
     case 'content':
     $id=$_GET['idcontent'];
     $topFeautureById=getAllTopFeautureById($id);
-    include 'view/content/content.php';
+    include 'view/content/content-tip.php';
     break;
 
     case 'contentbestplace':
