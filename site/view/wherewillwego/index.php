@@ -87,7 +87,7 @@
                             </div>
                             <div class="hot_text_item">
                                 <div class="hot_text3">
-                                   <span>Vịnh</span>   Hạ Long
+                                   <span>Hà</span>   Nội
                                 </div>
                             </div>
                         </div>
@@ -132,7 +132,7 @@
                                             foreach($topFeauture as $tf){
                                                 echo '
                                                 <div class="fr_box">
-                                            
+                                                
                                                 <div class="fr_img">
                                                     <div class="bg">
                                                         <img src="img/'.$tf['img_dd'].'" alt="">
