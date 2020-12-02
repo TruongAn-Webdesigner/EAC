@@ -545,7 +545,7 @@ animation-duration: 1s;
 .bg_review{
     margin-top: 10vh;
     width: 100%;
-    height: 120vh;
+    min-height: 120vh;
 /*     background-color: rgb(233, 233, 233); */
 }
 
@@ -586,21 +586,21 @@ animation-duration: 1s;
 .bg_box_review{
     float: left;
     width: 100%;
-    height: 100%;
+    min-height: 120vh;
     /* background-color: rgb(160, 218, 44); */
 }
 
 .bg_in-box_review{
     width: 100%;
     float: left;
-    height: 120vh;
+    min-height: 120vh;
     /* background-color: aqua; */
     position: relative;
 }
 
 .bg_box_item{
     width: calc(94%/3);
-    height: 24%;
+    height: 200px;
     background-color: rgb(255, 255, 255);
     margin: 3% 1%;
     float: left;
