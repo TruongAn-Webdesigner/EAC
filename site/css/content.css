@@ -238,6 +238,125 @@ h5{
     margin: 0 auto;
 }
 
+.big_box_img_content_food{
+    width: 60%;
+    min-height: 135vh;
+    margin: 0 auto;
+   /*  background-color: brown; */
+}
+
+.box_content_food_all1{
+    width: 100%;
+    min-height: 40vh;
+    margin: 20px auto;
+    /* background-color: cornflowerblue; */
+}
+
+.text_content_food_all2{
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.text_style_1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 2vw;
+}
+.text_style_2{
+    font-family: 'Lobster', cursive;
+    font-size: 3vw;
+}
+.box_img_food1{
+    float: left;
+    width: 50%;
+    min-height: 40vh;  
+    position: relative;
+}
+
+.bg_position_img_food{
+    width: 45%;
+    height: 20vh;
+    border-radius: 50%;
+    margin: 48px 85px;
+    background-color: rgba(212, 212, 212, 0.637);
+    position: absolute;
+    z-index: -1;
+}
+
+
+.bg_img_food{
+    width: 65%;
+    height: 40vh;
+    margin: 0 auto;
+}
+
+.box_img_food1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.text_food1{
+    float: right;
+    width: 40%;
+    min-height: 40vh;
+    background-color: rgb(240, 240, 240);
+    font-size: 2vw;
+}
+
+.small_content_food_all{
+    font-size: 1.1vw;
+    text-align: justify;
+    margin-top: 2vh;
+}
+
+.box_img_food2{
+    float: right;
+    width: 50%;
+    min-height: 40vh; 
+    position: relative;
+}
+
+.text_food2{
+    float: left;
+    width: 40%;
+    min-height: 40vh;
+    background-color: rgb(240, 240, 240);
+    font-size: 2vw;
+}
+
+.box_img_food2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+.box_img_food3{
+    float:left;
+    width: 50%;
+    min-height: 40vh;
+    position: relative; 
+}
+
+.box_img_food3 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.text_food3{
+    float: right;
+    width: 40%;
+    min-height: 40vh;
+    background-color: rgb(240, 240, 240);
+    font-size: 2vw;
+}
+
+
 
 
 /* .box_text_content0{
@@ -260,9 +379,9 @@ h5{
 
 
 .box_img_content{
-    margin: 4% 0;
-    width: 100%;
-    height: 70vh;
+    margin: 4% auto;
+    width: 85%;
+    height: 65vh;
     /* background-color: burlywood; */
 
 }
@@ -348,7 +467,7 @@ h5{
     letter-spacing: 4px;
     text-decoration: none;
     font-size: 28px;
-    background-image: linear-gradient(to left,rgba(253, 208, 208, 0.774),rgb(253, 228, 228));
+    background-image: linear-gradient(to left,rgba(236, 155, 155, 0.774),rgb(253, 228, 228));
     border: none;
 }
 
@@ -429,7 +548,7 @@ h5{
     color: white;
     transition: all 0.5s;
     cursor: pointer;
-    background-image: linear-gradient(to right,rgba(253, 208, 208, 0.774),rgb(253, 228, 228));
+    background-image: linear-gradient(to right,rgba(216, 110, 110, 0.774),rgb(253, 228, 228));
 }
 
 /* choose */
