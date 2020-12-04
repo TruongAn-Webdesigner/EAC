@@ -17,16 +17,12 @@
                         <nav class="nav">
                             <div class="bg_logo_content">
                                 <div class="text_logo">
-                                   <a href="index.php?ctrl=home&act=index">EAC</a>
+                                    <a href="index.php?ctrl=home&act=index">EAC</a>
+                                    <a href="index.php?ctrl=wewillgo&act=index">Where will we go?</a>
+                                    <a href="http://">Tip</a>
                                 </div>
                             </div>
-                            <ul>
-                                <li>
-                                    <a href="index.php?ctrl=wewillgo&act=index">Where will we go?</a>
-                                    <a href="http://">Review</a>
-                                    <a href="http://">About us</a>
-                                </li>
-                            </ul>
+                
                             
                         </nav>
                         <div class="left_login">
@@ -46,7 +42,7 @@
                 <img src="img/countryside.png" alt="">
             </div>
             <div class="click_down">
-                click down
+                <div class="mouse"></div>
             </div>
     </div>
     
@@ -368,7 +364,7 @@
     </div>
 </div>
     <div class="roww">
-        <div class="boxcenter_content">
+        <div class="boxcenter_content_tip">
             <div class="box_choose">
                 <div class="text_choose">
                     Choose us choose fun
@@ -388,6 +384,7 @@
                         
                             <i class="fas fa-mountain"></i>
                         </div>
+                        <div class="box_choose_infor">
                         <div class="text_title_choose">
                                 Place
                                 <div class="line_title_choose"></div>
@@ -398,7 +395,7 @@
                                 erafuygerygfyerugfy ery geryg 
                                 
                         </div>
-                       
+                        </div>
                     </div>
 
                    
@@ -407,6 +404,7 @@
                         <div class="icon_title_choose">
                             <i class="fas fa-address-book"></i>
                         </div>
+                        <div class="box_choose_infor">
                         <div class="text_title_choose">
                             plan
                             <div class="line_title_choose"></div>
@@ -417,12 +415,13 @@
                             erafuygerygfyerugfy ery geryg 
                             
                         </div>
-                       
+                        </div>
                     </div>
                     <div class="box_infor">
                         <div class="icon_title_choose">
                             <i class="fas fa-shield-alt"></i>
                         </div>
+                        <div class="box_choose_infor">
                         <div class="text_title_choose">
                             safe
                             <div class="line_title_choose"></div>
@@ -431,6 +430,7 @@
                         <div class="box_text_choose">     
                             waoefk weofkewo fw eofk ew ofewkfo ewof wiaje awuefnwefwef we e
                             erafuygerygfyerugfy ery geryg 
+                            </div>
                             
                     </div>
                         
@@ -440,16 +440,19 @@
         </div>
     </div>
 
-<div class="roww">
-        <div class="boxcenter_content">
+<!-- <div class="roww">
+        <div class="boxcenter_content_tip">
             <div class="box_comment">
                 <div class="text_comment">
                     What do you think?
                 </div>
                 <div class="line_comment"></div>
+                <div class="box_comment">
+
+                </div>
             </div>
         </div>
-</div>
+</div> -->
     
 
 </body>
