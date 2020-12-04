@@ -127,7 +127,7 @@
                             
                             <h5>Food</h5>
                                 <div class="box_text_content3">
-                                    '.$tr['noidung4'].' 
+                                    '.$tr['noidung3'].' 
                                 </div>
                                 <div class="big_box_img_content_food">
 
@@ -193,7 +193,7 @@
                                 <h5>My Thinking</h5>
                                 <div class="box_text_content3">
                                 
-                                    '.$tr['noidung4'].'
+                                    '.$tr['noidung3'].'
                                 </div>
 
                         </div>
