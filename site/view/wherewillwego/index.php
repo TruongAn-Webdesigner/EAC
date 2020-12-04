@@ -511,13 +511,14 @@ $(document).ready(function(){
                            
                             
                         </div><br>
-                        <!-- --------------------- -->
-                        <div id="result"></div> 
-                        <!-- cái này hiện mấy cái box địa điểm ra đó nha ai lóp du -->
-                    <div class="bg_in-box_review">
+                        <div class="bg_in-box_review">
                             <div class="title_wwwg_review">
                             DISCOVER
                             </div>
+                        <!-- --------------------- -->
+                        <div id="result"></div> 
+                        <!-- cái này hiện mấy cái box địa điểm ra đó nha ai lóp du -->
+                   
                         <!-- <?php
                             foreach($allPlace as $ap){
                                 echo'
