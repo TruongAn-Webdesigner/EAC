@@ -115,6 +115,7 @@ font-weight: bold;
         color: white;
         animation-name: smalltext;
         animation-duration: 3s;
+
     }
 
     @keyframes smalltext{
@@ -129,6 +130,7 @@ font-weight: bold;
         margin-top: 28px;
         animation-name: bigtext;
         animation-duration: 2s;
+
     }
 
     @keyframes bigtext{
@@ -153,10 +155,12 @@ font-weight: bold;
     }
 
     .float_text_login a{
+        font-size: 1vw;
         float: right;
         line-height: 10vh;
         color: white;
         transition: 0.5s;
+        font-family: 'Signika', sans-serif;
     }
 
     .float_text_login a:hover{
@@ -164,7 +168,7 @@ font-weight: bold;
         color:rgb(211, 211, 211);
     }
 
-    nav{
+    .nav{
         float: left;
     }
 
@@ -172,21 +176,23 @@ font-weight: bold;
         padding: 0;
         margin: 0;
     }
-    nav ul li{
-        display: inline-flex;
+    .nav ul li{
+        display: inline-block;
         width: 100%;
         /* background-color: burlywood; */
         list-style: none;
         
     }
-    nav ul li a{
+    .nav ul li a{
         padding: 0px 40px;
         text-decoration: none;
         color: white;
         line-height: 10vh;
+        font-size: 1vw;
+        font-family: 'Signika', sans-serif;
     }
 
-    nav ul li a:hover{
+    .nav ul li a:hover{
         text-decoration: none;
         color: rgb(211, 211, 211);
         transition: 0.5s;
@@ -534,6 +540,11 @@ opacity: 0.9;
             /* phần dot header */
             .slick-dots{
                 text-align: center;
+                margin-top: 5vh;
+            }
+            ul{
+                padding: 0;
+                margin: 0;
             }
           .slick-dots li {
             
@@ -1028,7 +1039,7 @@ opacity: 0.9;
     .box_tips2{
         float: left;
         width: 29.5%;
-        margin:0% 1%;
+        margin: 0% 1%;
         height: 35vh;
         /* background-color:gray;  */
     }
@@ -1183,7 +1194,7 @@ opacity: 0.9;
     footer{
         margin-top: 25vh;
         width: 100%;
-        height: 368px;
+        height: 60vh;
         background-color: #2c2b2a;
     }
 
@@ -1194,10 +1205,12 @@ opacity: 0.9;
         height: 100px;
         text-align: center;
         color: white;
+        font-family: 'Bellota', cursive;
     }
 
     .title_ft span{
         font-size: 2.5vw;
+        font-family: 'Oswald', sans-serif;
     }
     .ml20{
         margin-left: 14%;
@@ -1245,3 +1258,354 @@ opacity: 0.9;
 /* end footer */
 
 .rtl [dir='rtl'] .slick-slide { float: left; }
+
+/* reponsive */
+@media only screen and (max-width: 1024px) {
+
+    .box_time{
+        right: 5.5vh;
+    }
+
+    #time{
+        font-size: 11vw;
+    }
+/* phan headder */
+    .text_header{
+        width: 45%;
+        top: 50vh;
+        right: 5.5vh;
+    }
+
+    .bg_menu_left{
+        width: 30%;
+        border-right: none;
+    }
+
+
+    .logo_header{
+        width: 15%;
+        height: 10vh;
+    }
+
+    .number_header{
+        font-size: 4vw;
+        top: 26vh;
+        left: 10vw;
+    }
+
+    .number_header sup{
+        font-size: 5.5vw;
+    }
+
+    .box1{
+        height: 12vw;
+    }
+    .box2{
+        height: 12vw;
+    }
+    .box3{
+        height: 12vw;
+    }
+    .active_header, .dot:focus {
+        background-color: #fda745;
+        border-radius: 4px;
+        width: 70px;
+        height: 4%;
+        opacity: 1;
+        transition: 0.5s;
+        margin: 3vh 1.7vh;
+    }
+/* top review */
+.top_review{
+    height: 60vh;
+}
+.title_tv{
+    margin-bottom: 4vh;
+    font-size: 3vw;
+}
+
+.title_tv span{
+    font-size: 5.5vw;
+}
+
+.box_behind_tr{
+    top: 8vh;
+}
+
+/* phan hello */
+.bannerhome{
+    height: 34.5vw;
+}
+.box_text_hello{
+    width: 69%;
+}
+.title_hello{
+    font-size: 12vw;
+}
+.text_hello{
+    font-size: 2.5vw;
+}
+.clippy1{
+    margin-top: -5vh;
+    width: 15%;
+    height: 50%;
+}
+.clippy2{
+    height: 60%;
+}
+
+.clippy3{
+    width: 30%;
+    height: 15vh;
+}
+/* phan bp */
+
+    .box_right_bp img{
+        width: 100%;
+        margin-left: 8vh;
+    }
+    .box_behind_place{
+        top: 15vh;
+        left: 0vh;
+        width: 20%;
+        height: 59%;
+    }
+    .line{
+        top: 30vh;
+        left: 37vh;
+        width: 0.5%;
+        height: 45%;
+    }
+
+    .title_pl span{
+        font-size: 6.5vw;
+    }
+
+    .title_small_bp{
+        font-size: 3vw;
+    }
+
+    .box_text_bp{
+        width: 84%;
+        height: 57%;
+        margin: 18vh 0vh;
+        font-size: 6vw;
+    }
+
+    .box_text_small_bp{
+        font-size: 2.5vw;
+    }
+    .icon_bp_1{
+        top: 13vh;
+        left: 24vh;
+    }
+    .icon_bp_2{
+        top: 14vh;
+        left: 30vh;
+    }
+    .icon_bp_3{
+        top: 35vh;
+        left: 35vh;
+    }
+
+    /* phan things */
+    .tips{
+        height: 85vw;
+    }
+
+    .content-tips{
+        height: 50vw;
+    }
+    .title_tips{
+        font-size: 3vw;
+    }
+    .title_tips span{
+        font-size: 5.5vw;
+    }
+
+    .name_tips{
+        height: 5.9vw;
+    }
+
+    .box_tips1{
+        height: 25vw;
+    }
+
+    .box_tips2{
+        height: 25vw;
+    }
+
+    .box_tips3{
+        height: 35vw;
+    }
+
+    .box_tips4{
+        height: 35vw;
+    }
+
+    .box_tips5{
+        height: 25vw;
+    }
+
+    /* phan footer */
+    footer{
+        margin-top: 10vw;
+        height: 30vh;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+
+    .nav ul li a{
+        padding:0px 5px;
+        font-size: 3vw;
+    }
+
+    .number_header{
+        font-size: 7vw;
+    }
+
+    .small_text .float_text{
+    font-size: 5vw;
+    }
+
+    .float_text_login a{
+        font-size: 3vw;
+    }
+    .big_text .float_text{
+
+        font-size: 7vw;
+    }
+    .box1{
+        height: 20vw;
+        width: 100%;
+    }
+    .box2{
+        height: 20vw;
+        width: 100%;
+    }
+    .box3{
+        height: 20vw;
+        width: 100%;
+    }
+    .small_box1{
+        font-size: 5vw;
+    }
+
+    .title_box1{
+        font-size: 5vw;
+    }
+
+    .text_box1{
+        font-size: 3vw;
+    }
+
+    .title_box2_3{
+        font-size: 5vw;
+    }
+    .text_box2_3{
+        font-size: 3vw;
+    }
+
+    /* phan review */
+    .box_next_back_tv {
+        display: none;
+    }
+    .box_behind_tr{
+        top: 20vh;
+    }
+
+    .top_review{
+        height: 80vh;
+    }
+    .bannerhome{
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+    }
+
+    /* phan place */
+    .box_left_bp {
+        width: 30%;
+    }
+    .box_right_bp {
+        width: 70%;
+    }
+    .box_right_bp img{
+        width: 100%;
+        margin-left: 3vh;
+    }
+    .line {
+
+        left: 20vh;
+    }
+    .icon_bp_1 {
+        left: 23vh;
+    }
+
+    .icon_bp_2 {
+        left: 18vh;
+    }
+
+    .icon_bp_3 {
+        left: 29vh;
+    }
+
+    /* phan things */
+    .tips{
+        height: 122vh;
+        
+    }
+    .title_tips{
+        margin-bottom: unset;
+    }
+
+    .more_tips{
+        width: 40%;
+    }
+
+    .box_tips1{
+        height: 35vw;
+        width: 100%;
+        margin: 1% 0%;
+    }
+
+    .box_tips2{
+        height: 35vw;
+        width: 100%;
+        margin: 1% 0%;
+    }
+
+    .box_tips3{
+        height: 35vw;
+        width: 100%;
+        margin: 1% 0%;
+    }
+
+    .box_tips4{
+        height: 35vw;
+        width: 100%;
+        margin: 1% 0%;
+    }
+
+    .box_tips5{
+        height: 35vw;
+        width: 100%;
+        margin: 1% 0%;
+    }
+
+/* phan footer */
+    footer{
+        height: 90vh;
+    }
+    .boxft{
+        width: 100%;
+        font-size: 3vw;
+    }
+    .ml20{
+        margin-left: unset;
+    }
+    .title_ft span{
+        font-size: 5.5vw;
+    }
+}
