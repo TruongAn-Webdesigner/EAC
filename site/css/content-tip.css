@@ -30,7 +30,7 @@ body{
 }
 
 .bg_logo_content{
-    width: 10%;
+    width: 100%;
     height: 100%;
     float: left;
 }
@@ -40,8 +40,9 @@ body{
 }
 
 .text_logo a{
-    color: gray;
-
+    font-family: 'Signika', sans-serif;
+        color: gray;
+        padding: 0px 27px;
 }
 
 .text_logo a:hover{
@@ -140,6 +141,7 @@ li{
 }
 
 
+
 .bg_tip_position{
     width: 25%;
     min-height: 100vh;
@@ -170,6 +172,10 @@ li{
     border-left: 3px solid red;
 }
 
+.text_title_tip{
+    font-family: 'Oswald', sans-serif;
+}
+
 .text_tip_content{
     width: 98%;
     min-height: 40vh;
@@ -180,6 +186,12 @@ li{
 
 .text_detail_tip{
     font-size: 1vw;
+    font-family: 'Signika', sans-serif;
+}
+
+
+.tip_small{
+    font-family: 'Signika', sans-serif;
 }
 
 .text_tip2{
@@ -227,7 +239,7 @@ li{
 h3{
     font-size: 3vw;
     font-weight: bold;
-
+    font-family: 'Oswald', sans-serif;
 }
 
 h5{
@@ -620,7 +632,7 @@ h5{
 .box_choose{
     margin-top: 15vh;
     width: 100%;
-    height: 45vh;
+    min-height: 45vh;
     position: relative;
     z-index: 3;
     /* background-color: green; */
@@ -643,7 +655,7 @@ h5{
     justify-content: center;
     align-items: center;
     width: 60%;
-    height: 300px;
+    min-height: 45vh;
     margin: 0 auto;
 }
 
@@ -886,4 +898,184 @@ input[type=text], input[type=password],input[type=tel], input[type=number] {
     content: "";
     clear: both;
     display: table;
+  }
+
+  @media only screen and (max-width: 600px){
+/* phan menu */
+    .bg_logo_content {
+        width: 100%;
+        height: 100%;
+        float: left;
+    }
+
+    .text_logo {
+        font-size: 3.5vw;
+    }
+
+    .text_logo a{
+        padding: 0 3%;
+    }
+
+      .bg_link_form{
+          display: none;
+      }
+
+      .img_content_header > img {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* phan hieu ung chuot */
+
+    .click_down{
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+
+    .mouse::before{
+        content: "";
+        width: 20px;
+        height:20px;
+        position: absolute;
+        top: 30px;
+        background-color: rgba(190, 190, 190, 0.596);
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 50%;
+        opacity: 0.8;
+        animation:mouse 2s infinite;
+    }
+    @keyframes mouse{
+        from{
+            opacity: 0;
+            top:120px;
+            
+        }
+        to{
+            opacity: 1;
+            top:60px;
+
+        }
+    }
+
+      /* phan choose */
+    .box_choose {
+        width: 100%;
+        min-height: 45vh;
+    }
+
+    .box_choose_content {
+        display: block;
+        width: 100%;
+        min-height:45vh ;
+    }
+
+    .box_infor{
+        width: 100%;
+        height: 20vh;
+    }
+
+    .mt1{
+        margin:8% 0%;
+    }
+    .box_choose_infor{
+        width: 90%;
+        min-height: 10vh;
+        margin: 0 auto;
+        padding: 12px;
+        
+    }
+
+    .box_choose_infor .text_title_choose {
+        font-size: 5.5vw;
+        margin: unset;
+        text-align: unset;
+    }
+    .line_title_choose {
+        text-align: unset;
+        margin: unset;
+    }
+
+    .box_text_choose{
+        margin: unset;
+        font-size: 3vw;
+    }
+
+    .text_choose {
+        font-size: 5.5vw;
+    }
+
+    .bg_position_content4{
+        display: none;
+    }
+    .bg_position_content3{
+        display: none;
+    }
+
+
+    .icon_title_choose {
+        font-size: 6vw;
+        top: -20px;
+        left: -12px;
+    }
+
+    .icon_title_choose i {
+        line-height: 40px;
+        height: 40px;
+        width: 40px;
+    }
+
+    .text_comment{
+            font-size: 5.5vw;
+ 
+    }
+
+    /* phan noi dung title 1 */
+    h3{
+        font-size: 7vw;
+    }
+
+    .box_img_tip_right {
+        width: 45%;
+        height: 40vh;
+        background-color: greenyellow;
+        float: left;
+        margin-left: 30vh;
+        margin-top: -80vh;
+    }
+
+    .text_tip {
+        float: left;
+        margin-top: 3vh;
+        width: 100%;
+        min-height: 40vh;
+    }
+
+
+    .text_tip2 {
+        float: left;
+        margin-top: 1vh;
+        width: 100%;
+
+    }
+
+    .text_tip3{
+        width: 100%;
+    }
+
+    .text_title_tip{
+        font-size: 4.5vw;
+    }
+
+    .text_detail_tip{
+        font-size: 4.5vw;
+    }
+
+    .tip_small {
+        font-size: 3vw;
+    }
+
   }
