@@ -5,7 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Where will we go</title>
     <link rel="stylesheet" href="css/wherewillwego.css">
-    
+    <script>
+$(document).ready(function(){
+	load_data();
+	function load_data(query)
+	{
+		$.ajax({
+			url:"view/wherewillwego/fetch.php",
+			method:"post",
+			data:{query:query},
+			success:function(data)
+			{
+				$('#result').html(data);
+			}
+		});
+	}
+	
+	$('#search_text').keyup(function(){
+		var search = $(this).val();
+		if(search != '')
+		{
+			load_data(search);
+		}
+		else
+		{
+			load_data();			
+		}
+	});
+});
+</script>
 </head>
 <body>
 
@@ -479,14 +507,19 @@
                             <div class="icon_search">
                                 <i class="fas fa-search"></i>
                             </div>
-                            <input class="form-control" type="text" placeholder="Search" aria-label="Search">
-                        </div>
-
-                    <div class="bg_in-box_review">
+                            <input name="search_text" id="search_text"  class="form-control" type="text" placeholder="Search..">
+                           
+                            
+                        </div><br>
+                        <div class="bg_in-box_review">
                             <div class="title_wwwg_review">
                             DISCOVER
                             </div>
-                        <?php
+                        <!-- --------------------- -->
+                        <div id="result"></div> 
+                        <!-- cái này hiện mấy cái box địa điểm ra đó nha ai lóp du -->
+                   
+                        <!-- <?php
                             foreach($allPlace as $ap){
                                 echo'
                                 <div class="bg_box_item">
@@ -524,7 +557,8 @@
                             </div> 
                                 ';
                             }
-                        ?>
+                        ?> -->
+                        <!-- hihihi -->
                         
                         
 <!--                         <div class="bg_box_item">
