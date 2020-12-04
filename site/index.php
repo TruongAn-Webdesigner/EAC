@@ -61,7 +61,7 @@
                <div class="full">
                     <div class="title_ft">
                             <span>FIND US</span> <br>
-                            Duis vitae velit mollis, congue nisi dignissim, pellentesque lorem
+                            Hãy liên hệ với chúng tôi
                     </div>
                </div>
 
@@ -133,43 +133,46 @@
               
 <script>
 
-$(document).ready(function(){
+
     $('.tr').slick({
        
 infinite: true,
-  slidesToShow: 3,
+slidesToShow: 3,
   slidesToScroll: 1,
   autoplay: true,
   autoplaySpeed: 2000,
-  adaptiveHeight:true,
+  adaptiveHeight:false,
   dots:true,
   dotClass:'slick-dots',
   nextArrow:$('.next'),
   prevArrow:$('.prev'),
-  adaptiveHeight: true,
+  
   responsive: [
     {
-      breakpoint: 1024,
+      breakpoint: 980,
       settings: {
-
-        slidesToShow: 3,
+        slidesToShow: 2,
         slidesToScroll: 3,
         infinite: true,
-        dots: true
+        dots: true,
+        mobileFirst:true
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        mobileFirst:true
       }
     },
     {
       breakpoint: 600,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        settings: "unslick",
+        mobileFirst:true
       }
     }
     // You can unslick at a given breakpoint now by adding:
@@ -179,7 +182,7 @@ infinite: true,
 
 });
 
-});
+
 
 
 </script>
@@ -198,12 +201,12 @@ $('.center').slick({
   nextArrow:$('.nextwwg'),
   responsive: [
     {
-      breakpoint: 768,
+      breakpoint: 1024,
       settings: {
         arrows: false,
         centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 3
+        centerPadding: '60px',
+        slidesToShow: 1
       }
     },
     {
