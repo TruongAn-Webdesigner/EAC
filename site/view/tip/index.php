@@ -420,10 +420,17 @@
         <div class="bg_review">
             <div class="boxcenter"> 
                 <div class="bg_box_review">
-                    
+                    <!-- Search form -->
+                    <div class="md-form active-purple-2 mb-3">
+                          
+                          <div class="icon_search">
+                              <i class="fas fa-search"></i>
+                          </div>
+                          <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+                      </div>
                     <div class="bg_in-box_review">
                             <div class="title_wwwg_review">
-                            DISCOVER
+                            Knowledge
                             </div>
                         <?php
                             foreach($allPlace as $ap){
