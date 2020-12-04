@@ -297,6 +297,7 @@ animation-duration: 1s;
     margin: 0px 30px;
     color: gray;
     transition: 0.5s;
+    font-family: 'Signika', sans-serif;
 }
 
 .logo_wwwg a:hover{
@@ -312,9 +313,11 @@ animation-duration: 1s;
 }
 
 .link_right a{
+    font-size: 1vw;
     float: right;
     color: gray;
     transition: 0.5s;
+    font-family: 'Signika', sans-serif;
 }
 
 .link_right a:hover{
@@ -360,6 +363,7 @@ animation-duration: 1s;
 
 .small_text_tip{
     font-size: 0.9vw;
+    font-family: 'Bellota', cursive;
 }
 
 .bg_feature_item{
@@ -600,7 +604,7 @@ animation-duration: 1s;
 
 .bg_box_item{
     width: calc(94%/3);
-    height: 200px;
+    height: 30vh;
     background-color: rgb(255, 255, 255);
     margin: 3% 1%;
     float: left;
@@ -948,4 +952,150 @@ figure.figurefx{
 
 
 
+  @media only screen and (max-width: 600px) {
 
+    .logo_wwwg {
+        width: 80%;
+        font-size: 4vw;
+    }
+
+    .logo_wwwg a{
+        margin: 0 10px;
+    }
+
+    .menu_link {
+        width: 20%;
+        
+    }
+    .link_right a{
+        font-size: 4vw;
+        
+    }
+
+    .typewriter {
+        line-height: 15vh;
+    }
+    .bg_hot_item {
+        top: 10vh;
+    }
+    .box_img_background {
+        clip-path: polygon(0 0, 100% 0, 100% 50%, 0 40%);
+
+    }
+
+    .bg_background {
+        height: 65vh;
+    }
+
+    .hot_item1{
+        width: 100%;
+        height: 50%;
+        margin: 5% 0% 0% 1%;
+
+  }
+
+  .hot_text1{
+      font-size: 5vw;
+  }
+
+  .hot_item2 {
+    width: 49%;
+    height: 45%;
+    margin: 15% 0% 0% 1%;
+
+}
+
+.hot_text2{
+    font-size: 5vw;
+}
+
+
+    .hot_item3 {
+        width: 49%;
+        height: 45%;
+        margin: 15% 0% 0% 1%;
+
+  }
+
+/* phan review */
+
+  .boxnextback {
+    text-align: center;
+    font-size: 5.5vw;
+    line-height: 100vw;
+    display: none;
+}
+
+  .hot_text3{
+    font-size: 5vw;
+}
+
+
+.box_item {
+
+    width: calc(395%/4);
+    height: 250px;
+    margin: 0px 1%;
+}
+
+.boxnextback {
+    font-size: 5.5vw;
+    line-height: 100vw;
+    display: none;
+}
+
+.back_wwwg i {
+    height: 50px;
+    width: 50px;
+    line-height: 52px;
+    overflow: hidden;
+}
+
+
+.text_feature {
+    font-size: 9.5vw;
+}
+
+
+.small_text_tip {
+    width: 75%;
+    font-size: 4vw;
+}
+
+
+/* phan item */
+.bg_box_item {
+    width: 100%;
+}
+
+.text_item {
+    font-size: 7vw;
+}
+
+.rating_item {
+    font-size: 5vw;
+}
+
+.title_kv_item {
+    font-size: 3.9vw;
+}
+/* phan search */
+.form-control {
+    width: 85.5%;
+}
+.icon_search {
+    width: 13%;
+    height: 5.5vh;
+    font-size: 5vw;
+}
+/* text discover */
+.title_wwwg_review {
+    width: 20%;
+    height: 20%;
+    /* background-color: blue; */
+    color: gray;
+    top: -15vh;
+    left: -5vh;
+
+}
+}
