@@ -18,16 +18,10 @@
                             <div class="bg_logo_content">
                                 <div class="text_logo">
                                    <a href="index.php?ctrl=home&act=index">EAC</a>
+                                   <a href="index.php?ctrl=wewillgo&act=index">Where will we go?</a>
+                                    <a href="index.php?ctrl=tip&act=index">Tips</a>
                                 </div>
                             </div>
-                            <ul>
-                                <li>
-                                    <a href="index.php?ctrl=wewillgo&act=index">Where will we go?</a>
-                                    <a href="http://">Review</a>
-                                    <a href="http://">About us</a>
-                                </li>
-                            </ul>
-                            
                         </nav>
                         <div class="left_login">
                             <div class="float_text">
@@ -224,7 +218,7 @@
                         </a>
                         </div>
 
-
+                    <div class="bg_book_tour">
                         <div id="myModal" class="modal">
                             <div class="modal-content">
                                 <div class="close">
@@ -259,7 +253,7 @@
                             </div>
 
                         </div>
-
+                    </div>
 
 
 
@@ -286,6 +280,8 @@
                         
                             <i class="fas fa-mountain"></i>
                         </div>
+
+                        <div class="box_choose_infor">
                         <div class="text_title_choose">
                                 Place
                                 <div class="line_title_choose"></div>
@@ -296,7 +292,7 @@
                                 erafuygerygfyerugfy ery geryg 
                                 
                         </div>
-                       
+                        </div>
                     </div>
 
                    
@@ -305,6 +301,7 @@
                         <div class="icon_title_choose">
                             <i class="fas fa-address-book"></i>
                         </div>
+                        <div class="box_choose_infor">
                         <div class="text_title_choose">
                             plan
                             <div class="line_title_choose"></div>
@@ -315,12 +312,14 @@
                             erafuygerygfyerugfy ery geryg 
                             
                         </div>
+                        </div>
                        
                     </div>
                     <div class="box_infor">
                         <div class="icon_title_choose">
                             <i class="fas fa-shield-alt"></i>
                         </div>
+                        <div class="box_choose_infor">
                         <div class="text_title_choose">
                             safe
                             <div class="line_title_choose"></div>
@@ -329,7 +328,7 @@
                         <div class="box_text_choose">     
                             waoefk weofkewo fw eofk ew ofewkfo ewof wiaje awuefnwefwef we e
                             erafuygerygfyerugfy ery geryg 
-                            
+                        </div>
                     </div>
                         
                     </div>
