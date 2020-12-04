@@ -297,7 +297,7 @@
                             EAC
                         </div>
                         <div class="boxcenter_big">
-                            <nav>
+                            <nav class="nav">
                                 <ul>
                                     <li>
                                         <a href="index.php?ctrl=wewillgo">Where will we go?</a>
@@ -335,7 +335,7 @@
             <div class="box_behind_tr"></div>
                 <div class="boxcenter_big">
                     <div class="top_review">
-                        <div class="title_tv">
+                            <div class="title_tv">
                                 <span>TOP REVIEW</span><br> 
                                 Hãy cùng khám phá những địa điểm đầy hấp dẫn nào!.
                             </div>
@@ -371,78 +371,6 @@
                                             ';
                                         }
                                     ?>
-                                       
-
-
-
-                                            <!-- <div class="box_tv">
-                                                <div class="box_img_tv">
-                                                    <div class="img">
-
-                                                    </div>
-                                                </div>
-                                                <div class="box_name_rating">
-                                                <div class="name_tv">
-                                                    lalala2
-                                                </div>
-                                                <div class="rating_tv">
-                                                    rating
-                                                </div>
-                                                </div>
-                                            </div>
-
-                                           <div class="box_tv">
-                                                <div class="box_img_tv">
-                                                    <div class="img">
-
-                                                    </div>
-                                                </div>
-                                                <div class="box_name_rating">
-                                                <div class="name_tv">
-                                                    lalala3
-                                                </div>
-                                                <div class="rating_tv">
-                                                    
-                                                </div>
-                                                </div>
-                                            </div> 
-
-                                            <div class="box_tv">
-                                                <div class="box_img_tv">
-                                                    <div class="img">
-
-                                                    </div>
-                                                </div>
-                                                <div class="box_name_rating">
-
-                                                
-                                                    <div class="name_tv">
-                                                        lalala4
-                                                    </div>
-                                                    <div class="rating_tv">
-                                                        
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="box_tv">
-                                                <div class="box_img_tv">
-                                                    <div class="img">
-
-                                                    </div>
-                                                </div>
-                                                <div class="box_name_rating">
-
-                                                
-                                                    <div class="name_tv">
-                                                        lalala5
-                                                    </div>
-                                                    <div class="rating_tv">
-                                                        
-                                                    </div>
-                                            </div> -->
-                                            
-                                    
                                 </div>
                             </div>
                             
