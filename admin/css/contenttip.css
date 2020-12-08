@@ -42,15 +42,11 @@ body{
 .content_form_edit{
     width: 100%;
     height: 100vh;
-    background-color: red;
-    margin-top: 60px;
-    box-shadow: 0 0 30px black;
 }
 
 .left_content_edit {
     width: 100%;
     height: 100%;
-    background-color: #ffffff;
 }
 
 .file_edittip {
@@ -91,3 +87,4 @@ body{
     transition: 0.5s;
     font-family: 'Baloo Thambi 2', cursive;
 }
+
