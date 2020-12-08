@@ -25,7 +25,38 @@
                         </nav>
                         <div class="left_login">
                             <div class="float_text">
-                                <a href="http://">Login</a>
+                                <?php
+                                                    if(!isset($_SESSION['user']))//kiem tra xem co dang nhap chua
+                                                        {
+                                                            echo'<a href="view/login/login.php">login</a>';
+                                                        } else{
+                                                                include_once 'model/login.php';
+                                                                $kh_login=$_SESSION['user'];
+                                                                $khachhang=getkh($kh_login);
+
+                                                                /* foreach($khachhang as $ad){
+                                                                    echo''.$ad['name_ad'].'';
+                                                                } */
+                                                                foreach ($khachhang as $ad) {
+                                                                    echo'
+                                                                    <div class="dropdown">
+                                                                        <ul>
+                                                                            <li><a href="#">'.$ad['name_kh'].' <i class="fa fa-caret-down" style="font-size:17px;color:black"></i></a>
+                                                                                <div class="nav_ad_con">
+                                                                                        <ul>
+                                                                                            <li><a href="changespass.php">Đổi Mật Khẩu</a></li>
+                                                                                            <li><a href="view/login/logout.php">Đăng Xuất</a></li>
+                                                                                        </ul>
+                                                                                </div>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    ';
+                                                                }
+                                                            }
+                                                    ?>
+
+
                             </div>
                         </div>
                         
@@ -354,16 +385,26 @@
         </div>
     </div>
 
-<!--     <div class="roww">
+    <div class="roww">
         <div class="boxcenter_content">
             <div class="box_comment">
-                <div class="text_comment">
-                    What do you think?
+
+               <div class="title_comment">
+                    <div class="text_comment">
+                        What do you think?
+                    </div>
+                    <div class="line_comment">
+                        
+                    </div>
+               </div>
+
+                <div class="form_comment">
+                    
                 </div>
-                <div class="line_comment"></div>
+
             </div>
         </div>
-    </div> -->
+    </div>
     
 
 </body>
