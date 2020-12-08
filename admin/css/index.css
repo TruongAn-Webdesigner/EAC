@@ -138,72 +138,70 @@ body{
         float: right;
         margin: 10px 10px;
     }
-    .dropdown{
-        text-align: center;
-        float: right;
-    }
-    
-    .dropdown ul{
-        
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
 
-    .dropdown ul li{
-        background: white;
-        position: relative;
-        list-style: none;
-        display: inline-block;
-    }
-    .dropdown ul li a{
-        display: block;
-        padding-right: 50px;
-        padding-left: 10px;
-        color: black;
-        text-decoration: none;
-        line-height: 50px;
-        font-size: 20px;
-        
-    }
-    
-    
     .nav_ad_con{
         width: 250px;
         background-color: bisque;
         position: absolute;
         display: none;
     }
-
+    
     .dropdown ul li:hover > .nav_ad_con{
         display: block;
     }
-
+    
     .nav_ad_con ul{
         width: 100%;
     }
-
+    
     .nav_ad_con ul li{
         width: 100%;
     }
-
+    
     .nav_ad_con a{
         transition: all 0.5s;
     }
-
+    
     .nav_ad_con a:hover{
         background-color: black;
         color: white;
     }
-
-
-
+    
+    .dropdown{
+      text-align: center;
+      float: right;
+    }
+    
+    .dropdown ul{
+      
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .dropdown ul li{
+      background: white;
+      position: relative;
+      list-style: none;
+      display: inline-block;
+    }
+    .dropdown ul li a{
+      display: block;
+      padding-right: 50px;
+      padding-left: 10px;
+      color: black;
+      text-decoration: none;
+      line-height: 50px;
+      font-size: 20px;
+      
+    }
     button.btn a {
-        color: black;
-        font-size: 1vw;
+      color: black;
+      font-size: 1vw;
     }
-
+    
     button.btn:hover a{
-        text-decoration: none;
-        Color: white;
+      text-decoration: none;
+      Color: white;
     }
+    
