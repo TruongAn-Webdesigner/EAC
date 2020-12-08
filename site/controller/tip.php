@@ -2,6 +2,7 @@
 include_once 'model/database.php';
 include_once 'model/wherewillwego.php';
 include_once 'model/content.php';
+include_once 'model/booktour.php';
 $action = 'index';
 if(isset($_GET['act'])){
     $action=$_GET['act'];
@@ -20,7 +21,9 @@ switch($action){
     include 'view/content/content.php';
     break;
 
-    case 'contentbestplace':
+    case 'book':
+        $id=$_GET['iddiadiem'];
+        $tourname=$_POST['name_dd'];
     include_once 'view/content/content.php';
     break;
 }
