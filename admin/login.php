@@ -35,7 +35,7 @@
 <body>
 <?php
             session_start();
-            $db = new PDO("mysql:host=localhost;dbname=eac",'root','');
+            $db = new PDO("mysql:host=localhost;dbname=lala",'root','');
             if(isset($_POST['DangNhap'])){
                 $user=$_POST['username'];
                 $pass=$_POST['password'];
@@ -48,7 +48,7 @@
                 }else{
                     echo 
                     '<script>
-                    swal("Tài khoản không tồn tại","Vui lòng kiểm tra lại mật khẩu","error");
+                    swal("Lỗi đăng nhập","Vui lòng kiểm tra lại","error");
                     </script>
                     ';
                 }
