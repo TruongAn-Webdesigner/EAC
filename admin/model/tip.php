@@ -8,24 +8,42 @@
         }
 
         function getAllTipByIdAdmin($id){
-            $sql="select * from noidungtipnote where id_nd=$id";
+            $sql="select * from noidungtipnote where id_tip=$id";
             return query($sql);
         }
 
 
         function addTip($name_tip,$img){
-            $sql="INSERT INTO tip_note( name_tip,img_tip) VALUES ('$name_tip','$img')";
+            $sql="INSERT INTO tip_note( name_tip,img_tip,trangthai) VALUES ('$name_tip','$img','0')";
             return execute($sql);
         }
+
+
         function getTipID($id){
             $sql="SELECT * FROM `tip_note` WHERE id_tip='$id'";
             return queryOne($sql);
         }
-/* ,$name_nd2,$name_nd3,$name_nd4,$noidung1,$noidung2,$noidung3,$noidung4,$noidung5,$noidung6,$noidung7,$noidung8 */
+        /* phan them noi dung tip */
+        function getTipNoidungById($id){
+          $sql="SELECT * FROM `tip_note` WHERE id_tip='$id'";
+          return queryOne($sql);
+      }
 
+
+
+
+/* ,name_nd2,name_nd3,name_nd4,noidung1,noidung2,noidung3,noidung4,noidung5,noidung6,noidung7,noidung8 */
+/* ,'$name2','$name3','$name4','$nd1','$nd2','$nd3','$nd4','$nd5','$nd6','$nd7','$nd8' */
+          function addContentTip($id,$name1){
+            $sql="insert into noidungtipnote(name_nd1,id_tip)
+            values('$name1','$id')";
+            execute($sql);
+          }
         /* phan update noi dung tip */
-        function updateNoiDungTip($id,$name_nd1){
-          $sql = "update noidungtipnote set name_nd1='$name_nd1' where id_nd='$id'";
+        function updateNoiDungTip($id,$name_nd1,$name_nd2,$name_nd3,$name_nd4,$noidung1,$noidung2,$noidung3,$noidung4,$noidung5,$noidung6,$noidung7,$noidung8){
+          $sql = "update noidungtipnote set name_nd1='$name_nd1',name_nd2='$name_nd2',name_nd3='$name_nd3',name_nd4='$name_nd4',
+          noidung1='$noidung1',noidung2='$noidung2',noidung3='$noidung3',noidung4='$noidung4',noidung5='$noidung5',noidung6='$noidung6',noidung7='$noidung7',noidung8='$noidung8'
+          where id_nd='$id'";
           execute($sql);
       }
 
@@ -41,6 +59,11 @@
               $sql = "update tip_note set name_tip='$name' where id_tip='$id'";
               execute($sql);
           }
+
+          function updateTipTrangThai($id){
+            $sql = "update tip_note set trangthai=1 where id_tip='$id'";
+            execute($sql);
+        }
 
           function getTipContentById($id){
             $sql="SELECT * FROM `noidungtipnote` WHERE id_nd='$id'";

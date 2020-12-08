@@ -6,6 +6,13 @@
     $lastId = executeReturnID($query);
     return $lastId;//tra ve ma don hang moi vua them
     }
+
+
+    function postInforKhById($id){
+        $sql="select * khachhang where id_kh =$id";
+        return query($sql);
+    }
+
     
 ?>
 

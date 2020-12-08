@@ -21,7 +21,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Signika&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Francois+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cuprum:wght@500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bellota:wght@700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Bellota:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Charmonman:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
@@ -40,18 +40,18 @@
     <!-- font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <!-- slick -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> 
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 </head>
 <body>
 
+      <?php
+        session_start();
+      ?>
 
-          <?php
-                session_start();
-          ?>  
 
 
         <?php
-        
+
             $ctrl='home';
             if(isset($_GET['ctrl'])){
                 $ctrl = $_GET['ctrl'];
@@ -76,7 +76,7 @@
                <div class="full">
                    <div class="content_ft">
                        <div class="boxft">
-                            
+
                             <div class="left_ft">
                                   <i class="fas fa-phone-square"></i>
                             </div>
@@ -91,7 +91,7 @@
                        </div>
 
                        <div class="boxft ml20">
-                            
+
                             <div class="left_ft">
                               <i class="fas fa-map-marker-alt"></i>
                             </div>
@@ -108,7 +108,7 @@
                        </div>
 
                        <div class="boxft ml20">
-                            
+
                             <div class="left_ft">
                                 <i class="fas fa-envelope"></i>
                             </div>
@@ -134,16 +134,16 @@
   $('[data-toggle="tooltip-abc"]').tooltip()
 </script>
                  <!-- jquery -->
-                
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-              
+
 <script>
 
 
     $('.tr').slick({
-       
+
 infinite: true,
 slidesToShow: 3,
   slidesToScroll: 1,
@@ -154,7 +154,7 @@ slidesToShow: 3,
   dotClass:'slick-dots',
   nextArrow:$('.next'),
   prevArrow:$('.prev'),
-  
+
   responsive: [
     {
       breakpoint: 980,
@@ -197,7 +197,7 @@ slidesToShow: 3,
 
 
 <script>
-  
+
 $('.center').slick({
   infinite: true,
   centerMode: true,
@@ -244,17 +244,17 @@ function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
+  if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
+      slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active_header", "");
   }
-  slides[slideIndex-1].style.display = "block";  
+  slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active_header";
-} 
+}
 
 
 </script>
@@ -280,11 +280,11 @@ function checkTime(i) {
 <!-- phan text script -->
 <script>
   $(document).ready(function() {
-  
+
   typing( 0, $('.typewriter-text').data('text') );
 
   function typing( index, text ) {
-    
+
     var textIndex = 1;
 
     var tmp = setInterval(function() {
@@ -352,9 +352,9 @@ cancel.onclick = function() {
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
-    
+
   }
-  
+
 }
 </script>
 

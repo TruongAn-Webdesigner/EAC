@@ -3,6 +3,7 @@
 
    <?php 
                                foreach($tipnoidungadmin as $tnd){
+                                   
                                 echo'
     <article>
         <div class="roww">
@@ -103,6 +104,7 @@
                         </div>
                         <div class="fix_contenttip">
                         <a href="index.php?ctrl=tipnote&act=insert_editcontenttip&id='.$tnd['id_nd'].'">Sửa nội dung</a>
+                      
                         </div>
                     </div>
                     <div class="bg_tip_position2"> </div>

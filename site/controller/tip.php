@@ -26,6 +26,8 @@ switch($action){
         $tourname=$_POST['name_dd'];
     include_once 'view/content/content.php';
     break;
+
+    
 }
 
 ?>

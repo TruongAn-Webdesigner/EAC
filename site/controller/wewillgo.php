@@ -31,7 +31,7 @@ switch($action){
 
     case 'booktour':
         $id=$_GET['idcontent'];
-    $topFeautureById=getAllTopFeautureById($id);
+        $topFeautureById=getAllTopFeautureById($id);
         //luu thong tin don hang
         $fname=$_POST['fullName'];
         $address=$_POST['address'];
@@ -54,7 +54,7 @@ switch($action){
     $id_kh=$khachhang['id_kh'];/* lấy id khách hàng */
     $id_dd = $_GET['id_dd'];
     addRT($id_dd,$id_kh,$rtm);
-    
+
 
     $place=getplacebyID_one($id_dd);
     $rtc=$place['rating_dd'];
@@ -66,7 +66,7 @@ switch($action){
     $topFeautureById=getAllTopFeautureById($id_dd);
     include 'view/content/content.php';
     break;
-    
+
 }
 
 ?>
