@@ -80,7 +80,10 @@
                 <div class="box_position_content1"></div>
                 <!-- /* <div class="box_position_content2"></div> */ -->
                         <?php
+
+                        
                             foreach($topFeautureById as $tr){
+                                $id_dd=$tr['id_dd'];
                                 echo'
                             <div class="box_content_article">
                           
@@ -306,7 +309,46 @@
 
 ';
 }
+
 ?>
+
+<div class="roww">
+<div class="boxcenter_content">
+    <div class="container">
+            <div class="text_comment">
+                Đánh Giá Địa Điểm
+
+            </div>
+        <div class="star-widget">
+            <form action="index.php?ctrl=wewillgo&act=rating&id_dd=<?php echo"$id_dd"?>" method="POST">
+                <input type="radio" name="rate" value='5' id="rate-5" >
+                <label for="rate-5" class="fas fa-star"></label>
+                <input type="radio" name="rate" value='4' id="rate-4">
+                <label for="rate-4" class="fas fa-star"></label>
+                <input type="radio" name="rate" value='3' id="rate-3">
+                <label for="rate-3" class="fas fa-star"></label>
+                <input type="radio" name="rate" value='2' id="rate-2">
+                <label for="rate-2" class="fas fa-star"></label>
+                <input type="radio" name="rate" value='1' id="rate-1">
+                <label for="rate-1" class="fas fa-star"></label>
+
+                    <div class="content_rt">
+                    <header></header>
+                    
+                    <br />
+                    <div class="btn">
+                    <button type="submit">Post</button>
+
+                    </div>
+                    </div>
+                    </form>
+            </div>
+    
+    </div>
+</div>
+</div>
+
+
     <div class="roww">
         <div class="boxcenter_content">
             <div class="box_choose">
@@ -385,6 +427,7 @@
         </div>
     </div>
 
+
     <div class="roww">
         <div class="boxcenter_content">
             <div class="box_comment">
@@ -399,7 +442,7 @@
                </div>
 
                 <div class="form_comment">
-                    
+
                 </div>
 
             </div>
