@@ -52,10 +52,12 @@
                                         <?php
 
                                             foreach($tipadmin as $dd){
+
                                                 echo'
                                                     <tr>
                                                         <td scope="row">'.$dd['id_tip'].'</td>
                                                         <td><a href="index.php?ctrl=tipnote&act=noidungtip&id='.$dd['id_tip'].'">'.$dd['name_tip'].'</a> </td>
+                             
                                                         <td><button type="button" class="btn btn-outline-success"><a href="index.php?ctrl=tipnote&act=edit&id='.$dd['id_tip'].'">Edit</a></button></td>
                                                         <td><button type="button" class="btn btn-outline-danger"><a href="index.php?ctrl=tipnote&act=del&id='.$dd['id_tip'].'">Del</a></button></td>
                                                     </tr>
