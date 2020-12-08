@@ -34,7 +34,7 @@
 </head>
 <body>
 <?php
-            session_start();
+			session_start();
             $db = new PDO("mysql:host=localhost;dbname=demo_eac",'root','');
             if(isset($_POST['DangNhap'])){
                 $user=$_POST['username'];
