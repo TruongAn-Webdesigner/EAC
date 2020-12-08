@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/wherewewillgo.css">
     <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/comment.css">
+    <link rel="stylesheet" href="css/rating.css">
 
     <!-- google font -->
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
