@@ -8,6 +8,7 @@
     <!-- css -->
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/wherewewillgo.css">
+    <link rel="stylesheet" href="css/login.css">
 
     <!-- google font -->
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
@@ -42,6 +43,9 @@
 <body>
 
 
+          <?php
+                session_start();
+          ?>  
 
 
         <?php
