@@ -8,8 +8,15 @@
 
     switch($action){
         case 'index':
-            $tip = getAllTip();
+            $tipadmin = getAllTip();
             include 'view/tip/index.php';
+        break;
+
+        case'noidungtip':
+            $id=$_GET['idtipt'];
+            $tipnoidungadmin=getAllTipByIdAdmin($id);
+
+            include 'view/tip/contenttip.php';
         break;
 
         case 'add':
@@ -40,6 +47,8 @@
             include 'view/tip/editTip.php';
         break;
 
+
+
         case 'update':
             $id= $_POST['id'];
             $name =$_POST['name'];
@@ -53,6 +62,12 @@
           }
           echo'<script>window.location="index.php?ctrl=tipnote&act=index";</script>';
           break;
+
+        case'editcontenttip':
+            $id=$_GET['idfix'];
+            $suanoidung=getTipContentById($id);
+            include 'view/tip/editcontenttip.php';
+        break;
 
         case 'del':
             $id = $_GET['id'];
@@ -86,5 +101,7 @@
             }
             $tip = getAllTip();
             include 'view/tip/index.php';
+
+            
     }
 ?>
