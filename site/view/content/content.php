@@ -191,9 +191,7 @@
                                 </div>
 
                         </div>
-                                ';
-                            }
-                        ?>
+                               
 
                 </div>
             </div>
@@ -217,48 +215,67 @@
                             sign tour
                         </a>
                         </div>
-
-                    <div class="bg_book_tour">
+                        <div class="bg_book_tour">
                         <div id="myModal" class="modal">
                             <div class="modal-content">
                                 <div class="close">
                                     <span>&times;</span>
                                 </div>
+                                <div class="boxPay">
+                                <form action="index.php?ctrl=wewillgo&act=booktour&idcontent='.$tr['id_dd'].'" method="post" enctype="multipart/form-data">
+
+    
+                       
                                 
 
-                                <div class="boxPay">
-                                    <form action="index.php?ctrl=cart&act=checkout&id='.$detail['id'].'" method="post" enctype="multipart/form-data">
+                              
+                                  
                                         <div class="container">
-                                            <h1>Book tour</h1>
+                                            <h1>Book tour: '.$tr['name_dd'].'</h1>
                                                 <hr>
-                                                    <label for="fullname">Full name</label>
-                                                    <input type="text" placeholder="Enter Email" name="fullName" required>
+                                                    <label for="diadiem">Mã địa điểm</label>
+                                                    <div class="input_bg">
+                                                    <input type="text" placeholder="Enter Number" name="diadiem" value="'.$tr['id_dd'].' "readonly >
+                                                    </div>
+                                                    <div class="input_bg">
+                                                    <label for="ngaydi">Ngày đi dự kiến</label>
+                                                    <input type="text" placeholder="Enter Number" name="ngaydi" value="'.$tr['ngaydang'].' "readonly >
+                                                    </div>
+                                                    <label for="fullname">Họ tên</label>
+                                                    <input type="text" placeholder="Nhập tên của bạn" name="fullName" required>
 
                                                     <label for="email">Email</label>
-                                                    <input type="text" placeholder="Enter Email" name="email" required>
-
-                                                    <label for="address">Address</label>
-                                                    <input type="text" placeholder="Enter Address" name="address" required>
+                                                    <input type="text" placeholder="Nhập Email" name="email" required>
                                                         
-                                                    <label for="phone">Phone number</label>
-                                                    <input type="tel" placeholder="Enter Number" name="phone" required>
-                                        
+                                                    <label for="phone">Số điện thoại</label>
+                                                    <input type="tel" placeholder="nhập số điện thoại" name="phone" required>
+
+                                                
                                             <div class="clearfix">
                                                 <button type="submit" class="button">Done!</button>
-                                                <button type="button" id="cancel" class="button">Let's me think</button>
+                                                <button type="button" id="cancel" class="button">Lets me think</button>
                                             </div>
                                         </div>
-                                    </form>
-                                </div>
-                            </div>
+                                   
+                                
+                          
 
-                        </div>
+
+   
+                     </form>
                     </div>
+                      </div>
 
+</div>
+                    </div>
 
 
     </div>
 </div>
+
+';
+}
+?>
     <div class="roww">
         <div class="boxcenter_content">
             <div class="box_choose">
