@@ -24,6 +24,7 @@ switch($action){
     case 'contentread':
     include_once 'view/content/content-tip.php';
     break;
+    
 }
 
 ?>
