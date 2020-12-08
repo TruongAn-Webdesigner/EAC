@@ -11,10 +11,7 @@
         return query($sql);
     }
 
-    function getAllTip(){
-        $sql="select * from tip_note limit 8";
-        return query($sql);
-    }
+
 
     
 ?>
