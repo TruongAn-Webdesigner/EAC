@@ -11,12 +11,25 @@
             $tipadmin = getAllTip();
             include 'view/tip/index.php';
         break;
-
+        /* phan tip noi dung */
         case'noidungtip':
-            $id=$_GET['idtipt'];
+            $id=$_GET['id'];
             $tipnoidungadmin=getAllTipByIdAdmin($id);
-
             include 'view/tip/contenttip.php';
+        break;
+
+        /* sua noi dung tip */
+        case'insert_editcontenttip':
+            $id=$_GET['id'];
+            $suanoidung=getTipContentById($id);
+            include 'view/tip/editcontenttip.php';
+        break;
+
+        case'edit_content_tip':
+            $id=$_POST['id'];
+            $name_nd1=$_POST['name'];
+            updateNoiDungTip($id,$name_nd1);
+            echo'<script>window.location="index.php?ctrl=tipnote&act=noidungtip&id='.$id.'";</script>';
         break;
 
         case 'add':
@@ -63,11 +76,7 @@
           echo'<script>window.location="index.php?ctrl=tipnote&act=index";</script>';
           break;
 
-        case'editcontenttip':
-            $id=$_GET['idfix'];
-            $suanoidung=getTipContentById($id);
-            include 'view/tip/editcontenttip.php';
-        break;
+        
 
         case 'del':
             $id = $_GET['id'];
