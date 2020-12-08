@@ -21,7 +21,13 @@
             $sql="SELECT * FROM `tip_note` WHERE id_tip='$id'";
             return queryOne($sql);
         }
+/* ,$name_nd2,$name_nd3,$name_nd4,$noidung1,$noidung2,$noidung3,$noidung4,$noidung5,$noidung6,$noidung7,$noidung8 */
 
+        /* phan update noi dung tip */
+        function updateNoiDungTip($id,$name_nd1){
+          $sql = "update noidungtipnote set name_nd1='$name_nd1' where id_nd='$id'";
+          execute($sql);
+      }
 
 
         function updateTiphinh($id,$name,$img){
