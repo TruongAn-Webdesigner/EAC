@@ -302,6 +302,7 @@
                                     <li>
                                         <a href="index.php?ctrl=wewillgo">Where will we go?</a>
                                         <a href="index.php?ctrl=content-tip">Tips note</a>
+                                        <a href="view/usertourlist/index.php">Danh sách tour</a>
                                     </li>
                                 </ul>
                                 
@@ -326,7 +327,7 @@
                                                                         <li><a href="#">'.$ad['name_kh'].' <i class="fa fa-caret-down" style="font-size:17px;color:black"></i></a>
                                                                             <div class="nav_ad_con">
                                                                                     <ul>
-                                                                                        <li><a href="changespass.php">Đổi Mật Khẩu</a></li>
+                                                                                        <li><a href="view/usertourlist/index.php">Danh sách tour</a></li>
                                                                                         <li><a href="view/login/logout.php">Đăng Xuất</a></li>
                                                                                     </ul>
                                                                             </div>
