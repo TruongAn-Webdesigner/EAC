@@ -18,12 +18,13 @@ switch($action){
     case 'content':
     $id=$_GET['idcontent'];
     $topFeautureById=getAllTopFeautureById($id);
+
     include 'view/content/content.php';
     break;
 
     case 'booktour':
         $id=$_GET['idcontent'];
-    $topFeautureById=getAllTopFeautureById($id);
+        $topFeautureById=getAllTopFeautureById($id);
         //luu thong tin don hang
         $fname=$_POST['fullName'];
         $address=$_POST['address'];
@@ -35,9 +36,17 @@ switch($action){
         include 'view/content/content.php';
     break;
 
-    case 'contentbestplace':
-    include_once 'view/content/content.php';
-    break;
+        case 'booklogin':
+            $id=$_GET['idcontent'];
+            $topFeautureById=getAllTopFeautureById($id);
+            //luu thong tin don hang
+        $fname=$_POST['fullName'];
+        $address=$_POST['address'];
+        $email=$_POST['email'];
+        $phone=$_POST['phone'];
+        $diadiem=$_POST['diadiem'];
+        $ngaydat=date('Y-m-d H:i:s');//ngay thang nam, gio,.. hien tai
+    
 }
 
 ?>
