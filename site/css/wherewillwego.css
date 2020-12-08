@@ -560,9 +560,9 @@ animation-duration: 1s;
     border-right: none;
     width: 26.5%;
     float: right;
-    
     border-radius: none;
 }
+
 
 .active-purple-2 input.form-control[type=text]:focus:not([readonly]) {
     border-bottom: 1px solid #ce93d8;
