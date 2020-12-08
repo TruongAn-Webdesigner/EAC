@@ -519,7 +519,7 @@ $(document).ready(function(){
                         <div id="result"></div> 
                         <!-- cái này hiện mấy cái box địa điểm ra đó nha ai lóp du -->
                    
-                        <!-- <?php
+                        <?php
                             foreach($allPlace as $ap){
                                 echo'
                                 <div class="bg_box_item">
@@ -557,7 +557,7 @@ $(document).ready(function(){
                             </div> 
                                 ';
                             }
-                        ?> -->
+                        ?>
                         <!-- hihihi -->
                         
                         

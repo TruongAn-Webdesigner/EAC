@@ -301,13 +301,13 @@
                                 <ul>
                                     <li>
                                         <a href="index.php?ctrl=wewillgo">Where will we go?</a>
-                                        <a href="index.php?ctrl=tip">Tips note</a>
+                                        <a href="index.php?ctrl=content-tip">Tips note</a>
                                     </li>
                                 </ul>
                                 
                             </nav>
                             <div class="float_text_login">
-                                            <a href="http://">login</a>
+                                            <a href="index.php?ctrl=login&act=index">login</a>
                             </div>
                         </div>
                     </div>
@@ -505,6 +505,9 @@
                          
                     
                     <div class="content_tips">
+                        <?php
+                            foreach($tip1 as $t1){
+                                echo'
                         <div class="box_tips1">
                             <div class="box_img_tips">
                                 <img src="img/bana2.jpg" alt="">
@@ -512,67 +515,97 @@
 
                             <div class="name_tips">
                                 <div class="text_tips_home">
-                                    lalala
+                                    <a href="index.php?ctrl=content-tip&act=contenttip&idtip=1">'.$t1['name_tip'].'</a> 
                                 </div>
                             </div>
                         </div>
 
-                        <div class="box_tips2">
-                            <div class="box_img_tips">
-                                <img src="img/bana2.jpg" alt="">
-                            </div>
+                        
+                                ';
+                            }
+                        ?>
 
-                            <div class="name_tips">
-                            <div class="text_tips_home">
-                                    lalala
+                        <?php
+                            foreach($tip2 as $t2){
+                                echo'
+                                <div class="box_tips2">
+                                    <div class="box_img_tips">
+                                        <img src="img/bana2.jpg" alt="">
+                                    </div>
+
+                                    <div class="name_tips">
+                                        <div class="text_tips_home">
+                                        <a href="index.php?ctrl=content-tip&act=contenttip&idtip=2">'.$t2['name_tip'].'</a> 
+                                        </div>
+                                    </div>
+                                </div>
+                                ';
+                            }
+                        ?>
+                        
+
+                            <?php
+                                foreach($tip3 as $t3){
+                                    echo'
+                                <div class="box_tips3">
+                                    <div class="box_img_tips3">
+                                        <img src="img/bana2.jpg" alt="">
+                                    </div>
+        
+                                    <div class="name_tips">
+                                        <div class="text_tips_home">
+                                            <a href="index.php?ctrl=content-tip&act=contenttip&idtip=3">'.$t3['name_tip'].'</a> 
+                                        </div>
+                                    </div>
+                                </div>
+                                    
+                                    ';
+                                }
+                            ?>
+                        
+                        <?php
+                        foreach($tip4 as $t4)
+                               echo'
+                               <div class="box_tips4">
+                                    <div class="box_img_tips4">
+                                        <img src="img/bana2.jpg" alt="">
+                                    </div>
+
+                                    <div class="name_tips">
+                                        <div class="text_tips_home">
+                                        <a href="index.php?ctrl=content-tip&act=contenttip&idtip=4">'.$t4['name_tip'].'</a> 
+                                            </div>
+                                    </div>
+                                </div>
+                               '; 
+                        ?>
+                        
+
+                        <?php
+                            foreach($tip5 as $t5){
+                                echo'
+                                <div class="box_tips5">
+                                <div class="box_img_tips">
+                                    <img src="img/bana2.jpg" alt="">
+                                </div>
+    
+                                <div class="name_tips">
+                                <div class="text_tips_home">
+                                    <a href="index.php?ctrl=content-tip&act=contenttip&idtip=5">'.$t5['name_tip'].'</a> 
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-
-
-                        <div class="box_tips3">
-                            <div class="box_img_tips3">
-                                <img src="img/bana2.jpg" alt="">
-                            </div>
-
-                            <div class="name_tips">
-                            <div class="text_tips_home">
-                                    lalala
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="box_tips4">
-                            <div class="box_img_tips4">
-                                <img src="img/bana2.jpg" alt="">
-                            </div>
-
-                            <div class="name_tips">
-                            <div class="text_tips_home">
-                                    lalala
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="box_tips5">
-                            <div class="box_img_tips">
-                                <img src="img/bana2.jpg" alt="">
-                            </div>
-
-                            <div class="name_tips">
-                            <div class="text_tips_home">
-                                    lalala
-                                </div>
-                            </div>
-                        </div>
+                                ';
+                            }
+                        ?>
+                        
 
                     </div>                                    
                     
                  
                 </div>
                 <div class="more_tips">
-                                <a href="index.php?ctrl=tip" data-toggle="tooltip" data-placement="right" title="Tooltip on right">More</a>
+                                <a href="index.php?ctrl=content-tip&act=index" >More</a>
                             </div>
             </div>      
         </div>

@@ -6,4 +6,9 @@
         return query($sql);
     }
 
+    function getInforBookById($id){
+        $sql="select * from diadiem inner join chitiettour on diadiem.id_dd=chitiettour.id_dd where diadiem.id_dd='$id'";
+        return query($sql);
+    } 
+
 ?>

@@ -212,36 +212,44 @@
             <div class="bg_article_tip">
                 <div class="boxcenter_content_tip">
                     <div class="bg_tip_left">
+                        <?php
+                            foreach($tip as $tc){
+                                echo'
                         <div class="name_tip">
                             <h3>Plan(title1)</h3>
                             <div class="text_tip">
                                 <div class="text_tip_content">
                                     <div class="text_title_tip">
-                                        Chọn địa điểm (tennoidung1)
+                                      '.$tc['name_nd1'].'
                                     </div>
                                     <div class="text_detail_tip">
-                                        bla bla bla (noidung1)
+                                    '.$tc['noidung1'].'
                                     </div>
                                     <div class="tip_small">
-                                        Tip note: (noidung2 cái này viết ít tóm gọn các ý trên bla bla là dc ) 
+                                        Tip note: '.$tc['noidung2'].' 
                                     </div>
                                 </div>
                             </div>
 
 
-                            <div class="text_tip2">
-                                <div class="text_tip_content">
-                                    <div class="text_title_tip">
-                                        liên kết địa điểm (tennoidung2)
-                                    </div>
-                                    <div class="text_detail_tip">
-                                        bla bla bla(noidung3)
-                                    </div>
-                                    <div class="tip_small">
-                                        Tip note: (noidung4)
-                                    </div>
+                        <div class="text_tip2">
+                            <div class="text_tip_content">
+                                <div class="text_title_tip">
+                                '.$tc['name_nd2'].'
+                                </div>
+                                <div class="text_detail_tip">
+                                '.$tc['noidung3'].'
+                                </div>
+                                <div class="tip_small">
+                                    Tip note:'.$tc['noidung4'].'
                                 </div>
                             </div>
+                        </div>
+                               
+                        
+
+
+                           
 
 
                         </div>
@@ -258,19 +266,21 @@
             <div class="bg_article_tip">
                 <div class="boxcenter_content_tip">
                     <div class="bg_tip_left">
+
+
                         <div class="name_tip">
                             <h3>belongings (title2)</h3>
                             
                             <div class="text_tip3">
                                 <div class="text_tip_content">
                                     <div class="text_title_tip">
-                                        Cần mang theo gì?(tennoidung3)
+                                         '.$tc['name_nd3'].'
                                     </div>
                                     <div class="text_detail_tip">
-                                        bla bla bla (noidung5)
+                                    '.$tc['noidung5'].'
                                     </div>
                                     <div class="tip_small">
-                                        Tip note: (noidung6)
+                                        Tip note: '.$tc['noidung6'].'
                                     </div>
                                 </div>
                             </div>
@@ -279,17 +289,16 @@
                             <div class="text_tip3">
                                 <div class="text_tip_content">
                                     <div class="text_title_tip">
-                                        Kiểm tra hành lí (tennoidung4)
+                                    '.$tc['name_nd4'].'
                                     </div>
                                     <div class="text_detail_tip">
-                                        bla bla bla (noidung7)
+                                    '.$tc['noidung7'].'
                                     </div>
                                     <div class="tip_small">
-                                        Tip note: (noidung8)
+                                        Tip note: '.$tc['noidung8'].'
                                     </div>
                                 </div>
                             </div>
-
 
                         </div>
                     </div>
@@ -297,7 +306,9 @@
                     <div class="box_img_tip_right"></div>
                     </div>
                 </div>
-                
+                ';
+            }
+        ?>
         </div>
 
 

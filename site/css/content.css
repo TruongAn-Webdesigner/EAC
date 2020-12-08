@@ -759,18 +759,27 @@ h5{
 
   /* phan form dang ky gat hang */
   /* phan css pay nam cung voi phan .bg-buy-add */
+  h1{
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 0.2;
+}
 input[type=text], input[type=password],input[type=tel], input[type=number] {
     width: 100%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
+    padding: 10px;
+    margin: 2px 0 15px 0;
     display: inline-block;
     border: none;
-    background: #f1f1f1;
+    border-bottom: rgb(211, 211, 211) solid 2px;
   }
   
   input[type=text]:focus, input[type=password]:focus,input[type=tel]:focus, input[type=number]:focus {
     background-color: #ddd;
     outline: none;
+  }
+
+  .input_bg input[type=text]{
+      background: rgb(202, 202, 202);
   }
   
   hr {

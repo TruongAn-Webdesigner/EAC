@@ -7,6 +7,10 @@
             return query($sql);
         }
 
+        function getAllTipByIdAdmin($id){
+            $sql="select * from noidungtipnote where id_nd=$id";
+            return query($sql);
+        }
 
 
         function addTip($name_tip,$img){
@@ -18,14 +22,23 @@
             return queryOne($sql);
         }
 
+
+
         function updateTiphinh($id,$name,$img){
             $sql = "update tip_note set name_tip='$name', img_tip='$img' where id_tip='$id'";
               execute($sql);
           }
+
+
     
             function updateTip($id,$name){
               $sql = "update tip_note set name_tip='$name' where id_tip='$id'";
               execute($sql);
+          }
+
+          function getTipContentById($id){
+            $sql="SELECT * FROM `noidungtipnote` WHERE id_nd='$id'";
+            return queryOne($sql);
           }
     
           function deleteTip($id){
