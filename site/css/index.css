@@ -105,6 +105,76 @@ font-weight: bold;
         font-family: 'Sansita Swashed', cursive;
     }
 
+    /* phan drop */
+    .dropdown{
+        text-align: center;
+        float: right;
+        
+      }
+      
+      .dropdown ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      
+      .dropdown ul li{
+        position: relative;
+        list-style: none;
+        display: inline-block;
+        
+      }
+      .dropdown ul li a{
+        display: block;
+        padding-right: 50px;
+        padding-left: 20px;
+        color: rgb(209, 209, 209);
+        margin-top: 3vh;
+        text-decoration: none;
+        line-height: 50px;
+        font-size: 20px;
+        
+      }
+      
+      .nav_ad_con{
+          text-align: center;
+          width: 200px;
+          top: 70px;
+          right: 0;
+          position: absolute;
+          display: none;
+          z-index: 10;
+          background: rgba(119, 119, 119, 0.514);
+      }
+      
+      .dropdown ul li:hover > .nav_ad_con{
+          display: block;
+      }
+      
+      .nav_ad_con ul{
+          width: 100%;
+          
+      }
+      
+      .nav_ad_con ul li{
+          width: 100%;
+          
+      }
+      
+      
+      .nav_ad_con a:hover{
+          color: white;
+      }
+      
+      
+      button.btn:hover a{
+        width: 100%;
+        text-decoration: none;
+        Color: white;
+      } 
+
+
+
     .float_time{
         float: right;
     }
@@ -1455,7 +1525,32 @@ opacity: 0.9;
 }
 
 @media only screen and (max-width: 600px) {
+    .dropdown ul li a{
+        display: block;
+        padding-right: 50px;
+        padding-left: 10px;
+        color: white;
+        margin-top: 10vh;
+        text-decoration: none;
+        line-height: 50px;
+        font-size: 10px;
+        
+      }
+    
+    .text_logo a {
+        padding: 0px 5px;
+        font-size: 3.5vw;
+    }
 
+   
+    .left_login {
+        width: 30%;
+
+    }
+
+    .float_text {
+        line-height: 50px;
+    }
 
     .nav ul li a{
         padding:0px 5px;
@@ -1473,6 +1568,19 @@ opacity: 0.9;
     .float_text_login a{
         font-size: 3vw;
     }
+
+    .dropdown ul li a {
+        display: block;
+        padding-right: 0px;
+        padding-left: 0px;
+        color: white;
+        margin-top: 3vh;
+        text-decoration: none;
+        line-height: 100px;
+       
+    }
+
+
     .big_text .float_text{
 
         font-size: 7vw;
