@@ -128,14 +128,14 @@ li{
     min-height: 100vh;
     position: relative;
     z-index: 9;
-    background-color: lightgoldenrodyellow;
+    /* background-color: lightgoldenrodyellow; */
 }
 
 
 .bg_tip_left{
     width: 65%;
     min-height: 100vh;
-    background-color: lightskyblue;
+    /* background-color: lightskyblue; */
     float: left;
 
 }
@@ -146,7 +146,7 @@ li{
     width: 25%;
     min-height: 100vh;
     margin-left: 1%;
-    background-color: rgb(13, 146, 230);
+    background-color: rgba(209, 209, 209, 0.418);
     position: absolute;
     right: 0;
     z-index: -1;
@@ -156,7 +156,7 @@ li{
     width: 15%;
     min-height: 100vh;
     margin-left: 1%;
-    background-color: rgb(13, 146, 230);
+    background-color: rgba(209, 209, 209, 0.418);
     position: absolute;
     right: 50vh;
     z-index: -1;
@@ -168,8 +168,8 @@ li{
     margin-top: 10vh;
     width: 48%;
     min-height: 40vh;
-    background-color: grey;
-    border-left: 3px solid red;
+    /* background-color: grey; */
+    border-left: 3px solid rgb(0, 0, 0);
 }
 
 .text_title_tip{
@@ -180,7 +180,7 @@ li{
     width: 98%;
     min-height: 40vh;
     margin-left: 2%;
-    background-color: hotpink;
+    /* background-color: hotpink; */
     font-size: 1.3vw;
 }
 
@@ -199,16 +199,16 @@ li{
     margin-top: 40vh;
     width: 50%;
     min-height: 40vh;
-    background-color: grey;
-    border-left: 3px solid red;
+    /* background-color: grey; */
+    border-left: 3px solid rgb(0, 0, 0);
 }
 
 .text_tip3{
     margin-top: 4vh;
     width: 50%;
     min-height: 40vh;
-    background-color: grey;
-    border-left: 3px solid red;
+   /*  background-color: grey; */
+    border-left: 3px solid rgb(0, 0, 0);
 }
 
 .tip_small{
@@ -220,10 +220,18 @@ li{
 .box_img_tip_right{
     width: 25%;
     height: 50vh;
-    background-color: greenyellow;
+    /* background-color: greenyellow; */
     float: left;
     margin-left: 5vh;
     margin-top: 20vh;
+}
+
+
+.box_img_tip_right img{
+    width: 176%;
+    height: 149%;
+    object-fit: cover;
+    display: block;
 }
 
 .box_position_content1{
