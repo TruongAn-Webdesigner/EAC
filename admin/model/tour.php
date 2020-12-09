@@ -9,7 +9,7 @@
 
 
         function addTour($name,$id_kv,$img){
-          $sql="INSERT INTO  diadiem ( name_dd,id_kv ,img_dd) VALUES ('$name','$id_kv','$img')";
+          $sql="INSERT INTO  diadiem ( name_dd,id_kv ,img_dd,trangthai) VALUES ('$name','$id_kv','$img',0)";
           return execute($sql);
         }
 
@@ -32,4 +32,9 @@
          $sql="delete from diadiem where id_dd='$id'";
        return execute($sql);
     }
+
+    function getNoiDungByID_DD($id){
+      $sql="SELECT * FROM diadiem JOIN khuvuc on diadiem.id_kv = khuvuc.id_kv";
+      return query($sql);
+  }
 ?>
