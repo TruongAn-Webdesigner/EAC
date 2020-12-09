@@ -55,7 +55,7 @@
                         });
                         </script>';
                     }
-                      
+
                 }else{
                     echo'<script>alert("Bạn không Đủ Thẩm Quền Để Xóa Tài Khoản")</script>';
 
@@ -68,12 +68,12 @@
                 $rankTour =  getRankTour();
                 $rankKH = getRankKH();
                 $ad = getAdmin();
-              include 'view/home/index.php'; 
+              include 'view/home/index.php';
         break;
-        
+
     }
 
-    
+
 
 
 ?>
