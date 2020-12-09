@@ -1,5 +1,4 @@
 <?php
-
 include_once 'model/database.php';
 include_once 'model/wherewillwego.php';
 include_once 'model/content.php';
