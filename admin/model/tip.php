@@ -3,7 +3,7 @@
         include_once('database.php');
 
         function getAllTip(){
-            $sql="SELECT * from tip_note ";
+            $sql="SELECT * from tip_note";
             return query($sql);
         }
 
