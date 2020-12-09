@@ -210,52 +210,6 @@ $(document).ready(function(){
                                             }
                                         ?>
                                         
-
-                                        
-                                        <!-- <div class="fr_box">
-                                            
-                                            <div class="fr_img">
-                                                <div class="bg"></div>
-                                            </div>
-
-                                            <div class="fr_name"><span>MIKE2</span> /CFO</div>
-
-                                        </div>
-
-
-                                        <div class="fr_box">
-                                            
-                                            <div class="fr_img">
-                                                <div class="bg"></div>
-                                            </div>
-
-                                            <div class="fr_name"><span>MIKE3</span> /CFO</div>
-
-                                        </div>
-
-
-
-                                        <div class="fr_box">
-                                            
-                                            <div class="fr_img">
-                                                <div class="bg"></div>
-                                            </div>
-
-                                            <div class="fr_name"><span>MIKE4</span> /CFO</div>
-
-                                        </div>
-
-                                        <div class="fr_box">
-                                            
-                                            <div class="fr_img">
-                                                <div class="bg"></div>
-                                            </div>
-
-                                            <div class="fr_name"><span>MIKE5</span> /CFO</div>
-
-                                            </div>
-                                        </div> -->
-
                                         
                                         </div>
                                     </div>
@@ -273,261 +227,6 @@ $(document).ready(function(){
 
 
 <article>
-    <!-- <div class="roww">
-        <div class="boxcenter">
-            <div class="bg_review">
-                <div class="box_review">
-                    <div class="text_tips">
-                        Review
-                    </div>
-                    <div class="small_text_tip">
-                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at it's layout. The point of using 
-                    Lorem Ipsum is that it has a more-or-less normal distribution of letters,
-                    </div>
-                    <div class="line_review"></div>
-                    <div class="box_infor_review">
-                                    <div class="slide_tn">
-                                       
-                                       <div class="box_tn">
-                                           <div class="img_tn">
-
-                                           
-                                               <div class="bg_review_list">
-                                               <figure class="figurefx pushup">
-                                                    <img src="img/field.jpg" alt="">
-                                                    <figcaption>
-                                                        <a href=""><i class="fas fa-search"></i></a>                                    
-                                                        <a href=""><i class="fas fa-location-arrow"></i></a>
-                                                    </figcaption>
-                                                 
-                                               </figure>
-                                               </div>
-                                            </div>
-                                           <div class="box_infor">
-                                                <div class="name_tn"><span>MIKE</span> /CFO</div>
-                                                <div class="rating_infor_review">    
-                                                    <i class="far fa-star"></i>
-                                                    <i class="far fa-star"></i>
-                                                    <i class="far fa-star"></i>
-                                                    <i class="far fa-star"></i>
-                                                    <i class="far fa-star"></i>
-                                                </div>
-                                            </div>
-                                           
-                                       </div>
-                                       
-                                      
-                                        <div class="box_tn">
-                                           <div class="img_tn">
-                                               <div class="bg_review_list">
-                                               <figure class="figurefx pushup">
-                                                    <img src="img/flower.png" alt="">
-                                                    <figcaption>
-                                                        <a href=""><i class="fas fa-search"></i></a>                                    
-                                                        <a href=""><i class="fas fa-location-arrow"></i></a>
-                                                    </figcaption>
-                                                 
-                                               </figure>
-                                           </div>
-                                        </div>
-                                        <div class="box_infor">
-                                                <div class="name_tn"><span>MIKE</span> /CFO</div>
-                                                <div class="rating_infor_review">    
-                                                    <i class="far fa-star"></i>
-                                                    <i class="far fa-star"></i>
-                                                    <i class="far fa-star"></i>
-                                                    <i class="far fa-star"></i>
-                                                    <i class="far fa-star"></i>
-                                                </div>
-                                            </div>
-                                       </div>
-                                       
-                                      
-                                       <div class="box_tn">
-                                           <div class="img_tn">
-
-                                           
-                                               <div class="bg_review_list">
-                                               <figure class="figurefx pushup">
-                                                    <img src="img/flower.png" alt="">
-                                                    <figcaption>
-                                                        <a href=""><i class="fas fa-search"></i></a>                                    
-                                                        <a href=""><i class="fas fa-location-arrow"></i></a>
-                                                    </figcaption>
-                                                 
-                                               </figure>
-                                               </div>
-                                            </div>
-                                           <div class="box_infor">
-                                                <div class="name_tn"><span>MIKE</span> /CFO</div>
-                                                <div class="rating_infor_review">    
-                                                    <i class="far fa-star"></i>
-                                                    <i class="far fa-star"></i>
-                                                    <i class="far fa-star"></i>
-                                                    <i class="far fa-star"></i>
-                                                    <i class="far fa-star"></i>
-                                                </div>
-                                            </div>
-                                           
-                                       </div>
-                                       
-                                      
-                                       <div class="box_tn">
-                                           <div class="img_tn">
-
-                                           
-                                               <div class="bg_review_list">
-                                               <figure class="figurefx pushup">
-                                                    <img src="img/flower.png" alt="">
-                                                    <figcaption>
-                                                        <a href=""><i class="fas fa-search"></i></a>                                    
-                                                        <a href=""><i class="fas fa-location-arrow"></i></a>
-                                                    </figcaption>
-                                                 
-                                               </figure>
-                                               </div>
-                                            </div>
-                                           <div class="box_infor">
-                                                <div class="name_tn"><span>MIKE</span> /CFO</div>
-                                                <div class="rating_infor_review">    
-                                                    <i class="far fa-star"></i>
-                                                    <i class="far fa-star"></i>
-                                                    <i class="far fa-star"></i>
-                                                    <i class="far fa-star"></i>
-                                                    <i class="far fa-star"></i>
-                                                </div>
-                                            </div>
-                                           
-                                       </div>
-                                       
-                                      
-                                       <div class="box_tn">
-                                           <div class="img_tn">
-
-                                           
-                                               <div class="bg_review_list">
-                                               <figure class="figurefx pushup">
-                                                    <img src="img/flower.png" alt="">
-                                                    <figcaption>
-                                                        <a href=""><i class="fas fa-search"></i></a>                                    
-                                                        <a href=""><i class="fas fa-location-arrow"></i></a>
-                                                    </figcaption>
-                                                 
-                                               </figure>
-                                               </div>
-                                            </div>
-                                           <div class="box_infor">
-                                                <div class="name_tn"><span>MIKE</span> /CFO</div>
-                                                <div class="rating_infor_review">    
-                                                    <i class="far fa-star"></i>
-                                                    <i class="far fa-star"></i>
-                                                    <i class="far fa-star"></i>
-                                                    <i class="far fa-star"></i>
-                                                    <i class="far fa-star"></i>
-                                                </div>
-                                            </div>
-                                           
-                                       </div>
-                                       
-                                      
-                                       <div class="box_tn">
-                                           <div class="img_tn">
-
-                                           
-                                               <div class="bg_review_list">
-                                               <figure class="figurefx pushup">
-                                                    <img src="img/flower.png" alt="">
-                                                    <figcaption>
-                                                        <a href=""><i class="fas fa-search"></i></a>                                    
-                                                        <a href=""><i class="fas fa-location-arrow"></i></a>
-                                                    </figcaption>
-                                                 
-                                               </figure>
-                                               </div>
-                                            </div>
-                                           <div class="box_infor">
-                                                <div class="name_tn"><span>MIKE</span> /CFO</div>
-                                                <div class="rating_infor_review">    
-                                                    <i class="far fa-star"></i>
-                                                    <i class="far fa-star"></i>
-                                                    <i class="far fa-star"></i>
-                                                    <i class="far fa-star"></i>
-                                                    <i class="far fa-star"></i>
-                                                </div>
-                                            </div>
-                                           
-                                       </div>
-                                       
-                                      
-                                       <div class="box_tn">
-                                           <div class="img_tn">
-
-                                           
-                                               <div class="bg_review_list">
-                                               <figure class="figurefx pushup">
-                                                    <img src="img/flower.png" alt="">
-                                                    <figcaption>
-                                                        <a href=""><i class="fas fa-search"></i></a>                                    
-                                                        <a href=""><i class="fas fa-location-arrow"></i></a>
-                                                    </figcaption>
-                                                 
-                                               </figure>
-                                               </div>
-                                            </div>
-                                           <div class="box_infor">
-                                                <div class="name_tn"><span>MIKE</span> /CFO</div>
-                                                <div class="rating_infor_review">
-                                                    <i class="far fa-star"></i>
-                                                    <i class="far fa-star"></i>
-                                                    <i class="far fa-star"></i>
-                                                    <i class="far fa-star"></i>
-                                                    <i class="far fa-star"></i>
-                                                </div>
-                                            </div>
-                                           
-                                       </div>
-                                       
-                                      
-                                       <div class="box_tn">
-                                           <div class="img_tn">
-
-                                           
-                                               <div class="bg_review_list">
-                                               <figure class="figurefx pushup">
-                                                    <img src="img/flower.png" alt="">
-                                                    <figcaption>
-                                                        <a href=""><i class="fas fa-search"></i></a>                                    
-                                                        <a href=""><i class="fas fa-location-arrow"></i></a>
-                                                    </figcaption>
-                                                 
-                                               </figure>
-                                               </div>
-                                            </div>
-                                           <div class="box_infor">
-                                                <div class="name_tn"><span>MIKE</span> /CFO</div>
-                                                <div class="rating_infor_review">
-                                                    <i class="far fa-star"></i>
-                                                    <i class="far fa-star"></i>
-                                                    <i class="far fa-star"></i>
-                                                    <i class="far fa-star"></i>
-                                                    <i class="far fa-star"></i>
-                                                </div>
-                                            </div>
-
-                                           
-                                           
-                                       </div>
-
-                                       
-                                       
-                                   </div>
-
-                                   
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
     <div class="roww">
         <div class="bg_review">
             <div class="boxcenter"> 
@@ -547,10 +246,10 @@ $(document).ready(function(){
                             DISCOVER
                             </div>
                         <!-- --------------------- -->
-                        <div id="result"></div> 
+                        <div id="result">   </div> 
                         <!-- cái này hiện mấy cái box địa điểm ra đó nha ai lóp du -->
                    
-                        <?php
+                        <!-- <?php
                             foreach($allPlace as $ap){
                                 echo'
                                 <div class="bg_box_item">
@@ -580,7 +279,7 @@ $(document).ready(function(){
                     
                                     <div class="title_view_item">
                                         <div class="rating_item">
-                                            rating:   '.$ap['rating'].'
+                                            rating:   '.$ap['rating_dd'].'
                                         
                                         </div>
                                     </div>
@@ -588,7 +287,7 @@ $(document).ready(function(){
                             </div> 
                                 ';
                             }
-                        ?>
+                        ?> -->
                         <!-- hihihi -->
                         
                         
