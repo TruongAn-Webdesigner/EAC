@@ -377,46 +377,65 @@
     </article>
 
 
-';
+    <?php
+
+foreach( $kh_dg as $kh){
+    $sl_dg=$kh['tong'];
 }
+if($sl_dg==0){
+    echo'
+    <script>
+    document.getElementById("rating").style.display = "block";
+    </script>';
+}
+
 
 ?>
 
 <div class="roww">
-<div class="boxcenter_content">
-    <div class="container">
-            <div class="text_comment">
-                Đánh Giá Địa Điểm
+        <div class="boxcenter_content">
+            <div class="container">
+                    <div class="text_comment">
+                        Đánh Giá Địa Điểm
+                    </div>
+                <div class="star-widget" id="rating">
+                    <form action="index.php?ctrl=wewillgo&act=rating&id_dd=<?php echo"$id_dd"?>" method="POST">
+                        <input type="radio" name="rate" value='5' id="rate-5">
+                        <label for="rate-5" class="fas fa-star"></label>
+                        <input type="radio" name="rate" value='4' id="rate-4">
+                        <label for="rate-4" class="fas fa-star"></label>
+                        <input type="radio" name="rate" value='3' id="rate-3">
+                        <label for="rate-3" class="fas fa-star"></label>
+                        <input type="radio" name="rate" value='2' id="rate-2">
+                        <label for="rate-2" class="fas fa-star"></label>
+                        <input type="radio" name="rate" value='1' id="rate-1">
+                        <label for="rate-1" class="fas fa-star"></label>
+
+                            <div class="content_rt">
+                            <header></header>
+
+                            <br />
+                            <div class="btn">
+                            <button type="submit">Post</button>
+
+                            </div>
+                            </div>
+                            </form>
+                    </div>
 
             </div>
-        <div class="star-widget">
-            <form action="index.php?ctrl=wewillgo&act=rating&id_dd=<?php echo"$id_dd"?>" method="POST">
-                <input type="radio" name="rate" value='5' id="rate-5" >
-                <label for="rate-5" class="fas fa-star"></label>
-                <input type="radio" name="rate" value='4' id="rate-4">
-                <label for="rate-4" class="fas fa-star"></label>
-                <input type="radio" name="rate" value='3' id="rate-3">
-                <label for="rate-3" class="fas fa-star"></label>
-                <input type="radio" name="rate" value='2' id="rate-2">
-                <label for="rate-2" class="fas fa-star"></label>
-                <input type="radio" name="rate" value='1' id="rate-1">
-                <label for="rate-1" class="fas fa-star"></label>
+        </div>
+        </div>
 
-                    <div class="content_rt">
-                    <header></header>
-
-                    <br />
-                    <div class="btn">
-                    <button type="submit">Post</button>
-
-                    </div>
-                    </div>
-                    </form>
-            </div>
-
-    </div>
-</div>
-</div>
+<?php
+    if($sl_dg!=0){
+        echo'
+        <script>
+        document.getElementById("rating").style.display = "none";
+        </script>';
+    }
+?>
+<!--  -->
 
 
     <div class="roww">
