@@ -1,5 +1,4 @@
 <div class="roww">
-
             <div class="boxcenter_content">
 
                 <div class="bg_article">
@@ -80,11 +79,8 @@
                             
                                 '.$tr['noidung3'].'
                             </div>
-                            <div class="fix_contenttip">
-                            <a href="index.php?ctrl=tour&act=insert_editcontentreview&id='.$tr['id_dd'].'">Sửa nội dung</a>
+
                         </div>
-                        </div>
-                        
                                 ';
                             }
                         ?>

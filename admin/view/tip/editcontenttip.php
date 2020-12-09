@@ -2,12 +2,12 @@
         <div class="boxcenter_add">
             <div class="content_form_edit">
                 <div class="left_content_edit">
-                   
-                    <form class="formedit" action="index.php?ctrl=tipnote&act=edit_content_tip&id=<?php echo $id ?>" method='post' enctype="multipart/form-data">
+                    <?php  $idtip = $suanoidung['id_tip']; ?>
+                    <form class="formedit" action="index.php?ctrl=tipnote&act=edit_content_tip&id_tip=<?php echo"$idtip"?>" method='post' enctype="multipart/form-data">
                         
                         <?php
 
-                            $id = $suanoidung['id_tip'];
+                            $id = $suanoidung['id_nd'];
                             $name1= $suanoidung['name_nd1'];
                             $name2= $suanoidung['name_nd2'];
                             $name3= $suanoidung['name_nd3'];

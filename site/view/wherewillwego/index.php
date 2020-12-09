@@ -48,7 +48,7 @@ $(document).ready(function(){
                             <a href="index.php">EAC</a>
                         
                             <a href="index.php?ctrl=wewillgo">where will we go</a>
-                            <a href="index.php?ctrl=content-tip&act=index">Tips</a>
+                            <a href="index.php?ctrl=tip">Tips</a>
                             
                     </div>
                     <div class="menu_link">
