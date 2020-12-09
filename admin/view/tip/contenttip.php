@@ -103,7 +103,7 @@
 
                         </div>
                         <div class="fix_contenttip">
-                        <a href="index.php?ctrl=tipnote&act=insert_editcontenttip&idtip='.$tnd['id_tip'].'">Sửa nội dung</a>
+                        <a href="index.php?ctrl=tipnote&act=insert_editcontenttip&id='.$tnd['id_nd'].'">Sửa nội dung</a>
                       
                         </div>
                     </div>

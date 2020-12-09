@@ -4,7 +4,7 @@ include_once 'model/wherewillwego.php';
 include_once 'model/content.php';
 include_once 'model/booktour.php';
 include_once 'model/login.php';
-include_once 'model/xuly.php';
+// include_once 'model/xuly.php';
 
 $action = 'index';
 if(isset($_GET['act'])){

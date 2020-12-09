@@ -32,23 +32,4 @@
          $sql="delete from diadiem where id_dd='$id'";
        return execute($sql);
     }
-
-    function getReviewNoiDungById($id){
-      $sql="SELECT * FROM `diadiem` WHERE id_dd='$id'";
-    return execute($sql);
- }
-
-
-      function getReviewContentById($id){
-        $sql="SELECT * FROM noidungbocuc WHERE id_dd='$id'";
-        return queryOne($sql);
-      }
-
-      function updateNoiDungReview($id,$noidung1,$noidung2,$noidung3){
-        $sql = "update noidungbocuc set 
-        noidung='$noidung1',noidung2='$noidung2',noidung3='$noidung3'
-        where id_dd='$id'";
-        execute($sql);
-    }
-
 ?>

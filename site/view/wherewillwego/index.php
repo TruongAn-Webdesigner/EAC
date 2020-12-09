@@ -48,7 +48,7 @@ $(document).ready(function(){
                             <a href="index.php">EAC</a>
                         
                             <a href="index.php?ctrl=wewillgo">where will we go</a>
-                            <a href="index.php?ctrl=content-tip&act=index">Tips</a>
+                            <a href="index.php?ctrl=tip">Tips</a>
                             
                     </div>
                     <div class="menu_link">
@@ -550,7 +550,7 @@ $(document).ready(function(){
                         <div id="result"></div> 
                         <!-- cái này hiện mấy cái box địa điểm ra đó nha ai lóp du -->
                    
-                        <?php
+                        <!-- <?php
                             foreach($allPlace as $ap){
                                 echo'
                                 <div class="bg_box_item">
@@ -588,7 +588,7 @@ $(document).ready(function(){
                             </div> 
                                 ';
                             }
-                        ?>
+                        ?> -->
                         <!-- hihihi -->
                         
                         

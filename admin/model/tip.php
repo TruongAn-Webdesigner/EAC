@@ -43,7 +43,7 @@
         function updateNoiDungTip($id,$name_nd1,$name_nd2,$name_nd3,$name_nd4,$noidung1,$noidung2,$noidung3,$noidung4,$noidung5,$noidung6,$noidung7,$noidung8){
           $sql = "update noidungtipnote set name_nd1='$name_nd1',name_nd2='$name_nd2',name_nd3='$name_nd3',name_nd4='$name_nd4',
           noidung1='$noidung1',noidung2='$noidung2',noidung3='$noidung3',noidung4='$noidung4',noidung5='$noidung5',noidung6='$noidung6',noidung7='$noidung7',noidung8='$noidung8'
-          where id_tip='$id'";
+          where id_nd='$id'";
           execute($sql);
       }
 
@@ -66,7 +66,7 @@
         }
 
           function getTipContentById($id){
-            $sql="SELECT * FROM `noidungtipnote` WHERE id_tip='$id'";
+            $sql="SELECT * FROM `noidungtipnote` WHERE id_nd='$id'";
             return queryOne($sql);
           }
     
