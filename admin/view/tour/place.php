@@ -74,6 +74,7 @@ $(document).ready(function(){
                                         }
                                     ?>
                                 </select>
+                                
                                 <div class="btn_place">
                                     <a href="index.php?ctrl=tour&act=add">Add Place </a>
                                 </div>
@@ -89,7 +90,7 @@ $(document).ready(function(){
                                         <tr>
                                             <th scope="col">#</th>
                                             <th scope="col">Tên Địa Điểm</th>
-                                            <th scope="col">rating</th>
+                                            <th scope="col">Rating</th>
                                             <th scope="col">Khu Vực</th>
                                             <th scope="col">Edit</th>
                                             <th scope="col">Del</th>
