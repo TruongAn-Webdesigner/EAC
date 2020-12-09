@@ -19,7 +19,7 @@
                                 <div class="text_logo">
                                     <a href="index.php?ctrl=home&act=index">EAC</a>
                                     <a href="index.php?ctrl=wewillgo&act=index">Where will we go?</a>
-                                    <a href="http://">Tip</a>
+                                    <a href="index.php?ctrl=content-tip&act=index">Tips</a>
                                 </div>
                             </div>
                 
@@ -90,7 +90,7 @@
                             foreach($tip as $tc){
                                 echo'
                         <div class="name_tip">
-                            <h3>Plan(title1)</h3>
+                            <h3>Địa điểm</h3>
                             <div class="text_tip">
                                 <div class="text_tip_content">
                                     <div class="text_title_tip">
@@ -129,7 +129,9 @@
                         </div>
                     </div>
                     <div class="bg_tip_position"></div>
-                    <div class="box_img_tip_right"></div>
+                    <div class="box_img_tip_right">
+                                <img src="img/light.png" alt="">
+                    </div>
                     </div>
                 </div>
                 
@@ -143,7 +145,7 @@
 
 
                         <div class="name_tip">
-                            <h3>belongings (title2)</h3>
+                            <h3></h3>
                             
                             <div class="text_tip3">
                                 <div class="text_tip_content">
@@ -177,7 +179,8 @@
                         </div>
                     </div>
                     <div class="bg_tip_position2"> </div>
-                    <div class="box_img_tip_right"></div>
+                    <div class="box_img_tip_right">
+                    <img src="img/bag.png" alt=""></div>
                     </div>
                 </div>
                 ';
@@ -189,7 +192,7 @@
 
     </article>
 
-<div class="roww">
+<!-- <div class="roww">
     <div class="bg_link_form">
         <div class="bg_text">
             Join with us!
@@ -247,7 +250,7 @@
 
 
     </div>
-</div>
+</div> -->
     <div class="roww">
         <div class="boxcenter_content_tip">
             <div class="box_choose">

@@ -19,7 +19,7 @@
             $tipadminnoidung = getTipNoidungById($id);
             if($tipadminnoidung['trangthai']==0){
                 echo'
-                <script>alert("Bạn chưa nhập cái quần gì cả")</script>'
+                <script>alert("Bạn chưa nhập cái gì cả")</script>'
                 ;
                     
                 include 'view/tip/addcontenttip.php';
@@ -42,7 +42,7 @@
 
         /* sua noi dung tip */
         case'insert_editcontenttip':
-            $id=$_GET['id'];
+            $id=$_GET['idtip'];
             $suanoidung=getTipContentById($id);
             include 'view/tip/editcontenttip.php';
         break;
@@ -62,7 +62,7 @@
             $noidung7=$_POST['name'];
             $noidung8=$_POST['name'];
             updateNoiDungTip($id,$name_nd1,$name_nd2,$name_nd3,$name_nd4,$noidung1,$noidung2,$noidung3,$noidung4,$noidung5,$noidung6,$noidung7,$noidung8);
-            echo'<script>window.location="index.php?ctrl=tipnote&act=noidungtip&id='.$id.'";</script>';
+            echo'<script>window.location="index.php?ctrl=tipnote&act=index";</script>';
         break;
 
         case 'add':

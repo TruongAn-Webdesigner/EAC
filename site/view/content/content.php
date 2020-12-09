@@ -17,9 +17,9 @@
                         <nav class="nav">
                             <div class="bg_logo_content">
                                 <div class="text_logo">
-                                   <a href="index.php?ctrl=home&act=index">EAC</a>
-                                   <a href="index.php?ctrl=wewillgo&act=index">Where will we go?</a>
-                                    <a href="index.php?ctrl=tip&act=index">Tips</a>
+                                    <a href="index.php?ctrl=home&act=index">EAC</a>
+                                    <a href="index.php?ctrl=wewillgo&act=index">Where will we go?</a>
+                                    <a href="index.php?ctrl=content-tip&act=index">Tips</a>
                                 </div>
                             </div>
                         </nav>

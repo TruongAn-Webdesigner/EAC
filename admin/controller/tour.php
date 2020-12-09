@@ -14,6 +14,51 @@
         include 'view/tour/place.php';
         break;
 
+
+    /* phan tip noi dung */
+    case'noidungreview':
+        $id=$_GET['id'];
+        /*bat loi noi dung  */
+        $reviewadminnoidung = getReviewNoidungById($id);
+        if($reviewadminnoidung['trangthai']==0){
+            echo'
+            <script>alert("Bạn chưa nhập cái quần gì cả")</script>'
+            ;
+                
+            include 'view/noidung/addcontentreview.php';
+        }else{
+            $reviewadminnoidung=getReviewContentById($id);
+            include 'view/noidung/index.php';
+    }
+    break;
+
+    /* them noi dung */
+    case'addnoidungtip':
+        $id=$_POST['id'];
+        $name1=$_POST['name'];
+        updateTipTrangThai($id);
+        addContentReview($id,$name1);
+        echo'<script>window.location="index.php?ctrl=tipnote&act=noidungtip&id='.$id.'";</script>';
+    break;
+
+
+
+    /* sua noi dung review */
+    case'insert_editcontentreview':
+        $id=$_GET['id'];
+        $suanoidungreview=getReviewContentById($id);
+        include 'view/noidung/suanoidung.php';
+    break;
+
+    case'edit_content_review':
+        $id=$_POST['id'];
+        $noidung1=$_POST['name'];
+        $noidung2=$_POST['name'];
+        $noidung3=$_POST['name'];
+        updateNoiDungReview($id,$noidung1,$noidung2,$noidung3);
+        echo'<script>window.location="index.php?ctrl=tour&act=index&id='.$id.'";</script>';
+    break;
+
     case 'add':
         $kv=getAllKV();
         include_once 'view/tour/addnewtour.php';
