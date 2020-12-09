@@ -22,6 +22,27 @@
 
                                 </div>
 
+                                    <?php
+
+                                        /**
+                                         *
+                                         * Chuyển đổi chuỗi kí tự thành dạng slug dùng cho việc tạo friendly url.
+                                         *
+                                         * @access    public
+                                         * @param    string
+                                         * @return    string
+                                         */
+                                        if (!function_exists('currency_format')) {
+
+                                            function currency_format($number, $suffix = 'đ') {
+                                                if (!empty($number)) {
+                                                    return number_format($number, 0, ',', ',') . "{$suffix}";
+                                                }
+                                            }
+
+                                        }
+                                     ?>
+
                                 <div class="box_review_statis mr1">
                                     <div class="review_statis_left bggreen">
                                         <i class="fas fa-dollar-sign"></i>
@@ -36,7 +57,7 @@
                                                 foreach ($rv2 as $rv2) {
                                                     $tong+=$rv2['tong'];
                                                 }
-                                                echo'<p>'.$tong.'</p>';
+                                                echo currency_format($tong);
                                             ?>
                                         </div>
                                     </div>
