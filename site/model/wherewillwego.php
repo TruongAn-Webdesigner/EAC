@@ -2,7 +2,7 @@
     include_once('database.php');
 
     function getAllTopFeauture(){
-        $sql="select * from diadiem order by id_dd limit 5";
+        $sql="select * from diadiem order by id_dd limit 6";
         return query($sql);
     }
 
@@ -11,7 +11,15 @@
         return query($sql);
     }
 
+    function getplacebyID_one($id_dd){
+        $sql="select * from diadiem WHERE id_dd = $id_dd ";
+        return queryOne($sql);
+    }
 
+    function update_DD_RT($rt,$id_dd,$sl){
+        $sql = "update diadiem set rating_dd='$rt',sl ='$sl' where id_dd = '$id_dd'";
+        execute($sql);
+    }
 
     
 ?>
