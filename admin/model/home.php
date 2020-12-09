@@ -3,7 +3,7 @@
         include_once('database.php');
 
         function getCountTour(){
-            $sql="SELECT count(*) from tour ";
+            $sql="SELECT count(*) from diadiem ";
             return query($sql);
         }
 
