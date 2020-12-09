@@ -1,5 +1,5 @@
 <?php
-$connect = mysqli_connect("localhost", "root", "", "eac");
+$connect = mysqli_connect("localhost", "root", "", "demo_eac");
 $output = '';
 if(isset($_POST["query"]))
 {
@@ -90,7 +90,7 @@ if(mysqli_num_rows($result) > 0)
   
         <div class="title_view_item">
             <div class="rating_item">
-                rating:   '.$ap['rating'].'
+                rating:   '.$ap['rating_dd'].'
             
             </div>
         </div>
