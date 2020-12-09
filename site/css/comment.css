@@ -1,0 +1,27 @@
+.box_comment{
+    margin-top: 10vh;
+    width: 100%;
+    height: 50vh;
+    background-color: tomato;
+}
+
+.title_comment{
+    width: 100%;
+    height: 20%;
+    background-color: aqua;
+}
+.text_comment{
+    font-size: 1.5vw;
+}
+
+.line_comment{
+    width: 10%;
+    height: 2px;
+    background-color: black;
+}
+
+.form_comment{
+    width: 100%;
+    height: 20%;
+    background-color:azure
+}
