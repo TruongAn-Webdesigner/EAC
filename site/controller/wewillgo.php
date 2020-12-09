@@ -64,8 +64,9 @@ switch($action){
     update_DD_RT($rt,$id_dd,$sl);
 
     $topFeautureById=getAllTopFeautureById($id_dd);
-    include 'view/content/content.php';
-    break;
+    $kh_dg=getKH_DG($id_kh,$id_dd);
+    header('location:index.php?ctrl=wewillgo&act=content&idcontent='.$id_dd.'');
+    break; 
 
 }
 
