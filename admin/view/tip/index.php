@@ -1,4 +1,4 @@
-<!-- 
+<!--
 <h2>TIPS NOTE</h2>
 <div class="boxadd">
     <form action="">
@@ -24,9 +24,9 @@
 
                         <div class="text_view_place">
                             <span>Địa Điểm</span> <br>
-                            Danh Sách Các Địa Điểm 
+                            Danh Sách Các Địa Điểm
                         </div>
-                        
+
                         <div class="btn_tip">
                                 <div class="btn_place ">
                                     <a href="index.php?ctrl=tipnote&act=add">Add Place </a>
@@ -56,24 +56,24 @@
                                                 echo'
                                                     <tr>
                                                         <td scope="row">'.$dd['id_tip'].'</td>
-                                                        <td><a href="index.php?ctrl=tipnote&act=noidungtip&id='.$dd['id_tip'].'">'.$dd['name_tip'].'</a> </td>
-                             
+                                                        <td><a href="index.php?ctrl=tipnote&act=noidungtip&id='.$dd['id_tip'].'" class="nametip">'.$dd['name_tip'].'</a> </td>
+
                                                         <td><button type="button" class="btn btn-outline-success"><a href="index.php?ctrl=tipnote&act=edit&id='.$dd['id_tip'].'">Edit</a></button></td>
                                                         <td><button type="button" class="btn btn-outline-danger"><a href="index.php?ctrl=tipnote&act=del&id='.$dd['id_tip'].'">Del</a></button></td>
                                                     </tr>
-   
+
                                                 ';
                                             }
 
                                         ?>
-                                       
+
                                      </tbody>
                                 </table>
                             </div>
                         </div>
                     </div>
 
-               
+
         </div>
     </div>
 </div>
