@@ -15,9 +15,10 @@
         case 'index':
         $id=$_GET['id'];
         $dd = getDDID($id);
+
         if($dd['trangthai'] == 0 ){
-            echo'<script>alert("Bạn Chưa Thêm Nội Dung Cho Địa Điểm Vui Lòng Thêm Nội Dung")</script>';
-            include 'view/noidung/add.php';
+            echo'alert("Bạn Chưa ")';
+            echo'<script>window.location="index.php?ctrl=noidung&act=add";</script>';
         }else{
             $topFeautureById=getAllTopFeautureById($id);
             include 'view/noidung/index.php';
