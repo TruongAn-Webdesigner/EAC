@@ -7,7 +7,6 @@
                         <?php
                             foreach($topFeautureById as $tr){
 
-                                if($tr['TrangThai']==1){
                                    
                                 
                                 echo'
@@ -87,10 +86,7 @@
                         </div>
                                 ';
                            
-                            }else{
-                                echo'<script>alert("Địa Điểm Chưa Có Nội Dung Xin Mời Nhập Nội Dung")</script>';
                             }
-                        }
                         ?>
 
                 </div>
