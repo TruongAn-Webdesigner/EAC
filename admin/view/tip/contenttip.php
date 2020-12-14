@@ -2,7 +2,7 @@
 
 
    <?php 
-                               foreach($tipnoidungadmin as $tnd){
+        foreach($tipnoidungadmin as $tnd){
                                    
                                 echo'
     <article>
