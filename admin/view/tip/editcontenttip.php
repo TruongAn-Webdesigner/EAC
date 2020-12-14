@@ -20,6 +20,8 @@
                             $tipnotefix2=$suanoidung['noidung4'];
                             $tipnotefix3=$suanoidung['noidung6'];
                             $tipnotefix4=$suanoidung['noidung8'];
+                            
+
                         ?>
 
                             <h1> Sửa nội dung</h1>
@@ -32,65 +34,65 @@
 
                             <div class="form_content">
                                 <label for="">Tên nội dung 1</label>
-                                <input type="text" name='name' value="<?php echo"$name1"?>">
+                                <input type="text" name='namend1' value="<?php echo"$name1"?>">
                             </div>
 
                             <label for="">Đoạn 1</label>
                             <div class="form_content">
-                                <textarea name="name" id="" cols="120" rows="10" value=""><?php echo"$nd1"?></textarea>
+                                <textarea name="content1" id="" cols="120" rows="10" value=""><?php echo"$nd1"?></textarea>
                             </div>
 
                             <label for="">Tip note 1</label>
                             <div class="form_content">
-                                <textarea name="name" id="" cols="120" rows="10" value=""><?php echo"$tipnotefix1"?></textarea>
+                                <textarea name="tip2" id="" cols="120" rows="10" value=""><?php echo"$tipnotefix1"?></textarea>
                             </div>
 
 
                             <div class="form_content">
                                 <label for="">Tên nội dung 2</label>
-                                <input type="text" name='name' value="<?php echo"$name2"?>">
+                                <input type="text" name='namend2' value="<?php echo"$name2"?>">
                             </div>
 
                             <label for="">Đoạn 2</label>
                             <div class="form_content">
-                                <textarea name="name" id="" cols="120" rows="10" value=""><?php echo"$nd2"?></textarea>
+                                <textarea name="content3" id="" cols="120" rows="10" value=""><?php echo"$nd2"?></textarea>
                             </div>
 
                             <label for="">Tip note 2</label>
                             <div class="form_content">
-                                <textarea name="name" id="" cols="120" rows="10" value=""><?php echo"$tipnotefix2"?></textarea>
+                                <textarea name="tip4" id="" cols="120" rows="10" value=""><?php echo"$tipnotefix2"?></textarea>
                             </div>
 
 
                             <div class="form_content">
                                 <label for="">Tên nội dung 3</label>
-                                <input type="text" name='name' value="<?php echo"$name3"?>">
+                                <input type="text" name='namend3' value="<?php echo"$name3"?>">
                             </div>
 
                             <label for="">Đoạn 3</label>
                             <div class="form_content">
-                                <textarea name="name" id="" cols="120" rows="10" value=""><?php echo"$nd3"?></textarea>
+                                <textarea name="content5" id="" cols="120" rows="10" value=""><?php echo"$nd3"?></textarea>
                             </div>
 
                             <label for="">Tip note 3</label>
                             <div class="form_content">
-                                <textarea name="name" id="" cols="120" rows="10" value=""><?php echo" $tipnotefix3"?></textarea>
+                                <textarea name="tip6" id="" cols="120" rows="10" value=""><?php echo" $tipnotefix3"?></textarea>
                             </div>
 
 
                             <div class="form_content">
                                 <label for="">Tên nội dung 4</label>
-                                <input type="text" name='name' value="<?php echo"$name3"?>">
+                                <input type="text" name='namend4' value="<?php echo"$name3"?>">
                             </div>
 
                             <label for="">Đoạn 4</label>
                             <div class="form_content">
-                                <textarea name="name" id="" cols="120" rows="10" value=""><?php echo"$nd4"?></textarea>
+                                <textarea name="content7" id="" cols="120" rows="10" value=""><?php echo"$nd4"?></textarea>
                             </div>
 
                             <label for="">Tip note 4</label>
                             <div class="form_content">
-                                <textarea name="name" id="" cols="120" rows="10" value=""><?php echo"$tipnotefix4"?></textarea>
+                                <textarea name="tip8" id="" cols="120" rows="10" value=""><?php echo"$tipnotefix4"?></textarea>
                             </div>
 
                             <div class="file_edittip">
