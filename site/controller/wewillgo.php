@@ -19,14 +19,17 @@ switch($action){
     break;
 
     case 'content':
-
-    $id=$_GET['idcontent'];
-    $topFeautureById=getAllTopFeautureById($id);
-    $email_kh=$_SESSION['user'];/* lấy email của khách hàng */
-    $khachhang=getkh_id($email_kh); /* từ email để truy cập vào database lấy thông ti của khách hàng */
-    $id_kh=$khachhang['id_kh'];/* lấy id khách hàng */
-    $kh_dg=getKH_DG($id_kh,$id);
-    include 'view/content/content.php';
+        $id=$_GET['idcontent'];
+        $topFeautureById=getAllTopFeautureById($id);
+        if(isset($_SESSION['user'])){
+        $email_kh=$_SESSION['user']; /* lấy email của khách hàng */
+        $khachhang=getkh_id($email_kh);  /* từ email để truy cập vào database lấy thông ti của khách hàng */
+        $id_kh=$khachhang['id_kh']; /* lấy id khách hàng */
+        $kh_dg=getKH_DG($id_kh,$id);
+        } 
+        $cm=getCM_By_ID_DD($id); 
+        include 'view/content/content.php';
+        break;
 
 
     break;
