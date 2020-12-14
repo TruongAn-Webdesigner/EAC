@@ -58,7 +58,6 @@
             updateNDTour($id,$noidung1,$noidung2,$noidung3);/* ko co hinh */
        }
       
-        ($id,$nd1,$nd2,$nd3,$img1,$img2);
         echo'<script>window.location="index.php?ctrl=tour&act=addcontenttour&id='.$id.'";</script>';
     break;
 
