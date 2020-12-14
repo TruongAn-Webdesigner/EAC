@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 
-.container{
+.container_post{
   width: 100%;
   /* background: #111; */
   padding: 20px 30px;
@@ -12,12 +12,12 @@
   margin-top: 50px;
 }
 
-.container .text{
+.container_post .text{
   font-size: 25px;
   color: #666;
   font-weight: 500;
 }
-.container .star-widget input{
+.container_post .star-widget input{
   display: none;
 }
 .star-widget label{
@@ -54,7 +54,7 @@ input#rate-5:checked ~ label{
   content: "I just love it 😍";
 }
 
-.container .content_rt {
+.container_post .content_rt {
   display: none;
 }
 input:checked ~ .content_rt {
