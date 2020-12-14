@@ -69,7 +69,7 @@ switch($action){
 
     $topFeautureById=getAllTopFeautureById($id_dd);
     $kh_dg=getKH_DG($id_kh,$id_dd);
-    header('location:index.php?ctrl=wewillgo&act=content&idcontent='.$id_dd.'');
+    header('location:view/login/login.php');
     break; 
 
 }
