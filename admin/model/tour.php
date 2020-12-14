@@ -7,13 +7,56 @@
             return query($sql);
         }
 
+        /* lay noi dung */
+        function getTourById($id){
+          $sql="SELECT * FROM noidungbocuc inner JOIN diadiem on diadiem.id_dd = noidungbocuc.id_dd where noidungbocuc.id_dd='$id'";
+          return query($sql);
+      }
+
+      function getTrangThaiDD($id){
+        $sql="SELECT * FROM `diadiem` WHERE id_dd='$id'";
+        return queryOne($sql);
+      }
+
+      /* them noi dung tour*/
+      function addContentTour($id,$noidung1,$noidung2,$noidung3,$img1,$img2,$imgfood1,$imgfood2,$imgfood3){
+        $sql="INSERT INTO `noidungbocuc` (`noidung`, `noidung2`, `noidung3`, `img_noidung1`, `img_noidung2`, `img_right1`, `img_right2`, `img_food1`, `img_food2`, `img_food3`, `ngaydang`, `rating`, `id_dd`, `trangthai`) 
+        VALUES ('$noidung1', '$noidung2', '$noidung3', '$img1', '$img2', '$imgfood1', '$imgfood2', '$imgfood3', '$imgright1', '$imgright2', '2020-12-16', '5', '19', '0');";
+        execute($sql);
+      }
+
+      /* lay noi dung de sua */
+      function getNoiDungDD($id){
+        $sql="SELECT * FROM `noidungbocuc` WHERE id_dd='$id'";
+        return queryOne($sql);
+      }
+
+      /* sql sua noi dung */
+      function updateNoiDungTour($id,$noidung1,$noidung2,$noidung3,$img1,$img2,$imgfood1,$imgfood2,$imgfood3){
+        $sql = "update noidungbocuc set noidung='$noidung1',img_noidung1='$img1',img_noidung2='$img2',noidung2='$noidung2',noidung3='$noidung3',
+        img_food1='$imgfood1',img_food2='$imgfood2',img_food3='$imgfood3' where id_dd='$id'";
+        execute($sql);
+    }
+    /* sua noi dung ko co hinh */
+    function updateNDTour($id,$noidung1,$noidung2,$noidung3){
+      $sql = "update noidungbocuc set noidung='$noidung1',noidung2='$noidung2',noidung3='$noidung3' where id_dd='$id'";
+      execute($sql);
+    }
+      /* update trang thai */
+      function updateDiaDiemTrangThai($id){
+        $sql = "update diadiem set trangthai=1 where id_dd='$id'";
+        execute($sql);
+    }
+
+    /*  */
+
 
         function addTour($name,$id_kv,$img){
           $sql="INSERT INTO  diadiem ( name_dd,id_kv ,img_dd,trangthai) VALUES ('$name','$id_kv','$img',0)";
           return execute($sql);
         }
 
-        function getDDID($id){
+        function getddID($id){
           $sql="SELECT * FROM `diadiem` WHERE id_dd='$id'";
           return queryOne($sql);
       }
