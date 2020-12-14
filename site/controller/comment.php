@@ -38,7 +38,6 @@ include_once 'model/xuly.php';
                 $cm=getCM_By_ID_DD($id); 
                 header('location:index.php?ctrl=wewillgo&act=content&idcontent='.$id.'');
             }else{
-                echo'<script>alert("Bạn Chưa Đăng nhập vào EAC vui Lòng Đăng Nhập Để Bình Luận");</script>';
                 header('location:view/login/login.php');
             }
             break;
