@@ -25,7 +25,7 @@
         }
         /* phan them noi dung tip */
         function getTipNoidungById($id){
-          $sql="SELECT * FROM `tip_note` WHERE id_tip='$id'";
+          $sql="SELECT * FROM tip_note WHERE id_tip='$id'";
           return queryOne($sql);
       }
 
