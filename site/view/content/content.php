@@ -379,14 +379,13 @@
 
     <?php
 
-foreach( $kh_dg as $kh){
-    $sl_dg=$kh['tong'];
-}
-if($sl_dg==0){
-    echo'
-    <script>
-    document.getElementById("rating").style.display = "block";
-    </script>';
+if(isset($_SESSION['user'])){
+    foreach( $kh_dg as $kh){
+        $sl_dg=$kh['tong'];
+    }
+    var_dump($sl_dg);
+
+
 }
 
 
@@ -428,12 +427,22 @@ if($sl_dg==0){
         </div>
 
 <?php
+
+if(isset($_SESSION['user'])){
+    if($sl_dg==0){
+        echo'
+        <script>
+        document.getElementById("rating").style.display = "block";
+        </script>';
+    }
+    
     if($sl_dg!=0){
         echo'
         <script>
         document.getElementById("rating").style.display = "none";
         </script>';
     }
+}
 ?>
 <!--  -->
 
@@ -517,7 +526,7 @@ if($sl_dg==0){
     </div>
 
 
-    <div class="roww">
+    <div class="roww" id='comment'>
         <div class="boxcenter_content">
             <div class="box_comment">
 
@@ -529,14 +538,53 @@ if($sl_dg==0){
 
                     </div>
                </div>
+            </div>
+    </div>
 
-                <div class="form_comment">
+    <div class="roww">
+        <div class="boxcenter_content">
+             <div class="form_comment">
+                <form action="index.php?ctrl=comment&act=add&idcontent=<?php echo"$id_dd"?>#comment" method="POST">
+                    <input type="text" name='noidung' placeholder='Hãy cho chúng tôi biết cảm nhận của bạn về địa điểm ?';>
+                    <button type="submit">Post</button>
+                </form>
+            </div>
+        </div>
+    </div>
+                
+    <div class="roww">
+        <div class="boxcenter_content">
+            <div class="content_comment">
 
-                </div>
+                <div class="box_content_cm">
+
+                <?php
+                    foreach($cm as $cm){
+                        echo'
+                        <div class="title_box_cm">
+                        <span>'.$cm['name_kh'].'</span>
+                        <br>
+                        Ngày Bình Luận: '.$cm['ngay_cm'].'
+
+                        <div class="line_comment">
+
+                        </div>
+                    </div>
+
+                    <div class="text_box_cm">
+                    '.$cm['noidung_cm'].'
+                    </div>  
+                        ';
+                    }
+                ?>
+                </div>  
 
             </div>
         </div>
     </div>
+
+
+
 
 
 </body>
