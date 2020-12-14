@@ -75,8 +75,8 @@
 
 					<div class="container-login100-form-btn m-t-32">
 
-						<button class="login100-form-btn"type="submit" name="DangNhap"> Login</button>
-
+						<button class="login100-form-btn" type="submit" name="DangNhap"> Login</button>
+						<a class="login100-form-btn" href="dangky.php">Đăng ký</a>
 
 
 					</div>
