@@ -17,7 +17,7 @@
 
                             <div class="form_content">
                                 <label for="">Tên nội dung 1</label>
-                                <input type="text" name='name' >
+                                <input type="text" name='name1' >
                             </div>
 
 
