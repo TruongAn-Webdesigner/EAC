@@ -40,9 +40,9 @@
             execute($sql);
           }
         /* phan update noi dung tip */
-        function updateNoiDungTip($id,$name_nd1,$name_nd2,$name_nd3,$name_nd4,$noidung1,$noidung2,$noidung3,$noidung4,$noidung5,$noidung6,$noidung7,$noidung8){
+        function updateNoiDungTip($id,$name_nd1,$name_nd2,$name_nd3,$name_nd4,$noidung1,$noidung3,$noidung5,$noidung7,$tip2,$tip4,$tip6,$tip8){
           $sql = "update noidungtipnote set name_nd1='$name_nd1',name_nd2='$name_nd2',name_nd3='$name_nd3',name_nd4='$name_nd4',
-          noidung1='$noidung1',noidung2='$noidung2',noidung3='$noidung3',noidung4='$noidung4',noidung5='$noidung5',noidung6='$noidung6',noidung7='$noidung7',noidung8='$noidung8'
+          noidung1='$noidung1',noidung2='$tip2',noidung3='$noidung3',noidung4='$tip4',noidung5='$noidung5',noidung6='$tip6',noidung7='$noidung7',noidung8='$tip8'
           where id_nd='$id'";
           execute($sql);
       }
