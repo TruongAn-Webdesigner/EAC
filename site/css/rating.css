@@ -12,6 +12,10 @@
   margin-top: 50px;
 }
 
+#rating{
+  display: none;
+}
+
 .container_post .text{
   font-size: 25px;
   color: #666;
