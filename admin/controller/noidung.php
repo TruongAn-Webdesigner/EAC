@@ -19,12 +19,12 @@
             echo'<script>alert("Bạn Chưa Thêm Nội Dung Cho Địa Điểm Vui Lòng Thêm Nội Dung")</script>';
             include 'view/noidung/add.php';
         }else{
-            $topFeautureById=getAllTopFeautureById($id);
+            $tourCoNoiDung=getTourById($id);
             include 'view/noidung/index.php';
         } 
         
         break;
-
+        
         case 'add':
         include 'view/noidung/add.php';
     }
