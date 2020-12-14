@@ -19,7 +19,7 @@
             $tipadminnoidung = getTipNoidungById($id);
             if($tipadminnoidung['trangthai']==0){
                 echo'
-                <script>alert("Bạn chưa nhập cái quần gì cả")</script>'
+                <script>alert("Bạn chưa có nội dung gì cả")</script>'
                 ;
                     
                 include 'view/tip/addcontenttip.php';
@@ -32,7 +32,7 @@
         /* them noi dung */
         case'addnoidungtip':
             $id=$_POST['id'];
-            $name1=$_POST['name'];
+            $name1=$_POST['name1'];
             updateTipTrangThai($id);
             addContentTip($id,$name1);
             echo'<script>window.location="index.php?ctrl=tipnote&act=noidungtip&id='.$id.'";</script>';
@@ -49,19 +49,19 @@
 
         case'edit_content_tip':
             $id=$_POST['id'];
-            $name_nd1=$_POST['name'];
-            $name_nd2=$_POST['name'];
-            $name_nd3=$_POST['name'];
-            $name_nd4=$_POST['name'];
-            $noidung1=$_POST['name'];
-            $noidung2=$_POST['name'];
-            $noidung3=$_POST['name'];
-            $noidung4=$_POST['name'];
-            $noidung5=$_POST['name'];
-            $noidung6=$_POST['name'];
-            $noidung7=$_POST['name'];
-            $noidung8=$_POST['name'];
-            updateNoiDungTip($id,$name_nd1,$name_nd2,$name_nd3,$name_nd4,$noidung1,$noidung2,$noidung3,$noidung4,$noidung5,$noidung6,$noidung7,$noidung8);
+            $name_nd1=$_POST['namend1'];
+            $name_nd2=$_POST['namend2'];
+            $name_nd3=$_POST['namend3'];
+            $name_nd4=$_POST['namend4'];
+            $noidung1=$_POST['content1'];
+            $noidung3=$_POST['content3'];
+            $noidung5=$_POST['content5'];
+            $noidung7=$_POST['content7'];
+            $tip2=$_POST['tip2'];
+            $tip4=$_POST['tip4'];
+            $tip6=$_POST['tip6'];
+            $tip8=$_POST['tip8'];
+            updateNoiDungTip($id,$name_nd1,$name_nd2,$name_nd3,$name_nd4,$noidung1,$noidung3,$noidung5,$noidung7,$tip2,$tip4,$tip6,$tip8);
             echo'<script>window.location="index.php?ctrl=tipnote&act=noidungtip&id='.$id.'";</script>';
         break;
 
@@ -132,17 +132,17 @@
             <script type="text/javascript">
                 swal({
                 title: "Error!",
-                text: "Không xóa được vì tồn tại khách hàng.",
+                text: "Không xóa được vì tồn tại nội dung.",
                 type: "error",
-                timer: 5000,
+                timer: 100000,
                 showConfirmButton: true
                 }, function(){
-                window.location.href = "index.php?ctrl=tipnote";
+                window.location.href = "index.php?ctrl=tipnote&act=index";
                 });
                 </script>';
             }
-            $tip = getAllTip();
-            include 'view/tip/index.php';
+            
+            /* include 'view/tip/index.php'; */
 
             
     }
