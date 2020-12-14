@@ -162,7 +162,7 @@
                                             <div class="box_img_food1">
                                                 <div class="bg_position_img_food"></div>
                                                 <div class="bg_img_food">
-                                                    <img src="img/tomhum.png" alt="">
+                                                    <img src="img/'.$tr['img_food1'].'" alt="">
                                                 </div>
                                             </div>
                                             <div class="text_food1">
@@ -183,7 +183,7 @@
                                         <div class="box_img_food2">
                                             <div class="bg_position_img_food"></div>
                                                     <div class="bg_img_food">
-                                                        <img src="img/tomhum.png" alt="">
+                                                        <img src="img/'.$tr['img_food2'].'" alt="">
                                                     </div>
                                             </div>
                                         <div class="text_food2">
@@ -202,7 +202,7 @@
                                     <div class="box_img_food3">
                                         <div class="bg_position_img_food"></div>
                                                     <div class="bg_img_food">
-                                                        <img src="img/tomhum.png" alt="">
+                                                        <img src="img/'.$tr['img_food3'].'" alt="">
                                                     </div>
                                         </div>
                                     <div class="text_food3">
@@ -394,7 +394,7 @@ if($sl_dg==0){
 
 <div class="roww">
         <div class="boxcenter_content">
-            <div class="container">
+            <div class="container_post">
                     <div class="text_comment">
                         Đánh Giá Địa Điểm
                     </div>
