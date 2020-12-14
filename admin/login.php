@@ -35,7 +35,7 @@
 <body>
 <?php
             session_start();
-            $db = new PDO("mysql:host=localhost;dbname=eac1",'root','');
+            $db = new PDO("mysql:host=localhost;dbname=eac2",'root','');
             if(isset($_POST['DangNhap'])){
                 $user=$_POST['username'];
                 $pass=$_POST['password'];
@@ -76,7 +76,8 @@
 					<div class="container-login100-form-btn m-t-32">
 					
 						<button class="login100-form-btn"type="submit" name="DangNhap"> Login</button>
-				
+						<a class="login100-form-btn" href="dangkyadmin.php">Đăng ký</a>
+
 					
 
 					</div>
