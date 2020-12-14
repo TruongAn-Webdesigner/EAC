@@ -25,6 +25,9 @@
             include 'view/content/content-tip.php';
         break;
 
+        case 'dangky':
+            include 'view/login/dangky.php';
+        break;
             
 
     }
