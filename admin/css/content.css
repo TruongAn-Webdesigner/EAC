@@ -30,7 +30,7 @@ body{
 }
 
 .bg_logo_content{
-    width: 10%;
+    width: 100%;
     height: 100%;
     float: left;
 }
@@ -40,8 +40,9 @@ body{
 }
 
 .text_logo a{
-    color: gray;
-
+        color: gray;
+        padding: 0px 27px;
+        font-family: 'Signika', sans-serif;
 }
 
 .text_logo a:hover{
@@ -203,6 +204,7 @@ h5{
     width: 95%;
     text-align: justify;
     font-size: 1.5vw;
+    font-weight: bold;
     margin: 0 auto;
     font-family: 'Dancing Script', cursive;
 }
@@ -238,6 +240,125 @@ h5{
     margin: 0 auto;
 }
 
+.big_box_img_content_food{
+    width: 60%;
+    min-height: 135vh;
+    margin: 0 auto;
+   /*  background-color: brown; */
+}
+
+.box_content_food_all1{
+    width: 100%;
+    min-height: 40vh;
+    margin: 20px auto;
+    /* background-color: cornflowerblue; */
+}
+
+.text_content_food_all2{
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.text_style_1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 2vw;
+}
+.text_style_2{
+    font-family: 'Lobster', cursive;
+    font-size: 3vw;
+}
+.box_img_food1{
+    float: left;
+    width: 50%;
+    min-height: 40vh;  
+    position: relative;
+}
+
+.bg_position_img_food{
+    width: 45%;
+    height: 20vh;
+    border-radius: 50%;
+    margin: 48px 85px;
+    background-color: rgba(212, 212, 212, 0.637);
+    position: absolute;
+    z-index: -1;
+}
+
+
+.bg_img_food{
+    width: 65%;
+    height: 40vh;
+    margin: 0 auto;
+}
+
+.box_img_food1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.text_food1{
+    float: right;
+    width: 40%;
+    min-height: 40vh;
+    background-color: rgb(240, 240, 240);
+    font-size: 2vw;
+}
+
+.small_content_food_all{
+    font-size: 1.1vw;
+    text-align: justify;
+    margin-top: 2vh;
+}
+
+.box_img_food2{
+    float: right;
+    width: 50%;
+    min-height: 40vh; 
+    position: relative;
+}
+
+.text_food2{
+    float: left;
+    width: 40%;
+    min-height: 40vh;
+    background-color: rgb(240, 240, 240);
+    font-size: 2vw;
+}
+
+.box_img_food2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+.box_img_food3{
+    float:left;
+    width: 50%;
+    min-height: 40vh;
+    position: relative; 
+}
+
+.box_img_food3 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.text_food3{
+    float: right;
+    width: 40%;
+    min-height: 40vh;
+    background-color: rgb(240, 240, 240);
+    font-size: 2vw;
+}
+
+
 
 
 /* .box_text_content0{
@@ -260,9 +381,9 @@ h5{
 
 
 .box_img_content{
-    margin: 4% 0;
-    width: 100%;
-    height: 70vh;
+    margin: 4% auto;
+    width: 85%;
+    height: 65vh;
     /* background-color: burlywood; */
 
 }
@@ -348,7 +469,7 @@ h5{
     letter-spacing: 4px;
     text-decoration: none;
     font-size: 28px;
-    background-image: linear-gradient(to left,rgba(253, 208, 208, 0.774),rgb(253, 228, 228));
+    background-image: linear-gradient(to left,rgba(236, 155, 155, 0.774),rgb(253, 228, 228));
     border: none;
 }
 
@@ -429,14 +550,14 @@ h5{
     color: white;
     transition: all 0.5s;
     cursor: pointer;
-    background-image: linear-gradient(to right,rgba(253, 208, 208, 0.774),rgb(253, 228, 228));
+    background-image: linear-gradient(to right,rgba(216, 110, 110, 0.774),rgb(253, 228, 228));
 }
 
 /* choose */
 .box_choose{
     margin-top: 15vh;
     width: 100%;
-    height: 45vh;
+    min-height: 45vh;
     position: relative;
     z-index: 3;
     /* background-color: green; */
@@ -459,7 +580,7 @@ h5{
     justify-content: center;
     align-items: center;
     width: 60%;
-    height: 300px;
+    min-height: 45vh;
     margin: 0 auto;
 }
 
@@ -489,7 +610,7 @@ h5{
 ;
 }
 
-.box_choose_content .text_title_choose{
+.box_choose_infor .text_title_choose{
     font-size:1.5vw;
     font-weight: bold;
     text-align: center;
@@ -517,7 +638,7 @@ h5{
 
 .box_infor{
     width: calc(90%/3);
-    height: 100%;
+    height: 45vh;
     background-color: white;
     border: 4px solid rgba(255, 146, 146, 0.192);
     position: relative;
@@ -563,24 +684,6 @@ h5{
 }
 
 
-/* comment */
-
-.box_comment{
-    margin-top: 10vh;
-    width: 100%;
-    height: 50vh;
-/*     background-color: tomato; */
-}
-
-.text_comment{
-    font-size: 1.5vw;
-}
-
-.line_comment{
-    width: 10%;
-    height: 2px;
-    background-color: black;
-}
 
 /* The Modal (background) */
 .modal {
@@ -638,17 +741,27 @@ h5{
 
   /* phan form dang ky gat hang */
   /* phan css pay nam cung voi phan .bg-buy-add */
+  h1{
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 0.2;
+}
 input[type=text], input[type=password],input[type=tel], input[type=number] {
     width: 100%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
+    padding: 10px;
+    margin: 2px 0 15px 0;
     display: inline-block;
     border: none;
+    border-bottom: rgb(211, 211, 211) solid 2px;
   }
   
   input[type=text]:focus, input[type=password]:focus,input[type=tel]:focus, input[type=number]:focus {
+    background-color: #ddd;
     outline: none;
-    border-bottom: 3px black solid;
+  }
+
+  .input_bg input[type=text]{
+      background: rgb(202, 202, 202);
   }
   
   hr {
@@ -701,5 +814,244 @@ input[type=text], input[type=password],input[type=tel], input[type=number] {
     content: "";
     clear: both;
     display: table;
+  }
+
+  .bg_book_tour{
+      width: 90%;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .bg_logo_content {
+        width: 100%;
+        height: 100%;
+        float: left;
+    }
+
+    .text_logo {
+        font-size: 3.5vw;
+    }
+
+    .text_logo a{
+        padding: 0 3%;
+    }
+
+    .img_content_header > img {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* phan noi dung */
+    .title_content {
+        font-size: 6vw;
+    }
+
+    .box_position_content1 {
+        width: 35%;
+        height: 40vh;
+        left: -6vh;
+        top: 0vh;
+    }
+
+    .border_box{
+        margin: unset;
+        border: unset;
+        padding: unset;
+    }
+/* phan text sau ten noi dung vd ba na hills */
+
+.box_content_article {
+    width: 100%;
+}
+.box_text_content0 {
+    width: 100%;
+    min-height: 30vh;
+}
+
+
+.box_text0 {
+    font-size: 4.5vw;
+}
+/* phan slick hinh */
+.box_img_article {
+    width: 100%;
+}
+
+/* phan about */
+    h3{
+        font-size: 5.5vw;
+    }
+
+    h5{
+        width: 30%;
+        font-size: 4.5vw;
+    }
+
+    .box_text_content2 {
+        width: 100%;
+        font-size: 4vw;
+        
+    }
+
+    .box_text_content3 {
+        font-size: 4.5vw;
+        width: 100%;
+    }
+    /* phan hinh noi dung */
+    .big_box_img_content {
+        width: 100%;
+    }
+    .box_img_content {
+        width: 100%;
+        height: 40vh;
+    }
+
+
+
+    /* phan food */
+    .big_box_img_content_food {
+        width: 100%;
+    }
+
+    .bg_img_food {
+        width: 100%;
+    }
+    .bg_position_img_food {
+        width: 86%;
+        height: 20vh;
+        margin: 50px 8px;
+    }
+
+    /* phan noi dung food */
+    .text_food1 {
+        width: 50%;
+        min-height: 40vh;
+    }
+
+    .text_style_1 {
+        font-size: 6vw;
+    }
+
+    .text_style_2 {
+        font-size: 7vw;
+    }
+
+    .small_content_food_all {
+        font-size: 4vw;
+    }
+
+    .text_food2 {
+        width: 50%;
+    }
+
+    .text_food3 {
+        width: 50%;
+    }
+
+    /* phan nut sign tour*/
+
+    .bg_link_form {
+        height: 10vh;
+    }
+
+    .bg_text{
+        display: none;
+    }
+
+    .box_hover_a #myBtn {
+        font-size: 10px;
+        margin-top: 2.5vh;
+    }
+
+    /* phan form book sign */
+    .modal-content {
+        width: 85%;
+        height: 85%;
+    }
+    /* phan button trong book tour */
+    .clearfix {
+        width: 100%;
+    }
+
+    .clearfix .button {
+        width: 49%;
+    }
+
+    input[type=text], input[type=password], input[type=tel], input[type=number] {
+        padding: 10px;
+    }
+
+    .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+        font-size: 3vw;
+    }
+
+    /* phan choose */
+    .box_choose {
+        width: 100%;
+        min-height: 45vh;
+    }
+
+    .box_choose_content {
+        display: block;
+        width: 100%;
+        min-height:45vh ;
+    }
+
+    .box_infor{
+        width: 100%;
+        height: 20vh;
+    }
+
+    .mt1{
+        margin:8% 0%;
+    }
+    .box_choose_infor{
+        width: 90%;
+        min-height: 10vh;
+        margin: 0 auto;
+        padding: 12px;
+        
+    }
+
+    .box_choose_infor .text_title_choose {
+        font-size: 5.5vw;
+        margin: unset;
+        text-align: unset;
+    }
+    .line_title_choose {
+        text-align: unset;
+        margin: unset;
+    }
+
+    .box_text_choose{
+        margin: unset;
+        font-size: 3vw;
+    }
+
+    .text_choose {
+        font-size: 5.5vw;
+    }
+
+    .bg_position_content4{
+        display: none;
+    }
+    .bg_position_content3{
+        display: none;
+    }
+
+
+    .icon_title_choose {
+        font-size: 6vw;
+        top: -20px;
+        left: -12px;
+    }
+
+    .icon_title_choose i {
+        line-height: 40px;
+        height: 40px;
+        width: 40px;
+    }
+
+    
+
   }
 
