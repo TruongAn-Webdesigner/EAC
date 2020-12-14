@@ -14,10 +14,100 @@
         include 'view/tour/place.php';
         break;
 
+
+        /* thêm nội dung tour */
+
+    case 'addcontenttour':
+        $id=$_GET['id'];
+        $tournoidung=getTrangThaiDD($id);
+        if($tournoidung['trangthai']==0){
+            echo' <script>alert("Bạn chưa có nội dung hiển thị")</script>';
+            include 'view/tour/addcontenttour.php';
+        }else{
+            $tourCoNoiDung=getTourById($id);
+            include 'view/tour/index.php';
+        }  
+    break;
+
+    /* act them noi dung */
+    case'addnoidungtour':
+        $id=$_POST['id'];
+        $noidung1=$_POST['name1'];
+        $noidung2=$_POST['name2'];
+        $noidung3=$_POST['name3'];
+        $img1 = $_FILES['hinh1']['name'];
+        $img2 = $_FILES['hinh2']['name'];
+        $path = '../site/img/'.$img1;
+        $path2 = '../site/img/'.$img2;
+        $imgfood1 = $_FILES['hinhfood1']['name'];
+        $imgfood2 = $_FILES['hinhfood2']['name'];
+        $imgfood3 = $_FILES['hinhfood3']['name'];
+        $pathfood1 = '../site/img/'.$imgfood1;
+        $pathfood2 = '../site/img/'.$imgfood2;
+        $pathfood3 = '../site/img/'.$imgfood3;
+        updateDiaDiemTrangThai($id);
+       if($img1!="" || $img2!="" || $imgfood1!="" || $imgfood2!="" || $imgfood3!=""){
+            move_uploaded_file($_FILES['hinh1']['tmp_name'],$path);
+            move_uploaded_file($_FILES['hinh2']['tmp_name'],$path2);
+            move_uploaded_file($_FILES['hinhfood1']['tmp_name'],$pathfood1);
+            move_uploaded_file($_FILES['hinhfood2']['tmp_name'],$pathfood2);
+            move_uploaded_file($_FILES['hinhfood3']['tmp_name'],$pathfood3);
+            addContentTour($id,$noidung1,$noidung2,$noidung3,$img1,$img2,$imgfood1,$imgfood2,$imgfood3);//them vao databse
+        }else{
+            
+            updateNDTour($id,$noidung1,$noidung2,$noidung3);/* ko co hinh */
+       }
+      
+        ($id,$nd1,$nd2,$nd3,$img1,$img2);
+        echo'<script>window.location="index.php?ctrl=tour&act=addcontenttour&id='.$id.'";</script>';
+    break;
+
+
+    /* lay noi dung tour de sua*/
+    case 'editnoidungtour':
+        $id=$_GET['id'];
+        $suanoidungtour=getNoiDungDD($id);
+        include 'view/tour/editcontenttour.php';
+    break;
+
+    /* act sua noi dung */
+    case'suanoidungtour':
+        $id=$_POST['id'];
+        $noidung1=$_POST['name1'];
+        $noidung2=$_POST['name2'];
+        $noidung3=$_POST['name3'];
+        $img1 = $_FILES['hinh1']['name'];
+        $img2 = $_FILES['hinh2']['name'];
+        $path = '../site/img/'.$img1;
+        $path2 = '../site/img/'.$img2;
+        $imgfood1 = $_FILES['hinhfood1']['name'];
+        $imgfood2 = $_FILES['hinhfood2']['name'];
+        $imgfood3 = $_FILES['hinhfood3']['name'];
+        $pathfood1 = '../site/img/'.$imgfood1;
+        $pathfood2 = '../site/img/'.$imgfood2;
+        $pathfood3 = '../site/img/'.$imgfood3;
+       if($img1!="" || $img2!="" || $imgfood1!="" || $imgfood2!="" || $imgfood3!=""){
+            move_uploaded_file($_FILES['hinh1']['tmp_name'],$path);
+            move_uploaded_file($_FILES['hinh2']['tmp_name'],$path2);
+            move_uploaded_file($_FILES['hinhfood1']['tmp_name'],$pathfood1);
+            move_uploaded_file($_FILES['hinhfood2']['tmp_name'],$pathfood2);
+            move_uploaded_file($_FILES['hinhfood3']['tmp_name'],$pathfood3);
+            updateNoiDungTour($id,$noidung1,$noidung2,$noidung3,$img1,$img2,$imgfood1,$imgfood2,$imgfood3);//them vao databse
+        }else{
+            updateNDTour($id,$noidung1,$noidung2,$noidung3);/* ko co hinh */
+       }
+        /* include 'view/tour/editcontenttour.php'; */ 
+       echo'<script>window.location="index.php?ctrl=tour&act=addcontenttour&id='.$id.'";</script>';
+    break;
+
+
+
     case 'add':
         $kv=getAllKV();
         include_once 'view/tour/addnewtour.php';
     break;
+
+
 
     case 'insert':
         $name=$_POST['name'];
@@ -58,6 +148,7 @@
 
     case 'del':
         $id = $_GET['id'];
+        $xoanoidungbocuc=
         $delete=deleteTour($id);
         if ($delete) {
         echo'
