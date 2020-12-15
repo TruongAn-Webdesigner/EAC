@@ -34,12 +34,9 @@
   </div>
 
   <div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" name="pass" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    <label for="exampleInputPassword1">Mật khẩu</label>
+    <input type="password" name="pass" class="form-control" id="exampleInputPassword1" placeholder="Nhập mật khẩu">
   </div>
-
-
-  
   <button type="submit" class="btn btn-primary">Gửi</button>
 </form>
 </body>
