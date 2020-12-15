@@ -53,8 +53,19 @@
 
                             <label for="">Chọn hình bên phải 1 mới</label>
                             <div class="file_edittip">
-                                <label for="file">Chosse file</label>
-                                <input multiple type="file" name='hinhright1' id='file'>
+                                <label for="fileright">Chosse file</label>
+                                <input multiple type="file" name='hinhright1' id='fileright'>
+                            </div>
+
+                            <label for="">Hình bên phải 2</label>
+                            <div class="form_content">
+                                <img src="../site/img/<?php echo"$hinhright2"?>" alt="">
+                            </div>
+
+                            <label for="">Chọn hình bên phải 2 mới</label>
+                            <div class="file_edittip">
+                                <label for="fileright2">Chosse file</label>
+                                <input multiple type="file" name='hinhright2' id='fileright2'>
                             </div>
 
 
