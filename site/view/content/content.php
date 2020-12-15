@@ -38,6 +38,10 @@
                                                                     echo''.$ad['name_ad'].'';
                                                                 } */
                                                                 foreach ($khachhang as $ad) {
+                                                                    $id_kh=$ad['id_kh'];
+                                                                    $nameKH=$ad['name_kh'];
+                                                                    $emailKH=$ad['email_kh'];
+                                                                    $sdtKH=$ad['sdt_kh'];
                                                                     echo'
                                                                     <div class="dropdown">
                                                                         <ul>
@@ -51,9 +55,13 @@
                                                                             </li>
                                                                         </ul>
                                                                     </div>
+                                                                   
                                                                     ';
+                                                                    
                                                                 }
                                                             }
+
+                                                            
                                                     ?>
 
 
@@ -232,6 +240,7 @@
 
 ';
 
+}
                                                 if(!isset($_SESSION['user']))//kiem tra xem co dang nhap chua
                                                     {
                                                         /* neu chua co */
@@ -262,7 +271,7 @@
                                                                                     <div class="boxPay">
                                                                                     <form action="index.php?ctrl=wewillgo&act=booktour&idcontent='.$tr['id_dd'].'" method="post" enctype="multipart/form-data">
                                                                                             <div class="container">
-                                                                                                <h1>Book tour: '.$tr['name_dd'].'</h1>
+                                                                                                <h1>Book tour 1: '.$tr['name_dd'].' </h1>
                                                                                                     <hr>
                                                                                                         <label for="diadiem">Mã địa điểm</label>
                                                                                                         <div class="input_bg">
@@ -300,7 +309,7 @@
                                                     </div>';
                                                     }
                                                     else{
-
+                                                        
                                                         echo'
                                                         <div class="roww">
                                                             <div class="bg_link_form">
@@ -326,7 +335,7 @@
                                                                                             <span>&times;</span>
                                                                                         </div>
                                                                                         <div class="boxPay">
-                                                                                        <form action="index.php?ctrl=wewillgo&act=booktour&idcontent='.$tr['id_dd'].'" method="post" enctype="multipart/form-data">
+                                                                                        <form action="index.php?ctrl=wewillgo&act=booktour&idcontent='.$tr['id_dd'].'&id_kh='.$id_kh.'" method="post" enctype="multipart/form-data">
                                                                                                 <div class="container">
                                                                                                     <h1>Book tour: '.$tr['name_dd'].'</h1>
                                                                                                         <hr>
@@ -339,13 +348,13 @@
                                                                                                             <input type="text" placeholder="Enter Number" name="ngaydi" value="'.$tr['ngaydang'].' "readonly >
                                                                                                             </div>
                                                                                                             <label for="fullname">Họ tên</label>
-                                                                                                            <input type="text" placeholder="Nhập tên của bạn" name="fullName" required>
+                                                                                                            <input type="text" placeholder="Nhập tên của bạn" name="fullName" value="'.$nameKH.'" required>
 
                                                                                                             <label for="email">Email</label>
-                                                                                                            <input type="text" placeholder="Nhập Email" name="email" required>
+                                                                                                            <input type="text" placeholder="Nhập Email" name="email" value="'.$emailKH.'" required>
 
                                                                                                             <label for="phone">Số điện thoại</label>
-                                                                                                            <input type="tel" placeholder="nhập số điện thoại" name="phone" required>
+                                                                                                            <input type="tel" placeholder="nhập số điện thoại" name="phone" value="'.$sdtKH.'" required>
 
 
                                                                                                     <div class="clearfix">
@@ -365,10 +374,11 @@
 
                                                         </div>
                                                         ';
+                                                        
 
                                                     }
 
-                            }
+                            
 ?>
 
 </div>
@@ -383,9 +393,6 @@ if(isset($_SESSION['user'])){
     foreach( $kh_dg as $kh){
         $sl_dg=$kh['tong'];
     }
-    var_dump($sl_dg);
-
-
 }
 
 
