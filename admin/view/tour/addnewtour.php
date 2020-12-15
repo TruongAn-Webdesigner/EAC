@@ -14,9 +14,19 @@
                                 <input type="text" name='name' placeholder='Mời Nhập Tên Tour'>
                             </div>
 
+                            <label>Ngày đi:</label>
+                            <div class="form_content">
+                                <input type="date" name='datedi' placeholder='Ngày đi'>
+                            </div>
+
+                            <label>Ngày về:</label>
+                            <div class="form_content">
+                                <input type="date" name='dateve' placeholder='Ngày về'>
+                            </div>
+
 
                             <div class="form_content">
-                                <label'>Mời Chọn Khu Vực</label>
+                                <label>Mời Chọn Khu Vực</label>
                                 <br>
                                <select name="id">
                                     <?php
