@@ -20,6 +20,23 @@
                                 <input type="text" name='name' value="<?php echo"$name"?>">
                             </div>
 
+                            
+                            <div class="form_content">
+                            <label>Ngày đi:</label>
+                                <input type="date" name='datedi'>
+                            </div>
+
+                           
+                            <div class="form_content">
+                            <label>Ngày về:</label>
+                                <input type="date" name='dateve'>
+                            </div>
+
+                            <div class="form_content">
+                                <input type="text" name='gia' placeholder='Điền giá'>
+                            </div>
+
+
                             <div class="form_content">
                                 <label'>Mời Chọn Khu Vực</label>
                                 <br>
