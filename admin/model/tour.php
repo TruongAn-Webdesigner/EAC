@@ -32,14 +32,23 @@
       }
 
       /* sql sua noi dung */
-      function updateNoiDungTour($id,$noidung1,$noidung2,$noidung3,$img1,$img2,$imgfood1,$imgfood2,$imgfood3){
+      function updateNoiDungTour($id,$noidung1,$noidung2,$noidung3,$img1,$img2,$imgfood1,$imgfood2,$imgfood3,$loaifood1,$tenfood1,$noidungfood1,$loaifood2,$tenfood2,$noidungfood2,$loaifood3,$tenfood3,$noidungfood3){
         $sql = "update noidungbocuc set noidung='$noidung1',img_noidung1='$img1',img_noidung2='$img2',noidung2='$noidung2',noidung3='$noidung3',
-        img_food1='$imgfood1',img_food2='$imgfood2',img_food3='$imgfood3' where id_dd='$id'";
+        img_food1='$imgfood1',img_food2='$imgfood2',img_food3='$imgfood3',
+        loaifood1='$loaifood1',tenfood1='$tenfood1',noidungfood1='$noidungfood1',
+        loaifood2='$loaifood2',tenfood2='$tenfood2',noidungfood2='$noidungfood2',
+        loaifood3='$loaifood3',tenfood3='$tenfood3',noidungfood3='$noidungfood3'
+        where id_dd='$id'";
         execute($sql);
     }
     /* sua noi dung ko co hinh */
-    function updateNDTour($id,$noidung1,$noidung2,$noidung3){
-      $sql = "update noidungbocuc set noidung='$noidung1',noidung2='$noidung2',noidung3='$noidung3' where id_dd='$id'";
+    function updateNDTour($id,$noidung1,$noidung2,$noidung3,$img1,$img2,$imgfood1,$imgfood2,$imgfood3,$loaifood1,$tenfood1,$noidungfood1,$loaifood2,$tenfood2,$noidungfood2,$loaifood3,$tenfood3,$noidungfood3){
+      $sql = "update noidungbocuc set noidung='$noidung1',img_noidung1='$img1',img_noidung2='$img2',noidung2='$noidung2',noidung3='$noidung3',
+      img_food1='$imgfood1',img_food2='$imgfood2',img_food3='$imgfood3',
+      loaifood1='$loaifood1',tenfood1='$tenfood1',noidungfood1='$noidungfood1',
+      loaifood2='$loaifood2',tenfood2='$tenfood2',noidungfood2='$noidungfood2',
+      loaifood3='$loaifood3',tenfood3='$tenfood3',noidungfood3='$noidungfood3'
+      where id_dd='$id'";
       execute($sql);
     }
       /* update trang thai */
