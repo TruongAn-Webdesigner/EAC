@@ -49,8 +49,10 @@
         $tenfood3=$_POST['tenfood3'];
         $noidungfood3=$_POST['noidungfood3'];
 
-        $img1 = $_FILES['hinh1']['name'];
-        $img2 = $_FILES['hinh2']['name'];
+/*         $img1 = $_FILES['hinh1']['name'];
+        $img2 = $_FILES['hinh2']['name']; */
+        $img1 = $_FILES['hinhnd1']['name'];
+        $img2 = $_FILES['hinhnd2']['name'];
         $path = '../site/img/'.$img1;
         $path2 = '../site/img/'.$img2;
         $imgfood1 = $_FILES['hinhfood1']['name'];
@@ -59,20 +61,24 @@
         $pathfood1 = '../site/img/'.$imgfood1;
         $pathfood2 = '../site/img/'.$imgfood2;
         $pathfood3 = '../site/img/'.$imgfood3;
-        updateDiaDiemTrangThai($id);
+        $imgright1= $_FILES['hinhright1']['name'];
+        $imgright2= $_FILES['hinhright2']['name'];
+        $pathright1 = '../site/img/'.$imgright1;
+        $pathright2 = '../site/img/'.$imgright2;
+        $date = date('Y-m-d H:i:s');
+         updateDiaDiemTrangThai($id);
        if($img1!="" || $img2!="" || $imgfood1!="" || $imgfood2!="" || $imgfood3!=""){
             move_uploaded_file($_FILES['hinh1']['tmp_name'],$path);
             move_uploaded_file($_FILES['hinh2']['tmp_name'],$path2);
             move_uploaded_file($_FILES['hinhfood1']['tmp_name'],$pathfood1);
             move_uploaded_file($_FILES['hinhfood2']['tmp_name'],$pathfood2);
             move_uploaded_file($_FILES['hinhfood3']['tmp_name'],$pathfood3);
-            addContentTour($id,$noidung1,$noidung2,$noidung3,$img1,$img2,$imgfood1,$imgfood2,$imgfood3,$loaifood1,$tenfood1,$noidungfood1,$loaifood2,$tenfood2,$noidungfood2,$loaifood3,$tenfood3,$noidungfood3);//them vao databse
-        }else{
-            
-            updateNDTour($id,$noidung1,$noidung2,$noidung3,$img1,$img2,$imgfood1,$imgfood2,$imgfood3,$loaifood1,$tenfood1,$noidungfood1,$loaifood2,$tenfood2,$noidungfood2,$loaifood3,$tenfood3,$noidungfood3);/* ko co hinh */
-       }
-      
-        echo'<script>window.location="index.php?ctrl=tour&act=addcontenttour&id='.$id.'";</script>';
+            move_uploaded_file($_FILES['hinhright1']['tmp_name'],$pathright1);
+            move_uploaded_file($_FILES['hinhright2']['tmp_name'],$pathright2);
+            addContentTour($id,$noidung1,$noidung2,$noidung3,$img1,$img2,$imgright1, $imgright2,$imgfood1,$imgfood2,$imgfood3,$loaifood1,$tenfood1,$noidungfood1,$loaifood2,$tenfood2,$noidungfood2,$loaifood3,$tenfood3,$noidungfood3);//them vao databse
+        }
+          
+       echo'<script>window.location="index.php?ctrl=tour&act=addcontenttour&id='.$id.'";</script>'; 
     break;
 
 
@@ -86,6 +92,7 @@
     /* act sua noi dung */
     case'suanoidungtour':
         $id=$_POST['id'];
+        $suanoidungtour=getNoiDungDD($id);
         $noidung1=$_POST['name1'];
         $noidung2=$_POST['name2'];
         $noidung3=$_POST['name3'];
@@ -102,30 +109,107 @@
         $tenfood3=$_POST['tenfood3'];
         $noidungfood3=$_POST['noidungfood3'];
 
+        
+        /* hình bên phải 1 */
+        if($_FILES['hinhright1']['name']==null ){
+            $imgright1=$suanoidungtour['img_right1'];
+        }
+        else{
+            $imgright1 = $_FILES['hinhright1']['name'];
+            $pathright1 = '../site/img/'.$imgright1;
+        }
+
+        /* hình bên phải 2 */
+        if($_FILES['hinhright2']['name']==null ){
+            $imgright2=$suanoidungtour['img_right2'];
+        }
+        else{
+            $imgright2 = $_FILES['hinhright2']['name'];
+            $pathright2 = '../site/img/'.$imgright2;
+        }
+
+        /*hình nội dung1 */
+        if($_FILES['hinh1']['name']==null ){
+            $img1=$suanoidungtour['img_noidung1'];
+        }
+        else{
+            $img1 = $_FILES['hinh1']['name'];
+            $path = '../site/img/'.$img1;
+        }
+
+                
+        /*hình nội dung2 */
+
+        if($_FILES['hinh2']['name']==null ){
+            $img2=$suanoidungtour['img_noidung2'];
+        }
+        else{
+            $img2 = $_FILES['hinh2']['name'];
+            $path2 = '../site/img/'.$img2;
+        } 
 
 
-        $img1 = $_FILES['hinh1']['name'];
-        $img2 = $_FILES['hinh2']['name'];
-        $path = '../site/img/'.$img1;
-        $path2 = '../site/img/'.$img2;
-        $imgfood1 = $_FILES['hinhfood1']['name'];
-        $imgfood2 = $_FILES['hinhfood2']['name'];
-        $imgfood3 = $_FILES['hinhfood3']['name'];
-        $pathfood1 = '../site/img/'.$imgfood1;
-        $pathfood2 = '../site/img/'.$imgfood2;
-        $pathfood3 = '../site/img/'.$imgfood3;
-       if($img1!="" || $img2!="" || $imgfood1!="" || $imgfood2!="" || $imgfood3!=""){
-            move_uploaded_file($_FILES['hinh1']['tmp_name'],$path);
-            move_uploaded_file($_FILES['hinh2']['tmp_name'],$path2);
-            move_uploaded_file($_FILES['hinhfood1']['tmp_name'],$pathfood1);
-            move_uploaded_file($_FILES['hinhfood2']['tmp_name'],$pathfood2);
-            move_uploaded_file($_FILES['hinhfood3']['tmp_name'],$pathfood3);
-            updateNoiDungTour($id,$noidung1,$noidung2,$noidung3,$img1,$img2,$imgfood1,$imgfood2,$imgfood3,$loaifood1,$tenfood1,$noidungfood1,$loaifood2,$tenfood2,$noidungfood2,$loaifood3,$tenfood3,$noidungfood3);//them vao databse;//them vao databse
-        }else{
-            updateNDTour($id,$noidung1,$noidung2,$noidung3,$img1,$img2,$imgfood1,$imgfood2,$imgfood3,$loaifood1,$tenfood1,$noidungfood1,$loaifood2,$tenfood2,$noidungfood2,$loaifood3,$tenfood3,$noidungfood3);/* ko co hinh */
-       }
-        /* include 'view/tour/editcontenttour.php'; */ 
-       echo'<script>window.location="index.php?ctrl=tour&act=addcontenttour&id='.$id.'";</script>';
+
+        /*hình food 1 */
+
+        if($_FILES['hinhfood1']['name']==null ){
+            $imgfood1=$suanoidungtour['img_food1'];
+        }
+        else{
+            $imgfood1 = $_FILES['hinhfood1']['name'];
+            $pathfood1 = '../site/img/'.$imgfood1;    
+        }
+
+        /*hình food2 */
+
+       if($_FILES['hinhfood2']['name']==null ){
+            $imgfood2=$suanoidungtour['img_food2'];
+        }
+        else{
+            $imgfood2 = $_FILES['hinhfood2']['name'];
+            $pathfood2 = '../site/img/'.$imgfood2;
+        } 
+
+        /*hình food3 */
+
+       if($_FILES['hinhfood3']['name']==null ){
+            $imgfood3=$suanoidungtour['img_food3'];
+        }
+        else{
+            $imgfood3 = $_FILES['hinhfood3']['name'];
+            $pathfood3 = '../site/img/'.$imgfood3; 
+        } 
+
+             if($img1!="" || $img2!="" || $imgfood1!="" || $imgfood2!="" || $imgfood3!=""){
+                if($_FILES['hinhright1']['name']!=null ){
+                    move_uploaded_file($_FILES['hinhright1']['tmp_name'],$pathright1);
+                }
+
+                if($_FILES['hinhright2']['name']!=null ){
+                    move_uploaded_file($_FILES['hinhright2']['tmp_name'],$pathright2);
+                }
+
+                if($_FILES['hinh1']['name']!=null ){
+                    move_uploaded_file($_FILES['hinh1']['tmp_name'],$path);
+                }
+                if($_FILES['hinh2']['name']!=null ){
+                    move_uploaded_file($_FILES['hinh2']['tmp_name'],$path2);
+                }
+                if($_FILES['hinhfood1']['name']!=null ){
+                    move_uploaded_file($_FILES['hinhfood1']['tmp_name'],$pathfood1);
+                }
+                if($_FILES['hinhfood2']['name']!=null ){
+                    move_uploaded_file($_FILES['hinhfood2']['tmp_name'],$pathfood2);
+                }
+                if($_FILES['hinhfood3']['name']!=null ){
+                    move_uploaded_file($_FILES['hinhfood3']['tmp_name'],$pathfood3);
+                }
+
+
+            updateNoiDungTour($id,$noidung1,$noidung2,$noidung3,$imgright1,$imgright2,$img1,$img2,$imgfood1,$imgfood2,$imgfood3,$loaifood1,$tenfood1,$noidungfood1,$loaifood2,$tenfood2,$noidungfood2,$loaifood3,$tenfood3,$noidungfood3);//them vao databse;//them vao databse
+        }
+        
+      echo'<script>window.location="index.php?ctrl=tour&act=addcontenttour&id='.$id.'";</script>'; 
     break;
 
 
@@ -152,25 +236,32 @@
            echo'<script>window.location="index.php?ctrl=tour&act=index";</script>';
     break;
 
+           /* lay thong tin tour */
     case 'edit':
         $id = $_GET['id'];
         $dd = getDDID($id);
         $kv=getAllKV();
         include 'view/tour/edittour.php';
     break;
-
+        /* sua thong tin tour */
     case 'update':
         $id= $_POST['id'];
         $name =$_POST['name'];
+        $datedi=$_POST['datedi'];
+        $dateve=$_POST['dateve'];
+        $gia=$_POST['gia'];
+
+
         $id_kv=$_POST['id_cata'];
         $img= $_FILES['file_name']['name'];
         $path = '../site/img/'.$img;
       if($img!=""){
           move_uploaded_file($_FILES['file_name']['tmp_name'],$path);
-          updateTourhinh($id,$name,$img,$id_kv);//them vao databse
+          updateTourhinh($id,$name,$img,$id_kv,$datedi,$dateve,$gia);//them vao databse
       }else{
-        updateTour($id,$name,$id_kv);
+        updateTour($id,$name,$id_kv,$datedi,$dateve,$gia);
       }
+      /* include 'view/tour/edittour.php'; */
       echo'<script>window.location="index.php?ctrl=tour&act=index";</script>';
       break;
 
