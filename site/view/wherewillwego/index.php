@@ -48,7 +48,7 @@ $(document).ready(function(){
                             <a href="index.php">EAC</a>
                         
                             <a href="index.php?ctrl=wewillgo">where will we go</a>
-                            <a href="index.php?ctrl=tip">Tips</a>
+                            <a href="index.php?ctrl=content-tip">Tips</a>
                             
                     </div>
                     <div class="menu_link">
@@ -271,10 +271,10 @@ $(document).ready(function(){
                                     </div>
                                     <div class="date_item">
                                         <div class="float_date">
-                                            '.$ap['ngaydang'].'
+                                            ngày đi:'.$ap['ngaydi'].'
                                         </div>
                                     </div>
-                                   
+                                
                                    
                     
                                     <div class="title_view_item">
