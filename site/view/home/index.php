@@ -321,6 +321,10 @@
                                                                 echo''.$ad['name_ad'].'';
                                                             } */
                                                             foreach ($khachhang as $ad) {
+                                                                    $id_kh=$ad['id_kh'];
+                                                                    $nameKH=$ad['name_kh'];
+                                                                    $emailKH=$ad['email_kh'];
+                                                                    $sdtKH=$ad['sdt_kh'];
                                                                 echo'
                                                                 <div class="dropdown">
                                                                     <ul>
@@ -331,7 +335,7 @@
                                                                  
                                                                             <div class="nav_ad_con">
                                                                                     <ul>
-                                                                                        <li><a href="index.php?ctrl=usertourlist">Danh sách tour</a></li>
+                                                                                        <li><a href="index.php?ctrl=usertourlist&id_kh='.$ad['id_kh'].'">Danh sách tour</a></li>
                                                                                         <li><a href="view/login/logout.php">Đăng Xuất</a></li>
                                                                                     </ul>
                                                                             </div>
