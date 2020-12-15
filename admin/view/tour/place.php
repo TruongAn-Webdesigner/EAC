@@ -90,6 +90,9 @@ $(document).ready(function(){
                                         <tr>
                                             <th scope="col">#</th>
                                             <th scope="col">Tên Địa Điểm</th>
+                                            <th scope="col">Ngày đi</th>
+                                            <th scope="col">Ngày về</th>
+                                            <th scope="col">Giá</th>
                                             <th scope="col">Rating</th>
                                             <th scope="col">Khu Vực</th>
                                             <th scope="col">Edit</th>
@@ -97,6 +100,26 @@ $(document).ready(function(){
                                         </tr>
                                     </thead>
                                     <tbody id="search">
+                                    <?php
+
+                                        /**
+                                         *
+                                         * Chuyển đổi chuỗi kí tự thành dạng slug dùng cho việc tạo friendly url.
+                                         *
+                                         * @access    public
+                                         * @param    string
+                                         * @return    string
+                                         */
+                                        if (!function_exists('currency_format')) {
+
+                                            function currency_format($number, $suffix = 'VND') {
+                                                if (!empty($number)) {
+                                                    return number_format($number, 0, ',', ',') . "{$suffix}";
+                                                }
+                                            }
+
+                                        }
+                                     ?>
 
                                         <?php
 
@@ -105,6 +128,10 @@ $(document).ready(function(){
                                                     <tr>
                                                         <td scope="row">'.$diadiem['id_dd'].'</td>
                                                         <td><a href="index.php?ctrl=tour&act=addcontenttour&id='.$diadiem['id_dd'].'" class="tendd">'.$diadiem['name_dd'].'</a></td>
+                                                        <td>'.$diadiem['ngaydi'].'</td>
+                                                        <td>'.$diadiem['ngayve'].'</td>
+                                                        <td>'.currency_format($diadiem['gia']).'</td>
+                                                        
                                                         <td>'.$diadiem['rating_dd'].'</td>
                                                         <td>'.$diadiem['name_kv'].'</td>
                                                         <td><button type="button" class="btn btn-outline-success"><a href="index.php?ctrl=tour&act=edit&id='.$diadiem['id_dd'].'">Edit</a></button></td>
