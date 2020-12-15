@@ -290,6 +290,9 @@
                                                                                                         <label for="phone">Số điện thoại</label>
                                                                                                         <input type="tel" placeholder="nhập số điện thoại" name="phone" required>
 
+                                                                                                        <label for="gia">Giá</label>
+                                                                                                        <input type="text" name="gia" readonly value="'.$tr['gia'].'VND">
+
 
                                                                                                 <div class="clearfix">
                                                                                                     <button type="submit" class="button">Done!</button>
@@ -355,7 +358,9 @@
 
                                                                                                             <label for="phone">Số điện thoại</label>
                                                                                                             <input type="tel" placeholder="nhập số điện thoại" name="phone" value="'.$sdtKH.'" required>
-
+                                                                                                            
+                                                                                                            <label for="gia">Giá</label>
+                                                                                                            <input type="text" name="gia" readonly value="'.$tr['gia'].'VND">
 
                                                                                                     <div class="clearfix">
                                                                                                         <button type="submit" class="button">Done!</button>

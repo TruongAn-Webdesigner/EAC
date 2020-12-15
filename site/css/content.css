@@ -741,10 +741,13 @@ h5{
 
   /* phan form dang ky gat hang */
   /* phan css pay nam cung voi phan .bg-buy-add */
+
+
   h1{
     margin-bottom: 0.5rem;
     font-weight: 500;
     line-height: 0.2;
+   
 }
 input[type=text], input[type=password],input[type=tel], input[type=number] {
     width: 100%;
@@ -838,6 +841,23 @@ input[type=text], input[type=password],input[type=tel], input[type=number] {
     .img_content_header > img {
         width: 100%;
         height: 100%;
+    }
+
+    /* phan login  */
+    .nav_ad_con {
+       
+        width: 70px;
+        top: 29px;
+    }
+
+    .dropdown ul li a {
+        display: block;
+        padding-right: 0px;
+        padding-left: 0px;
+        color: black;
+        margin-top: 3vh;
+        text-decoration: none;
+        line-height: 30px;
     }
 
     /* phan noi dung */
@@ -963,6 +983,13 @@ input[type=text], input[type=password],input[type=tel], input[type=number] {
     }
 
     /* phan form book sign */
+    label{
+        display: none;
+    }
+    .h1, h1{
+        font-size: 5.5vw;
+    }
+
     .modal-content {
         width: 85%;
         height: 85%;
@@ -983,6 +1010,15 @@ input[type=text], input[type=password],input[type=tel], input[type=number] {
     .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
         font-size: 3vw;
     }
+    /* phan dánh gia */
+    .text_comment {
+        font-size: 3.5vw;
+        font-weight: bold;
+    }
+    .star-widget label {
+        font-size: 20px;
+    }
+
 
     /* phan choose */
     .box_choose {

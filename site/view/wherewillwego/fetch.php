@@ -1,5 +1,5 @@
 <?php
-$connect = mysqli_connect("localhost", "root", "", "eac1");
+$connect = mysqli_connect("localhost", "root", "", "eac2");
 $output = '';
 if(isset($_POST["query"]))
 {
@@ -19,7 +19,7 @@ if(isset($_POST["query"]))
 else
 {
 	$query = "
-	SELECT name_dd,rating_dd,diadiem.id_kv,diadiem.id_dd,name_kv,ngaydang,img_dd,rating FROM ((diadiem INNER JOIN khuvuc ON diadiem.id_kv=khuvuc.id_kv) INNER JOIN noidungbocuc on diadiem.id_dd=noidungbocuc.id_dd) ";
+	SELECT name_dd,rating_dd,diadiem.id_kv,diadiem.id_dd,name_kv,ngaydang,ngaydi,ngayve,img_dd,rating FROM ((diadiem INNER JOIN khuvuc ON diadiem.id_kv=khuvuc.id_kv) INNER JOIN noidungbocuc on diadiem.id_dd=noidungbocuc.id_dd) ";
 }
 $result = mysqli_query($connect, $query);
 if(mysqli_num_rows($result) > 0)
@@ -82,7 +82,7 @@ if(mysqli_num_rows($result) > 0)
         </div>
         <div class="date_item">
             <div class="float_date">
-                '.$ap['ngaydang'].'
+               Ngày đi dự kiến: '.$ap['ngaydi'].'/ '.$ap['ngayve'].' 
             </div>
         </div>
 

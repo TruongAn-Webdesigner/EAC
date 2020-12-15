@@ -44,6 +44,7 @@ switch($action){
         $email=$_POST['email'];
         $phone=$_POST['phone'];
         $diadiem=$_POST['diadiem'];
+        $gia=$_POST['gia'];
         $ngaydat=date('Y-m-d H:i:s');//ngay thang nam, gio,.. hien tai
         if(isset($_GET['id_kh'])){
             $id_kh=$_GET['id_kh'];

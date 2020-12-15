@@ -271,10 +271,10 @@ $(document).ready(function(){
                                     </div>
                                     <div class="date_item">
                                         <div class="float_date">
-                                            '.$ap['ngaydang'].'
+                                            ngày đi:'.$ap['ngaydi'].'
                                         </div>
                                     </div>
-                                   
+                                
                                    
                     
                                     <div class="title_view_item">

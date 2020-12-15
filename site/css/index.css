@@ -24,6 +24,7 @@ body{
 }
 
 /* header */
+
     .bg_header{
         width: 100%;
         height: 100vh;
@@ -79,7 +80,7 @@ body{
 
     .number_header sup{
         font-size: 1.5vw;
-        color: rgb(245, 183, 126);
+        color: rgb(224, 162, 162);
         text-shadow:
   0 0.3px 0.2px rgba(0, 0, 0, 0.02),
   0 0.8px 0.5px rgba(0, 0, 0, 0.028),
@@ -209,10 +210,19 @@ font-weight: bold;
 
     .logo_header{
         width: 10%;
-        height: 15vh;
+        height: 11vh;
         background-color: rgba(206, 206, 206, 0.356);
         float: left;
         border-right: 1px solid rgb(218, 218, 218);
+    }
+
+    .logo_header img{
+        width: 50%;
+    height: 36%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    margin-top: 3vh;
     }
 
     .bg_menu{
@@ -301,7 +311,7 @@ font-weight: bold;
         height: 3%;
         width: 25%;
         margin: 3vh 2vh;
-        background-color: rgba(238, 146, 26, 0.795);
+        background-color: rgba(0, 0, 0, 0.795);
         display: block;
         transition: background-color 0.6s ease;
         opacity: 0.5;
@@ -311,11 +321,11 @@ font-weight: bold;
     }
 
     .active_header, .dot:hover {
-        background-color: #fda745;
+        background-color: #464646;
     }
 
     .active_header, .dot:focus {
-        background-color: #fda745;
+        background-color: #b1b1b1;
         border-radius: 4px;
         width: 60px;
         height: 4%;
@@ -1352,6 +1362,7 @@ opacity: 0.9;
 
 
     .logo_header{
+        display: none;
         width: 15%;
         height: 10vh;
     }
@@ -1567,6 +1578,12 @@ opacity: 0.9;
     .float_text_login a{
         font-size: 3vw;
     }
+    .nav_ad_con {
+        text-align: center;
+        width: 200px;
+        top: 35px;
+
+    }
 
     .dropdown ul li a {
         display: block;
@@ -1575,9 +1592,11 @@ opacity: 0.9;
         color: white;
         margin-top: 3vh;
         text-decoration: none;
-        line-height: 100px;
+        line-height: 18px;
        
     }
+
+
 
 
     .big_text .float_text{
@@ -1647,15 +1666,27 @@ opacity: 0.9;
         left: 20vh;
     }
     .icon_bp_1 {
-        left: 23vh;
+        left: 16vh;
+    }
+
+    .icon_bp_1 a i{
+        font-size: 7vw;
     }
 
     .icon_bp_2 {
-        left: 18vh;
+        left: 22vh;
+    }
+
+    .icon_bp_2 a i{
+        font-size: 7vw;
     }
 
     .icon_bp_3 {
         left: 29vh;
+    }
+
+    .icon_bp_3 a i{
+        font-size: 7vw;
     }
 
     /* phan things */
