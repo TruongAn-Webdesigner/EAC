@@ -35,6 +35,20 @@
         $noidung1=$_POST['name1'];
         $noidung2=$_POST['name2'];
         $noidung3=$_POST['name3'];
+
+
+        $loaifood1=$_POST['loaifood1'];
+        $tenfood1=$_POST['tenfood1'];
+        $noidungfood1=$_POST['noidungfood1'];
+
+        $loaifood2=$_POST['loaifood2'];
+        $tenfood2=$_POST['tenfood2'];
+        $noidungfood2=$_POST['noidungfood2'];
+
+        $loaifood3=$_POST['loaifood3'];
+        $tenfood3=$_POST['tenfood3'];
+        $noidungfood3=$_POST['noidungfood3'];
+
         $img1 = $_FILES['hinh1']['name'];
         $img2 = $_FILES['hinh2']['name'];
         $path = '../site/img/'.$img1;
@@ -52,10 +66,10 @@
             move_uploaded_file($_FILES['hinhfood1']['tmp_name'],$pathfood1);
             move_uploaded_file($_FILES['hinhfood2']['tmp_name'],$pathfood2);
             move_uploaded_file($_FILES['hinhfood3']['tmp_name'],$pathfood3);
-            addContentTour($id,$noidung1,$noidung2,$noidung3,$img1,$img2,$imgfood1,$imgfood2,$imgfood3);//them vao databse
+            addContentTour($id,$noidung1,$noidung2,$noidung3,$img1,$img2,$imgfood1,$imgfood2,$imgfood3,$loaifood1,$tenfood1,$noidungfood1,$loaifood2,$tenfood2,$noidungfood2,$loaifood3,$tenfood3,$noidungfood3);//them vao databse
         }else{
             
-            updateNDTour($id,$noidung1,$noidung2,$noidung3);/* ko co hinh */
+            updateNDTour($id,$noidung1,$noidung2,$noidung3,$img1,$img2,$imgfood1,$imgfood2,$imgfood3,$loaifood1,$tenfood1,$noidungfood1,$loaifood2,$tenfood2,$noidungfood2,$loaifood3,$tenfood3,$noidungfood3);/* ko co hinh */
        }
       
         echo'<script>window.location="index.php?ctrl=tour&act=addcontenttour&id='.$id.'";</script>';
@@ -75,6 +89,21 @@
         $noidung1=$_POST['name1'];
         $noidung2=$_POST['name2'];
         $noidung3=$_POST['name3'];
+
+        $loaifood1=$_POST['loaifood1'];
+        $tenfood1=$_POST['tenfood1'];
+        $noidungfood1=$_POST['noidungfood1'];
+
+        $loaifood2=$_POST['loaifood2'];
+        $tenfood2=$_POST['tenfood2'];
+        $noidungfood2=$_POST['noidungfood2'];
+
+        $loaifood3=$_POST['loaifood3'];
+        $tenfood3=$_POST['tenfood3'];
+        $noidungfood3=$_POST['noidungfood3'];
+
+
+
         $img1 = $_FILES['hinh1']['name'];
         $img2 = $_FILES['hinh2']['name'];
         $path = '../site/img/'.$img1;
@@ -91,9 +120,9 @@
             move_uploaded_file($_FILES['hinhfood1']['tmp_name'],$pathfood1);
             move_uploaded_file($_FILES['hinhfood2']['tmp_name'],$pathfood2);
             move_uploaded_file($_FILES['hinhfood3']['tmp_name'],$pathfood3);
-            updateNoiDungTour($id,$noidung1,$noidung2,$noidung3,$img1,$img2,$imgfood1,$imgfood2,$imgfood3);//them vao databse
+            updateNoiDungTour($id,$noidung1,$noidung2,$noidung3,$img1,$img2,$imgfood1,$imgfood2,$imgfood3,$loaifood1,$tenfood1,$noidungfood1,$loaifood2,$tenfood2,$noidungfood2,$loaifood3,$tenfood3,$noidungfood3);//them vao databse;//them vao databse
         }else{
-            updateNDTour($id,$noidung1,$noidung2,$noidung3);/* ko co hinh */
+            updateNDTour($id,$noidung1,$noidung2,$noidung3,$img1,$img2,$imgfood1,$imgfood2,$imgfood3,$loaifood1,$tenfood1,$noidungfood1,$loaifood2,$tenfood2,$noidungfood2,$loaifood3,$tenfood3,$noidungfood3);/* ko co hinh */
        }
         /* include 'view/tour/editcontenttour.php'; */ 
        echo'<script>window.location="index.php?ctrl=tour&act=addcontenttour&id='.$id.'";</script>';
