@@ -79,7 +79,7 @@ body{
 
     .number_header sup{
         font-size: 1.5vw;
-        color: rgb(245, 183, 126);
+        color: rgb(224, 162, 162);
         text-shadow:
   0 0.3px 0.2px rgba(0, 0, 0, 0.02),
   0 0.8px 0.5px rgba(0, 0, 0, 0.028),
@@ -301,7 +301,7 @@ font-weight: bold;
         height: 3%;
         width: 25%;
         margin: 3vh 2vh;
-        background-color: rgba(238, 146, 26, 0.795);
+        background-color: rgba(0, 0, 0, 0.795);
         display: block;
         transition: background-color 0.6s ease;
         opacity: 0.5;
@@ -311,11 +311,11 @@ font-weight: bold;
     }
 
     .active_header, .dot:hover {
-        background-color: #fda745;
+        background-color: #464646;
     }
 
     .active_header, .dot:focus {
-        background-color: #fda745;
+        background-color: #b1b1b1;
         border-radius: 4px;
         width: 60px;
         height: 4%;
