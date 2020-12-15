@@ -30,7 +30,7 @@
                             <div class="float_text">
                             
                             <?php
-                            $name_dd=$_GET['name_dd'];
+                                            $name_dd=$_GET['name_dd'];
                                                 if(!isset($_SESSION['user']))//kiem tra xem co dang nhap chua
                                                     {
                                                         echo'<a href="view/login/login.php">login</a>';
