@@ -42,6 +42,10 @@
                                                                 echo''.$ad['name_ad'].'';
                                                             } */
                                                             foreach ($khachhang as $ad) {
+                                                                $id_kh=$ad['id_kh'];
+                                                                $nameKH=$ad['name_kh'];
+                                                                $emailKH=$ad['email_kh'];
+                                                                $sdtKH=$ad['sdt_kh'];
                                                                 echo'
                                                                 <div class="dropdown">
                                                                     <ul>
@@ -69,34 +73,92 @@
         </div>
     </header>
 
+<div class="roww">
+    <div class="titleLT">
+            Danh Sách các Tour của <span><?php echo''.$nameKH.''?></span>
+    </div>
+
+</div>
 
     <article>
         <div class="roww">
             <div class="full_bg">
                 <div class="boxcenter_content_tip">
-                <form action="#" method="post">
-                    <div class="card mt-3">
-                        <div class="card-header">
-                        
-                        </div>
                             <div class="card-body">
                                 <table class="table table-striped table">
                                 
                                     <tr>
-                                        <td>Mã tour</td>
-                                        <td>Tên khách hàng</td>
-                                        <td>Địa điểm</td>
-                                        <td>Ngày đi</td>
+                                        <th>Mã tour</th>
+                                        <th>Tên khách hàng</th>
+                                        <th>Địa điểm</th>
+                                        <th>Ngày đi</th>
+                                        <th>Del</th>
                                     </tr>
                             
-                                <?php?>
+                                 <?php
 
+                                    foreach($gt as $gt){
+                                        echo'
+                                            <tr>
+                                                <td>'.$gt['id_dd'].'</td>
+                                                <td>'.$gt['hoten'].'</td>
+                                                <td><a href="index.php?ctrl=usertourlist&act=chitiettour&id_dd='.$gt['id_dd'].'&name_dd='.$gt['name_dd'].'">'.$gt['name_dd'].'</a></td>
+                                                <td>'.$gt['ngaydat'].'</td>
+                                                <td><a href="index.php?ctrl=usertourlist&act=del&id_bt='.$gt['id_kh'].'&id_kh='.$gt['id_kh_login'].'"><button type="button" class="btn btn-danger">Del</button></a></td>
+                                            </tr>
+                                        ';
+                                    }
+
+                                 ?>
                                 </table>
-                </form>
+                            </div>
 
                 </div>
             </div>
         </div>
     </article>
+
+    <div class="roww">
+    <div class="titleLT">
+        Các địa điểm đã đánh giá của <span><?php echo''.$nameKH.''?></span>
+    </div>
+
+    <div class="roww">
+            <div class="full_bg">
+                <div class="boxcenter_content_tip">
+                            <div class="card-body">
+                                <table class="table table-striped table">
+                                
+                                    <tr>
+                                        <th>Mã Địa Điểm</th>
+                                        <th>Tên Địa Điểm</th>
+                                        <th>Số Sao Đánh Giá</th>
+                                        <th>Rating Địa Điểm</th>
+                                        <th>Del</th>
+                                    </tr>
+                            
+                                 <?php
+
+                                    foreach($viewRT as $rt){
+                                        echo'
+                                        <tr>
+                                        <td>'.$rt['id_dd'].'</td>
+                                        <td>'.$rt['name_dd'].'</td>
+                                        <td>'.$rt['rate'].'</td>
+                                        <td>'.$rt['rating_dd'].'</td>
+                                        <td><a href=""><button type="button" class="btn btn-danger">Del</button></a></td>
+                                    </tr>
+                                        ';
+                                    }
+
+                                 ?>
+                                </table>
+                            </div>
+
+                </div>
+            </div>
+        </div>
+
+</div>
 </body>
 </html>
