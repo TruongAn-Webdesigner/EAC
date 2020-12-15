@@ -437,7 +437,7 @@
                         <div class="clippy2"></div>
                     <div class="box_text_hello">
                         <div class="title_hello">
-                            hello!
+                            Hello!
                         </div>
                         <div class="text_hello">
                             Đằng ấy ơi! Đằng ấy đã sẵn sàng để vui chơi
@@ -478,11 +478,11 @@
                                         <div class="box_text_bp">
                                                 Viet Nam
                                             <div class="box_text_small_bp">
-                                                beauty & peaceful country
+                                                Beauty & Peaceful country
                                             </div>
 
                                             <div class="quotes">
-                                                    "
+                                                    
                                             </div>
                                         </div>   
                                 </div>
