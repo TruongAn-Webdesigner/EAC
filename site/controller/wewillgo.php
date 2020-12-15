@@ -41,13 +41,73 @@ switch($action){
         $topFeautureById=getAllTopFeautureById($id);
         //luu thong tin don hang
         $fname=$_POST['fullName'];
-        $address=$_POST['address'];
         $email=$_POST['email'];
         $phone=$_POST['phone'];
         $diadiem=$_POST['diadiem'];
         $ngaydat=date('Y-m-d H:i:s');//ngay thang nam, gio,.. hien tai
-        $madh=addToOrder($fname,$address,$email,$phone,$diadiem,$ngaydat);
-        include 'view/content/content.php';
+        if(isset($_GET['id_kh'])){
+            $id_kh=$_GET['id_kh'];
+            $book=addToOrderlogin($fname,$email,$phone,$diadiem,$ngaydat,$id_kh);
+
+            if ($book) {
+                echo'
+                <script type="text/javascript">
+                    swal({
+                    title: "Success!",
+                    text: "Ban đã đặt tour thành công.",
+                    type: "success",
+                    timer: 2000,
+                    showConfirmButton: true
+                    }, function(){
+                    window.location.href ="index.php?ctrl=usertourlist&id_kh='.$id_kh.'";
+                    });
+                    </script>';
+                }else{
+                echo'
+                <script type="text/javascript">
+                    swal({
+                    title: "Error!",
+                    text: "có lỗi xay ra vui lòng đặt lại hoặc đặt địa điểm khác",
+                    type: "error",
+                    timer: 5000,
+                    showConfirmButton: true
+                    }, function(){
+                    window.location.href = "index.php?ctrl=usertourlist&id_kh='.$id_kh.'";
+                    });
+                    </script>';
+                }
+
+        }else{
+         $madh=addToOrder($fname,$email,$phone,$diadiem,$ngaydat);
+                if ($madh) {
+                echo'
+                <script type="text/javascript">
+                    swal({
+                    title: "Success!",
+                    text: "Ban đã đặt tour thành công.",
+                    type: "success",
+                    timer: 2000,
+                    showConfirmButton: true
+                    }, function(){
+                    window.location.href ="index.php?ctrl=wewillgo&act=content&idcontent='.$id.'";
+                    });
+                    </script>';
+                }else{
+                echo'
+                <script type="text/javascript">
+                    swal({
+                    title: "Error!",
+                    text: "có lỗi xay ra vui lòng đặt lại hoặc đặt địa điểm khác",
+                    type: "error",
+                    timer: 5000,
+                    showConfirmButton: true
+                    }, function(){
+                    window.location.href = "index.php?ctrl=wewillgo&act=content&idcontent='.$id.'";
+                    });
+                    </script>';
+                }
+        }
+        include 'view/content/content.php'; 
     break;
 
     case 'contentbestplace':
@@ -72,7 +132,7 @@ switch($action){
 
     $topFeautureById=getAllTopFeautureById($id_dd);
     $kh_dg=getKH_DG($id_kh,$id_dd);
-    header('location:view/login/login.php');
+    header('location:index.php?ctrl=wewillgo&act=content&idcontent='.$id_dd.'');
     break; 
 
 }
