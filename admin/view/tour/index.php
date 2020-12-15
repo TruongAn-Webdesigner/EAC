@@ -91,10 +91,10 @@
                                         </div>
                                         <div class="text_food1">
                                             <div class="text_content_food_all2">
-                                                <div class="text_style_1">Hai san</div>
-                                                <div class="text_style_2">Viet nam</div>
+                                                <div class="text_style_1">'.$tr['loaifood1'].'</div>
+                                                <div class="text_style_2">'.$tr['tenfood1'].'</div>
                                                 <div class="small_content_food_all">
-                                                    la la la la 1
+                                                '.$tr['noidungfood1'].'
                                                 </div>
                                             </div>
                                         </div>
@@ -112,10 +112,10 @@
                                         </div>
                                     <div class="text_food2">
                                         <div class="text_content_food_all2">
-                                            <div class="text_style_1">Hai san</div>
-                                            <div class="text_style_2">Viet nam</div>
+                                            <div class="text_style_1">'.$tr['loaifood2'].'</div>
+                                            <div class="text_style_2">'.$tr['tenfood2'].'</div>
                                             <div class="small_content_food_all">
-                                                la la la la 2
+                                            '.$tr['noidungfood2'].'
                                             </div>
                                         </div>
                                     </div>
@@ -131,10 +131,10 @@
                                     </div>
                                 <div class="text_food3">
                                         <div class="text_content_food_all2">
-                                            <div class="text_style_1">Hai san</div>
-                                            <div class="text_style_2">Viet nam</div>
+                                            <div class="text_style_1">'.$tr['loaifood3'].'</div>
+                                            <div class="text_style_2">'.$tr['tenfood3'].'</div>
                                             <div class="small_content_food_all">
-                                                la la la la 3
+                                            '.$tr['noidungfood3'].'
                                             </div>
                                         </div>
                                     </div>
