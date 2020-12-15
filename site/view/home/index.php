@@ -294,7 +294,7 @@
 
                     <div class="bg_menu">
                         <div class="logo_header">
-                            EAC
+                            <img src="img/logo.png" alt="">
                         </div>
                         <div class="boxcenter_big">
                             <nav class="nav">
