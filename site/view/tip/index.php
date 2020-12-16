@@ -197,7 +197,7 @@
                                     <div class="title_view_item">
                                         <div class="view_item"></div>
                                         <div class="rating_item">
-                                            rating:  
+                                         
                                         
                                         </div>
                                     </div>
