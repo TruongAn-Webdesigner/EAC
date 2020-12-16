@@ -37,7 +37,7 @@
 <body>
 <?php
 			session_start();
-            $db = new PDO("mysql:host=localhost;dbname=eac1",'root','');
+            $db = new PDO("mysql:host=localhost;dbname=eac2",'root','');
             if(isset($_POST['DangNhap'])){
                 $user=$_POST['username'];
                 $pass=$_POST['password'];

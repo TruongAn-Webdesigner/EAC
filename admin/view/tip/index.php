@@ -23,13 +23,13 @@
                      <div class="title_view_ad">
 
                         <div class="text_view_place">
-                            <span>Địa Điểm</span> <br>
-                            Danh Sách Các Địa Điểm
+                            <span>Tips note</span> <br>
+                            Danh Sách Các Tips Note Hữu Ích
                         </div>
 
                         <div class="btn_tip">
                                 <div class="btn_place ">
-                                    <a href="index.php?ctrl=tipnote&act=add">Add Place </a>
+                                    <a href="index.php?ctrl=tipnote&act=add">Add Tip </a>
                                 </div>
                         </div>
 
