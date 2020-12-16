@@ -175,10 +175,10 @@
                                             </div>
                                             <div class="text_food1">
                                                 <div class="text_content_food_all2">
-                                                    <div class="text_style_1">Hai san</div>
-                                                    <div class="text_style_2">Viet nam</div>
+                                                    <div class="text_style_1">'.$tr['loaifood1'].'</div>
+                                                    <div class="text_style_2">'.$tr['tenfood1'].'</div>
                                                     <div class="small_content_food_all">
-                                                        la la la la 1
+                                                    '.$tr['noidungfood1'].'
                                                     </div>
                                                 </div>
                                             </div>
@@ -196,10 +196,10 @@
                                             </div>
                                         <div class="text_food2">
                                             <div class="text_content_food_all2">
-                                                <div class="text_style_1">Hai san</div>
-                                                <div class="text_style_2">Viet nam</div>
+                                                <div class="text_style_1">'.$tr['loaifood2'].'</div>
+                                                <div class="text_style_2">'.$tr['tenfood2'].'</div>
                                                 <div class="small_content_food_all">
-                                                    la la la la 2
+                                                '.$tr['noidungfood2'].'
                                                 </div>
                                             </div>
                                         </div>
@@ -215,10 +215,10 @@
                                         </div>
                                     <div class="text_food3">
                                             <div class="text_content_food_all2">
-                                                <div class="text_style_1">Hai san</div>
-                                                <div class="text_style_2">Viet nam</div>
+                                                <div class="text_style_1">'.$tr['loaifood3'].'</div>
+                                                <div class="text_style_2">'.$tr['tenfood3'].'</div>
                                                 <div class="small_content_food_all">
-                                                    la la la la 3
+                                                    '.$tr['noidungfood3'].'
                                                 </div>
                                             </div>
                                         </div>
@@ -463,7 +463,7 @@ if(isset($_SESSION['user'])){
         <div class="boxcenter_content">
             <div class="box_choose">
                 <div class="text_choose">
-                    Choose us choose fun
+                   Chọn chúng tôi chọn niềm tin
                 </div>
                 <div class="line_comment"></div>
                 <div class="small_text_choose">
@@ -483,13 +483,12 @@ if(isset($_SESSION['user'])){
 
                         <div class="box_choose_infor">
                         <div class="text_title_choose">
-                                Place
+                                Địa điểm
                                 <div class="line_title_choose"></div>
                         </div>
 
                         <div class="box_text_choose">
-                                waoefk weofkewo fw eofk ew ofewkfo ewof wiaje awuefnwefwef we e
-                                erafuygerygfyerugfy ery geryg
+                                Luôn cập nhập những điều thú vị nâng cao trải nghiệm khám phá khi sử dụng dịch vụ tour EAC.
 
                         </div>
                         </div>
@@ -503,13 +502,12 @@ if(isset($_SESSION['user'])){
                         </div>
                         <div class="box_choose_infor">
                         <div class="text_title_choose">
-                            plan
+                           Kế hoạch
                             <div class="line_title_choose"></div>
                         </div>
 
                         <div class="box_text_choose">
-                            waoefk weofkewo fw eofk ew ofewkfo ewof wiaje awuefnwefwef we e
-                            erafuygerygfyerugfy ery geryg
+                            Liệt kê các địa điểm chuẩn bị các bước trải nghiệm kỹ lưỡng để du khách có thể tận hưởng một cách thoải mái nhất.
 
                         </div>
                         </div>
@@ -521,13 +519,12 @@ if(isset($_SESSION['user'])){
                         </div>
                         <div class="box_choose_infor">
                         <div class="text_title_choose">
-                            safe
+                            An toàn
                             <div class="line_title_choose"></div>
                         </div>
 
                         <div class="box_text_choose">
-                            waoefk weofkewo fw eofk ew ofewkfo ewof wiaje awuefnwefwef we e
-                            erafuygerygfyerugfy ery geryg
+                            Chúng tôi cam kết không chia sẻ thông tin du khách cho bất kì ai hoặc buôn bán thông tin trái phép nhằm trục lợi.
                         </div>
                     </div>
 
@@ -544,7 +541,7 @@ if(isset($_SESSION['user'])){
 
                <div class="title_comment">
                     <div class="text_comment">
-                        What do you think?
+                        Bạn có chia sẻ gì ?
                     </div>
                     <div class="line_comment">
 
