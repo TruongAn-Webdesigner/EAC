@@ -28,7 +28,7 @@ body{
     .bg_header{
         width: 100%;
         height: 100vh;
-        background-color: tomato;
+        /* background-color: tomato; */
     }
 
     .box_time{
@@ -50,7 +50,7 @@ body{
         position: relative;
         width: 100%;
         height: 100vh;
-        background-color: tomato;
+        /* background-color: tomato; */
     }
     .img_header{
         width: 100%;
@@ -401,7 +401,7 @@ opacity: 0.9;
       }
 
       .text_box1{
-        font-size: 0.7vw;
+        font-size: 0.8vw;
       }
 
       .box2{
@@ -435,7 +435,7 @@ opacity: 0.9;
     }
 
     .text_box2_3{
-        font-size: 0.7vw;
+        font-size: 0.8vw;
         color: white;
     }
 
@@ -1386,8 +1386,12 @@ opacity: 0.9;
     .box3{
         height: 12vw;
     }
+
+    .dot{
+        background-color: rgb(189, 189, 189);
+    }
     .active_header, .dot:focus {
-        background-color: #fda745;
+        background-color: #cccccc;
         border-radius: 4px;
         width: 70px;
         height: 4%;
@@ -1604,15 +1608,15 @@ opacity: 0.9;
         font-size: 7vw;
     }
     .box1{
-        height: 20vw;
+        height: 17vh;
         width: 100%;
     }
     .box2{
-        height: 20vw;
+        height: 17vh;
         width: 100%;
     }
     .box3{
-        height: 20vw;
+        height: 17vh;
         width: 100%;
     }
     .small_box1{
