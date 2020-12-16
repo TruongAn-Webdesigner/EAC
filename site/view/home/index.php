@@ -49,33 +49,34 @@
                                         <div class="box1">
                                             <div class="small_box1">
                                                 <div class="title_box1">
-                                                    Small Country
+                                                   Tọa lạc
                                                 </div>
 
                                                 <div class="text_box1">
-                                                    In Asia, South
+                                                21°01′42″B 105°51′15″Đ </br>
+                                                Diện tích: 331.212 km<sup>2</sup>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="box2">
                                             <div class="small_box1">
                                                 <div class="title_box2_3">
-                                                    Small Country
+                                                    Địa điểm nổi bật
                                                 </div>
                                                 
                                                 <div class="text_box2_3">
-                                                    In Asia, South
+                                                    Thủ đô Hà Nội, Tp.Hồ Chí Minh, Đà Nẵng,...
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="box3">
                                             <div class="small_box1">
                                                 <div class="title_box2_3">
-                                                    Small Country
+                                                    Về Việt Nam
                                                 </div>
                                                 
                                                 <div class="text_box2_3">
-                                                    In Asia, South
+                                                là đất nước có nhiều cảnh quan thiên nhiên hoang dã, với đường bờ biển dài, từ những ruộng bậc thang xanh rờn ở Sapa đến những bãi biển cát trắng ở Phú Quốc đầy hùng vĩ lẫy lừng.
                                                 </div>
                                             </div>
                                         </div>
@@ -116,33 +117,34 @@
                                             <div class="box1">
                                                 <div class="small_box1">
                                                     <div class="title_box1">
-                                                        Small Country
+                                                       Tọa lạc
                                                     </div>
 
                                                     <div class="text_box1">
-                                                        In Asia, South
+                                                        21°01′42″B 105°51′12″Đ </br>
+                                                        Diện tích	3.358,6 km<sup>2</sup>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="box2">
                                                 <div class="small_box1">
                                                     <div class="title_box2_3">
-                                                        Small Country
+                                                        Địa điểm nổi bật
                                                     </div>
                                                     
                                                     <div class="text_box2_3">
-                                                        In Asia, South
+                                                    Quảng trường Ba Đình – Lăng Bác, Hồ Gươm, Phố cổ Hà Nội,...
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="box3">
                                                 <div class="small_box1">
                                                     <div class="title_box2_3">
-                                                        Small Country
+                                                        Về Hà Nội
                                                     </div>
                                                     
                                                     <div class="text_box2_3">
-                                                        In Asia, South
+                                                    với tuổi đời hơn 1000 năm, Hà Nội chính là thủ đô lâu đời nhất khu vực Đông Nam Á. Thủ đô của quốc gia Việt Nam được UNESCO trao danh hiệu "Thành phố vì hòa bình".
                                                     </div>
                                                 </div>
                                             </div>
@@ -183,33 +185,34 @@
                                             <div class="box1">
                                                 <div class="small_box1">
                                                     <div class="title_box1">
-                                                        Small Country
+                                                       Tọa lạc
                                                     </div>
 
                                                     <div class="text_box1">
-                                                        In Asia, South
+                                                    20°54′B 107°12′Đ </br>
+                                                    Diện tích: 1.553 km<sup>2</sup>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="box2">
                                                 <div class="small_box1">
                                                     <div class="title_box2_3">
-                                                        Small Country
+                                                        Địa điểm nổi bật
                                                     </div>
                                                     
                                                     <div class="text_box2_3">
-                                                        In Asia, South
+                                                    Vịnh Bái Tử Long, Đảo Titop, Động Thiên Cung,...
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="box3">
                                                 <div class="small_box1">
                                                     <div class="title_box2_3">
-                                                        Small Country
+                                                       Về Vịnh Hạ Long
                                                     </div>
                                                     
                                                     <div class="text_box2_3">
-                                                        In Asia, South
+                                                    Unesco nhiều lần công nhận là di sản thiên nhiên của thế giới bởi tạo hoá kỳ vĩ và sống động cùng phong cảnh nổi bật với hệ thống đảo đá và hang động tuyệt đẹp rất hấp dẫn với nhiều du khách.
                                                     </div>
                                                 </div>
                                             </div>
@@ -253,33 +256,34 @@
                                             <div class="box1">
                                                 <div class="small_box1">
                                                     <div class="title_box1">
-                                                        Small Country
+                                                        Tọa lạc
                                                     </div>
 
                                                     <div class="text_box1">
-                                                        In Asia, South
+                                                    16°01′55″B 108°13′14″Đ </br>
+                                                    Diện tích	1.284,9 km<sup>2</sup>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="box2">
                                                 <div class="small_box1">
                                                     <div class="title_box2_3">
-                                                        Small Country
+                                                        Địa điểm nổi bật
                                                     </div>
                                                     
                                                     <div class="text_box2_3">
-                                                        In Asia, South
+                                                    Bà Nà Hills, Cầu Vàng, Asia Park – Sunworld Đà Nẵng Wonders,...
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="box3">
                                                 <div class="small_box1">
                                                     <div class="title_box2_3">
-                                                        Small Country
+                                                        Về Đà Nẵng
                                                     </div>
                                                     
                                                     <div class="text_box2_3">
-                                                        In Asia, South
+                                                   là một trong những điểm du lịch nghỉ dưỡng lý tưởng nhất cho du khách với nhiều danh lam thắng làm say mê lòng người. Tuy nhiên không phải ai cũng đã đi được khắp tất cả những địa điểm hấp dẫn của Đà Nẵng đâu nhé.
                                                     </div>
                                                 </div>
                                             </div>
