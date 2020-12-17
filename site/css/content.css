@@ -301,7 +301,7 @@ h5{
 
 .text_food1{
     float: right;
-    width: 40%;
+    width: 41.5%;
     min-height: 40vh;
     background-color: rgb(240, 240, 240);
     font-size: 2vw;
@@ -322,7 +322,7 @@ h5{
 
 .text_food2{
     float: left;
-    width: 40%;
+    width: 41.5%;
     min-height: 40vh;
     background-color: rgb(240, 240, 240);
     font-size: 2vw;
@@ -352,7 +352,7 @@ h5{
 
 .text_food3{
     float: right;
-    width: 40%;
+    width: 41.5%;
     min-height: 40vh;
     background-color: rgb(240, 240, 240);
     font-size: 2vw;
