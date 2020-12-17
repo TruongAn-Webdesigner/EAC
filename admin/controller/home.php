@@ -17,6 +17,7 @@
         $rankTour =  getRankTour();
         $rankKH = getRankKH();
         $ad = getAdmin();
+        $gv= getluotxem();
         include 'view/home/index.php';
         break;
 
