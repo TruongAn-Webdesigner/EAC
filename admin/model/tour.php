@@ -84,6 +84,11 @@
        return execute($sql);
     }
 
+    function delndByID($id_dd){
+        $sql="DELETE FROM `noidungbocuc` WHERE `noidungbocuc`.`id_noidung` = $id_dd";
+        return execute($sql);
+    }
+
     function getNoiDungByID_DD($id){
       $sql="SELECT * FROM diadiem JOIN khuvuc on diadiem.id_kv = khuvuc.id_kv";
       return query($sql);
