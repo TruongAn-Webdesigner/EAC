@@ -78,22 +78,23 @@
 
                     <div class="content_db">
                         <ul>
-                            <li class="active"><a href="index.php" >Statistical</a></li>
+                            <li class="active"><a href="index.php" >Thống Kê</a></li>
 
                             <li>
-                                <a href="#"  class="feat-btn">Data <i class="fas fa-chevron-down"></i></a>
+                                <a href="#"  class="feat-btn">Tour<i class="fas fa-chevron-down"></i></a>
                                     <ul  class="feat-show">
-                                        <li><a href="index.php?ctrl=place"><i class="fas fa-angle-right"></i> Place</a></li>
-                                        <li><a href="index.php?ctrl=review"><i class="fas fa-angle-right"></i> Review</a></li>
+                                        <li><a href="index.php?ctrl=place"><i class="fas fa-angle-right"></i> Khu Vực</a></li>
+                                        <li><a href="index.php?ctrl=tour"><i class="fas fa-angle-right"></i> Địa Điêm</a></li>
                                         <li><a href="index.php?ctrl=tipnote"><i class="fas fa-angle-right"></i> Tips note</a></li>
                                     </ul>
                                 
                             </li>
 
                             <li>
-                                <a href="#" class="serv-btn">E-commerce <i class="fas fa-chevron-down"></i></a>
+                                <a href="#" class="serv-btn">Khách Hàng <i class="fas fa-chevron-down"></i></a>
                                     <ul  class="serv-show">
-                                        <li><a href="index.php?ctrl=tour"><i class="fas fa-angle-right"></i> Tour</a></li>
+                                        <li><a href="index.php?ctrl=review&act=khachhang"><i class="fas fa-angle-right"></i> khách hàng</a></li>
+                                        <li><a href="index.php?ctrl=review"><i class="fas fa-angle-right"></i> Địa Điểm Đặt</a></li>
                                     </ul>
                                 
                             </li>
@@ -101,23 +102,6 @@
                     </div>
                 </div>
             <!-- end dashboarid -->
-
-            <!-- application -->
-
-            <div class="dashboarid">
-
-                <div class="title_db">
-                   APPLICATION
-                </div>
-
-                <div class="content_db">
-                    <ul>
-                        <li><a href="#" >Mail</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- end application -->
 
         </div>
         <!-- end ad_left -->
@@ -144,7 +128,6 @@
                                             
                                         <div class="nav_ad_con">
                                                  <ul>                                              
-                                                    <li><a href="#">Changes Pass</a></li>
                                                     <li><a href="logout.php">Log Out</a></li>
                                                 </ul>
                                            </div>
