@@ -249,21 +249,35 @@
         $name =$_POST['name'];
         $datedi=$_POST['datedi'];
         $dateve=$_POST['dateve'];
+        $date = date('Y-m-d');
         $gia=$_POST['gia'];
-
-
         $id_kv=$_POST['id_cata'];
         $img= $_FILES['file_name']['name'];
         $path = '../site/img/'.$img;
-      if($img!=""){
+        if($datedi>$dateve || $datedi<$date){
+            echo'
+            <script type="text/javascript">
+            swal({
+            title: "Error!",
+            text: "vui  lòng chọn ngày xuất phát lớn hơn ngày hiện tại và ngày về lớn hơn ngày đi",
+            type: "error",
+            timer: 5000,
+            showConfirmButton: true
+            }, function(){
+            window.location.href = "index.php?ctrl=tour&act=edit&id='.$id.'";
+            });
+            </script>';            
+        }else
+        {
+       if($img!=""){
           move_uploaded_file($_FILES['file_name']['tmp_name'],$path);
           updateTourhinh($id,$name,$img,$id_kv,$datedi,$dateve,$gia);//them vao databse
       }else{
         updateTour($id,$name,$id_kv,$datedi,$dateve,$gia);
-      }
+      } 
       /* include 'view/tour/edittour.php'; */
-      echo'<script>window.location="index.php?ctrl=tour&act=index";</script>';
-      break;
+       echo'<script>window.location="index.php?ctrl=tour&act=index";</script>';}
+       break;
 
     case 'del':
         $id = $_GET['id'];
@@ -300,7 +314,39 @@
         $dd=getAlldd();
         include 'view/tour/place.php';
 
+        break;
 
+        case 'delnd':
+            $id_dd = $_GET['id'];
+            $delete=delndByID($id_dd);
+            if ($delete) {
+            echo'
+            <script type="text/javascript">
+                swal({
+                title: "Success!",
+                text: "Ban đã xoa thành công.",
+                type: "success",
+                timer: 2000,
+                showConfirmButton: true
+                }, function(){
+                window.location.href ="index.php?ctrl=tour";
+                });
+                </script>';
+            }else{
+            echo'
+            <script type="text/javascript">
+                swal({
+                title: "Error!",
+                text: "vui Lòng Xóa Nội dung của địa điểm trước",
+                type: "error",
+                timer: 5000,
+                showConfirmButton: true
+                }, function(){
+                window.location.href = "index.php?ctrl=tour";
+                });
+                </script>';
+            }
+        break;
 
 /* 
     case 'tour':
@@ -314,7 +360,7 @@
     default:
         # code...
         break; */
-}
+    }
 
 
 ?>
