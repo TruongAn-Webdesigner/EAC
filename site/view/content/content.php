@@ -403,13 +403,13 @@ if(isset($_SESSION['user'])){
 
 ?>
 
-<div class="roww">
+<div class="roww" id="rating" >
         <div class="boxcenter_content">
-            <div class="container_post">
+            <div class="container_post " >
                     <div class="text_comment">
                         Đánh Giá Địa Điểm
                     </div>
-                <div class="star-widget" id="rating">
+                <div class="star-widget">
                     <form action="index.php?ctrl=wewillgo&act=rating&id_dd=<?php echo"$id_dd"?>" method="POST">
                         <input type="radio" name="rate" value='5' id="rate-5">
                         <label for="rate-5" class="fas fa-star"></label>
