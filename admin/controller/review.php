@@ -18,6 +18,11 @@
             $gt=getCTTourById($id_dd);
             include 'view/review/chitiettour.php';
             break;
+
+        case 'khachhang':
+                $kh=getallKH();
+                 include 'view/review/khachang.php';
+                 break;
     ;
 
     }
