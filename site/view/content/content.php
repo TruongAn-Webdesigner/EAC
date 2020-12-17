@@ -19,50 +19,50 @@
                                 <div class="text_logo">
                                    <a href="index.php?ctrl=home&act=index">EAC</a>
                                    <a href="index.php?ctrl=wewillgo&act=index">Where will we go?</a>
-                                    <a href="index.php?ctrl=tip&act=index">Tips</a>
+                                    <a href="index.php?ctrl=content-tip&act=index">Tips</a>
                                 </div>
                             </div>
                         </nav>
                         <div class="left_login">
                             <div class="float_text">
-                                <?php
-                                                    if(!isset($_SESSION['user']))//kiem tra xem co dang nhap chua
-                                                        {
-                                                            echo'<a href="view/login/login.php">login</a>';
-                                                        } else{
-                                                                include_once 'model/login.php';
-                                                                $kh_login=$_SESSION['user'];
-                                                                $khachhang=getkh($kh_login);
+                            <?php
+                                                if(!isset($_SESSION['user']))//kiem tra xem co dang nhap chua
+                                                    {
+                                                        echo'<a href="view/login/login.php">login</a>';
+                                                    } else{
+                                                            include_once 'model/login.php';
+                                                            $kh_login=$_SESSION['user'];
+                                                            $khachhang=getkh($kh_login);
 
-                                                                /* foreach($khachhang as $ad){
-                                                                    echo''.$ad['name_ad'].'';
-                                                                } */
-                                                                foreach ($khachhang as $ad) {
+                                                            /* foreach($khachhang as $ad){
+                                                                echo''.$ad['name_ad'].'';
+                                                            } */
+                                                            foreach ($khachhang as $ad) {
                                                                     $id_kh=$ad['id_kh'];
                                                                     $nameKH=$ad['name_kh'];
                                                                     $emailKH=$ad['email_kh'];
                                                                     $sdtKH=$ad['sdt_kh'];
-                                                                    echo'
-                                                                    <div class="dropdown">
-                                                                        <ul>
-                                                                            <li><a href="#">'.$ad['name_kh'].' <i class="fa fa-caret-down" style="font-size:17px;color:black"></i></a>
-                                                                                <div class="nav_ad_con">
-                                                                                        <ul>
-                                                                                            <li><a href="changespass.php">Đổi Mật Khẩu</a></li>
-                                                                                            <li><a href="view/login/logout.php">Đăng Xuất</a></li>
-                                                                                        </ul>
-                                                                                </div>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </div>
-                                                                   
-                                                                    ';
-                                                                    
-                                                                }
-                                                            }
+                                                                echo'
+                                                                <div class="dropdown">
+                                                                    <ul>
+                                                                        <li>
+                                                                        
 
-                                                            
-                                                    ?>
+                                                                            <a href="#">'.$ad['name_kh'].' <i class="fa fa-caret-down" style="font-size:17px;color:black"></i></a>
+                                                                 
+                                                                            <div class="nav_ad_con">
+                                                                                    <ul>
+                                                                                        <li><a href="index.php?ctrl=usertourlist&id_kh='.$ad['id_kh'].'">Danh sách tour</a></li>
+                                                                                        <li><a href="view/login/logout.php">Đăng Xuất</a></li>
+                                                                                    </ul>
+                                                                            </div>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                ';
+                                                            }
+                                                        }
+                                                ?>
 
 
                             </div>
