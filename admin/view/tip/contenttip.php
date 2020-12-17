@@ -13,7 +13,7 @@
                         
                         
                         <div class="name_tip">
-                            <h3>Plan(title1)</h3>
+                            <h3>Kế hoạch</h3>
                             <div class="text_tip">
                                 <div class="text_tip_content">
                                 <h4>Đoạn 1</h4>
@@ -68,7 +68,7 @@
 
 
                         <div class="name_tip">
-                            <h3>belongings (title2)</h3>
+                            <h3>Chuẩn bị</h3>
                             
                             <div class="text_tip3">
                                 <div class="text_tip_content">
