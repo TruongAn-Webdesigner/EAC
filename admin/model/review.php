@@ -17,6 +17,11 @@ function getCTTourById($id_dd){
     return query($sql);
 }
 
+function getallKH(){
+    $sql="SELECT * FROM khachhang";
+    return query($sql);
+}
+
 
 
 ?>
