@@ -23,7 +23,7 @@
         }
 
         function getRankKH(){
-          $sql="SELECT *,COUNT(*) AS tongCD FROM khachhang JOIN booktour ON khachhang.id_kh = booktour.id_kh_login GROUP BY khachhang.id_kh";
+          $sql="SELECT * FROM `diadiem` ORDER BY view DESC LIMIT 7";
           return query($sql);
         }
 
