@@ -27,7 +27,10 @@ switch($action){
         $id_kh=$khachhang['id_kh']; /* lấy id khách hàng */
         $kh_dg=getKH_DG($id_kh,$id);
         } 
-        $cm=getCM_By_ID_DD($id); 
+        $cm=getCM_By_ID_DD($id);
+        $viewdd=getviewDDByID($id);
+        $view=$viewdd['view']+1; 
+        updateluotxemviewDD($view,$id);
         include 'view/content/content.php';
         break;
 
