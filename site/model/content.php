@@ -11,4 +11,25 @@
         return query($sql);
     } 
 
+    function getluotxem(){
+        $sql="SELECT * FROM `luotxem`";
+        return queryOne($sql);
+    }
+
+      function  updateluotxem($view){
+        $sql = "UPDATE luotxem SET view ='$view'";
+          execute($sql);
+      }
+
+      function getviewDDByID($id){
+        $sql="SELECT * FROM diadiem WHERE id_dd = $id";
+        return queryOne($sql);
+    }
+
+      function  updateluotxemviewDD($view,$id   ){
+        $sql = "UPDATE diadiem SET view = $view WHERE id_dd = $id ";
+          execute($sql);
+      }
+
+
 ?>
