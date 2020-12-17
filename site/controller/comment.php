@@ -47,7 +47,7 @@ include_once 'model/xuly.php';
                     timer: 5000,
                     showConfirmButton: true
                     }, function(){
-                    window.location.href = "view/login/login.php";
+                        window.history.back();
                     });
                  </script>'; 
              }
