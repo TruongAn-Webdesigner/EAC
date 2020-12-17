@@ -10,7 +10,7 @@
                                     </div>
 
                                     <div class="content_rv_st">
-                                        <div class="title_rv"> Số Lượng tour</div>
+                                        <div class="title_rv"> Số Lượng Địa Điểm</div>
                                         <div class="text_rv">
                                         <?php
                                             foreach ($rv1 as $rv1) {
@@ -88,8 +88,8 @@
                                     </div>
 
                                     <div class="content_rv_st">
-                                        <div class="title_rv">view</div>
-                                        <div class="text_rv">100</div>
+                                        <div class="title_rv">view</div> 
+                                        <div class="text_rv"> <?php echo''.$gv['view'].'';?></div>
                                     </div>
 
                                 </div>
@@ -117,7 +117,7 @@
                                                                 <table class="table table-striped">
                                                                         <thead>
                                                                             <tr>
-                                                                            <th scope="col">Tên Tour</th>
+                                                                            <th scope="col">Tên Địa Điểm</th>
                                                                             <th scope="col">Ngày Đi</th>
                                                                             <th scope="col">Ngày Về</th>
                                                                             <th scope="col">Giá</th>
@@ -133,8 +133,8 @@
                                                                                             <td>'.$rank['name_dd'].'</td>
                                                                                             <td>'.$rank['ngaydi'].'</td>
                                                                                             <td>'.$rank['ngayve'].'</td>
-                                                                                            <td>'.$rank['price_ct'].'</td>
-                                                                                            <td>'.$rank['tongKH'].'</td>
+                                                                                            <td>'.$rank['gia'].'</td>
+                                                                                            <td>'.$rank['tongkh'].'</td>
                                                                                         </tr>
                                                                                     ';
                                                                                 }
