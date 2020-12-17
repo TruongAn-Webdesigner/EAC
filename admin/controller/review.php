@@ -10,8 +10,15 @@
         case 'index':
             $dd=getAlldd();
             $gt=getCTTourById_DD();
-            var_dump($gt);
-            /* include_once 'view/review/index.php'; */
+             include_once 'view/review/index.php'; 
         break;
+
+        case 'chitiettour':
+            $id_dd=$_GET['id_dd'];
+            $gt=getCTTourById($id_dd);
+            include 'view/review/chitiettour.php';
+            break;
+    ;
+
     }
 ?>
