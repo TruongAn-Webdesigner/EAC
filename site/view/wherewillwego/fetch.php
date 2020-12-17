@@ -5,7 +5,7 @@ if(isset($_POST["query"]))
 {
 	$search = mysqli_real_escape_string($connect, $_POST["query"]);
 	$query = "
-	SELECT name_dd,rating_dd,diadiem.id_kv,diadiem.id_dd,name_kv,ngaydang,img_dd,rating FROM ((diadiem INNER JOIN khuvuc ON diadiem.id_kv=khuvuc.id_kv) INNER JOIN noidungbocuc on diadiem.id_dd=noidungbocuc.id_dd)
+	SELECT * FROM ((diadiem INNER JOIN khuvuc ON diadiem.id_kv=khuvuc.id_kv) INNER JOIN noidungbocuc on diadiem.id_dd=noidungbocuc.id_dd)
 	WHERE name_dd LIKE '%".$search."%'
 	OR rating_dd LIKE '%".$search."%'
 	OR diadiem.id_kv LIKE '%".$search."%'
@@ -13,7 +13,10 @@ if(isset($_POST["query"]))
   OR name_kv LIKE '%".$search."%'
   OR ngaydang LIKE '%".$search."%'
   OR img_dd LIKE '%".$search."%'
-  OR rating LIKE '%".$search."%'
+  OR rating LIKE '%".$search."%' 
+  OR noidung LIKE '%".$search."%' 
+  OR noidung2 LIKE '%".$search."%' 
+  OR noidung3 LIKE '%".$search."%'
 	";
 }
 else
