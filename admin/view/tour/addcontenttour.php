@@ -12,7 +12,7 @@
 
                             <div class="form_content">
                                 <label for="">Ma noi dung tour</label>
-                                <input type="text" name='id' value=<?php echo $id?> >
+                                <input type="text" name='id' value=<?php echo $id?> readonly>
                             </div>
 
 
@@ -40,25 +40,24 @@
                                 <input type="file" name='hinhnd2' id='file2'>
                             </div>
 
+
+
+
                             <div class="form_content">
                                 <label for="">Loại food 1</label>
-                                <input type="text" name="loaifood1" value="<?php echo"$loaifood1"?>" >
+                                <input type="text" name="loaifood1" >
                             </div>
 
                             <div class="form_content">
                                 <label for="">Tên food 1</label>
-                                <input type="text" name="tenfood1" value="<?php echo"$tenfood1"?>" >
+                                <input type="text" name="tenfood1" >
                             </div>
 
                             <label for="">Nội dung food 1</label>
                             <div class="form_content">
-                                <textarea name="noidungfood1" id="" cols="120" rows="10" value=""><?php echo"$noidungfood1"?></textarea>
+                                <textarea name="noidungfood1" id="" cols="120" rows="10" value=""></textarea>
                             </div>
-                            
-                            <label for="">Hình đồ ăn 1</label>
-                            <div class="form_content">
-                                <img src="../site/img/<?php echo"$hinhfood1"?>" alt="">
-                            </div>
+                        
 
                             <label for="">Chọn hình đồ ăn 1 mới:</label>
                             <div class="file_edittip">
@@ -69,22 +68,17 @@
                             <!-- food 2 -->
                             <div class="form_content">
                                 <label for="">Loại food 2</label>
-                                <input type="text" name="loaifood2" value="<?php echo"$loaifood2"?>" >
+                                <input type="text" name="loaifood2" >
                             </div>
 
                             <div class="form_content">
                                 <label for="">Tên food 2</label>
-                                <input type="text" name="tenfood2" value="<?php echo"$tenfood2"?>" >
+                                <input type="text" name="tenfood2" >
                             </div>
 
                             <label for="">Nội dung food 2</label>
                             <div class="form_content">
-                                <textarea name="noidungfood2" id="" cols="120" rows="10" value=""><?php echo"$noidungfood2"?></textarea>
-                            </div>
-
-                            <label for="">Hình đồ ăn 2</label>
-                            <div class="form_content">
-                                <img src="../site/img/<?php echo"$hinhfood2"?>" alt="">
+                                <textarea name="noidungfood2" id="" cols="120" rows="10" ></textarea>
                             </div>
 
                             <label for="">Chọn hình đồ ăn 2 mới:</label>
@@ -96,25 +90,20 @@
                             <!-- food 3 -->
                             <div class="form_content">
                                 <label for="">Loại food 3</label>
-                                <input type="text" name="loaifood3" value="<?php echo"$loaifood3"?>" >
+                                <input type="text" name="loaifood3"  >
                             </div>
 
                             <div class="form_content">
                                 <label for="">Tên food 3</label>
-                                <input type="text" name="tenfood3" value="<?php echo"$tenfood3"?>" >
+                                <input type="text" name="tenfood3"  >
                             </div>
 
                             <label for="">Nội dung food 3</label>
                             <div class="form_content">
-                                <textarea name="noidungfood3" id="" cols="120" rows="10" value=""><?php echo"$noidungfood3"?></textarea>
+                                <textarea name="noidungfood3" id="" cols="120" rows="10" value=""></textarea>
                             </div>
 
-                            <label for="">Hình đồ ăn 3</label>
-                            <div class="form_content">
-                                <img src="../site/img/<?php echo"$hinhfood3"?>" alt="">
-                            </div>
-
-                            <label for="">Chọn hình đồ ăn 3 mới::</label>
+                            <label for="">Chọn hình đồ ăn 3 mới:</label>
                             <div class="file_edittip">
                                 <label for="file5">Chosse file</label>
                                 <input multiple type="file" name="hinhfood3" id='file5'>
@@ -126,24 +115,6 @@
                                 <textarea name="name3" id="" cols="120" rows="10" value=""></textarea>
                             </div>
 
-                            <label for="">Hình Food 1</label>
-                            <div class="file_edittip">
-                                <label for="hinhfood1">Chosse File</label>
-                                <input type="file" name='hinhfood1' id='hinhfood1'>
-                            </div>
-
-                            <label for="">Hình Food 2</label>
-                            <div class="file_edittip">
-                                <label for="hinhfood2">Chosse File</label>
-                                <input type="file" name='hinhfood2' id='hinhfood2'>
-                            </div>
-
-
-                            <label for="">Hình Food 3</label>
-                            <div class="file_edittip">
-                                <label for="hinhfood3">Chosse File</label>
-                                <input type="file" name='hinhfood3' id='hinhfood3'>
-                            </div>
 
 
                             <label for="">Hình SlideShow1</label>
