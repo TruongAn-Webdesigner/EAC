@@ -23,6 +23,15 @@ body{
     text-align: center;
 }
 
+.fix_contenttip_xoa{
+    width: 20%;
+    margin: 0 auto;
+    margin-top: 5vh;
+    background: red;
+    padding: 10px;
+    text-align: center;
+}
+
 .fix_contenttip a{
     
     color: white;
@@ -32,6 +41,17 @@ body{
     color: rgb(211, 211, 211);
     text-decoration: none;
 }
+
+.fix_contenttip_xoa a{
+    
+    color: white;
+}
+
+.fix_contenttip_xoa a:hover{
+    color: rgb(211, 211, 211);
+    text-decoration: none;
+}
+
 
 .tip_small{
     color: black;
