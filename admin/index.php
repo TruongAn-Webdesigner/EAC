@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/tip.css">
     <link rel="stylesheet" href="css/content.css">
     <link rel="stylesheet" href="css/contenttip.css">
+    <link rel="stylesheet" href="css/usertour.css">
 
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
