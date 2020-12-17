@@ -38,8 +38,19 @@ include_once 'model/xuly.php';
                 $cm=getCM_By_ID_DD($id); 
                 header('location:index.php?ctrl=wewillgo&act=content&idcontent='.$id.'');
             }else{
-                header('location:view/login/login.php');
-            }
+                echo'
+              <script type="text/javascript">
+                    swal({
+                    title: "Error!",
+                    text: "vui Lòng Đăng nhập trước khi comment",
+                    type: "error",
+                    timer: 5000,
+                    showConfirmButton: true
+                    }, function(){
+                    window.location.href = "view/login/login.php";
+                    });
+                 </script>'; 
+             }
             break;
 
             
