@@ -25,26 +25,34 @@
                     </div>
                     <div class="menu_link">
                         <div class="link_right">
-                            <?php
-                                                    if(!isset($_SESSION['user']))//kiem tra xem co dang nhap chua
-                                                        {
-                                                            echo'<a href="view/login/login.php">login</a>';
-                                                        } else{
-                                                                include_once 'model/login.php';
-                                                                $kh_login=$_SESSION['user'];
-                                                                $khachhang=getkh($kh_login);
+                        <?php
+                                                if(!isset($_SESSION['user']))//kiem tra xem co dang nhap chua
+                                                    {
+                                                        echo'<a href="view/login/login.php">login</a>';
+                                                    } else{
+                                                            include_once 'model/login.php';
+                                                            $kh_login=$_SESSION['user'];
+                                                            $khachhang=getkh($kh_login);
 
-                                                                /* foreach($khachhang as $ad){
-                                                                    echo''.$ad['name_ad'].'';
-                                                                } */
-                                                                foreach ($khachhang as $ad) {
-                                                                    echo'
-                                                                    <div class="dropdown">
-                                                                        <ul>
-                                                                            <li><a href="#">'.$ad['name_kh'].' <i class="fa fa-caret-down" style="font-size:17px;color:black"></i></a>
-                                                                                <div class="nav_ad_con">
-                                                                                        <ul>
-                                                                                        <li><a href="changespass.php">Đổi Mật Khẩu</a></li>
+                                                            /* foreach($khachhang as $ad){
+                                                                echo''.$ad['name_ad'].'';
+                                                            } */
+                                                            foreach ($khachhang as $ad) {
+                                                                    $id_kh=$ad['id_kh'];
+                                                                    $nameKH=$ad['name_kh'];
+                                                                    $emailKH=$ad['email_kh'];
+                                                                    $sdtKH=$ad['sdt_kh'];
+                                                                echo'
+                                                                <div class="dropdown">
+                                                                    <ul>
+                                                                        <li>
+                                                                        
+
+                                                                            <a href="#">'.$ad['name_kh'].' <i class="fa fa-caret-down" style="font-size:17px;color:black"></i></a>
+                                                                 
+                                                                            <div class="nav_ad_con">
+                                                                                    <ul>
+                                                                                        <li><a href="index.php?ctrl=usertourlist&id_kh='.$ad['id_kh'].'">Danh sách tour</a></li>
                                                                                         <li><a href="view/login/logout.php">Đăng Xuất</a></li>
                                                                                     </ul>
                                                                             </div>
