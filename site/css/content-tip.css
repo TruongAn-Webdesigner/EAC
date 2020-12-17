@@ -79,12 +79,11 @@ li{
     
 }
 
-.left_login{
-    width: 10%;
+.left_login {
+    width: 15%;
     height: 100%;
     float: right;
 }
-
 .left_login a{
     line-height: 10vh;
     color: black;
@@ -721,7 +720,7 @@ h5{
 
 .box_infor{
     width: calc(90%/3);
-    height: 100%;
+    height: 45vh;
     background-color: white;
     border: 4px solid rgba(255, 146, 146, 0.192);
     position: relative;
