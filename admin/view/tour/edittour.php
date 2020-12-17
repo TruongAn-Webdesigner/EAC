@@ -4,6 +4,9 @@
                         $id=$dd['id_dd'];
                         $name=$dd['name_dd'];
                         $id_kv= $dd['id_kv'];
+                        $ngaydi= $dd['ngaydi'];
+                        $ngayve= $dd['ngayve'];
+                        $gia= $dd['gia'];
                     ?>
         <div class="boxcenter">
             <div class="content_form">
@@ -23,17 +26,17 @@
                             
                             <div class="form_content">
                             <label>Ngày đi:</label>
-                                <input type="date" name='datedi'>
+                                <input type="date" name='datedi' value="<?php echo"$ngaydi"?>">
                             </div>
 
                            
                             <div class="form_content">
                             <label>Ngày về:</label>
-                                <input type="date" name='dateve'>
+                                <input type="date" name='dateve'value="<?php echo"$ngayve"?>">
                             </div>
 
                             <div class="form_content">
-                                <input type="text" name='gia' placeholder='Điền giá'>
+                                <input type="text" name='gia' placeholder='Điền giá' value=" <?php echo"$gia"?>">
                             </div>
 
 
