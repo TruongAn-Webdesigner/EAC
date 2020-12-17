@@ -47,6 +47,7 @@
                                                                 <div class="dropdown">
                                                                     <ul>
                                                                         <li><a href="#">'.$ad['name_kh'].' <i class="fa fa-caret-down" style="font-size:17px;color:black"></i></a>
+                                                                        <li><a href="#">'.$ad['name_kh'].' <i class="fa fa-caret-down" style="font-size:17px;color:black"></i></a>
                                                                             <div class="nav_ad_con">
                                                                                     <ul>
                                                                                        
