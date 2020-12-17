@@ -152,6 +152,11 @@
                             <a href="index.php?ctrl=tour&act=editnoidungtour&id='.$tr['id_dd'].'">Sửa nội dung</a>
                           
                             </div>
+                            <div class=" fix_contenttip_xoa ">
+                            <a href="index.php?ctrl=tour&act=delnd&id='.$tr['id_dd'].'">Xóa nội dung</a>
+                          
+                            </div>
+
                         </div>
 
                         
