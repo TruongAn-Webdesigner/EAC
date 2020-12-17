@@ -107,8 +107,8 @@
                                         <div class="box_rank mr2">
                                                 <div class="title_box_rank">
                                                     <div class="text_title_rank">
-                                                            <span>Ranks Tour </span><br>
-                                                            xếp loại các loại tour
+                                                            <span> Rank User By KH </span><br>
+                                                            xếp loại các loại tour theo khách hàng đăng ký từng tour
                                                     </div>
 
                                                     <div class="full">
@@ -155,39 +155,43 @@
                                         <div class="box_rank">
                                                 <div class="title_box_rank">
                                                     <div class="text_title_rank">
-                                                        <span>Rank User</span> <br>
-                                                        xếp hàng người dùng đi nhiều tour
+                                                        <span>Rank Tour By View</span> <br>
+                                                        xếp hàng tour theo số lượng view cửa từ địa điểm
                                                     </div>
+
 
                                                     <div class="full">
                                                         <div class="boxcenter_statis">
-                                                                <div class="content_box_rank">
-                                                                    <table class="table table-striped">
-                                                                            <thead>
-                                                                                <tr>
-                                                                                <th scope="col">id khách hàng</th>
-                                                                                <th scope="col">Tên Khách Hàng</th>
-                                                                                <th scope="col">Số Điện Thoại</th>
-                                                                                <th scope="col">Tổng Số Tour</th>
-                                                                                </tr>
-                                                                            </thead>
-                                                                            <tbody>
-                                                                                <?php
+                                                        <div class="content_box_rank">
+                                                                <table class="table table-striped">
+                                                                        <thead>
+                                                                            <tr>
+                                                                            <th scope="col">Tên Địa Điểm</th>
+                                                                            <th scope="col">Ngày Đi</th>
+                                                                            <th scope="col">Ngày Về</th>
+                                                                            <th scope="col">Giá</th>
+                                                                            <th scope="col">View</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <?php
 
-                                                                                    foreach($rankKH as $rank){
-                                                                                        echo'
-                                                                                            <tr>
-                                                                                                <th scope="row">'.$rank['id_kh'].'</th>
-                                                                                                <td>'.$rank['name_kh'].'</td>
-                                                                                                <td>'.$rank['sdt_kh'].'</td>
-                                                                                                <td>'.$rank['tongCD'].'</td>
-                                                                                            </tr>
-                                                                                        ';
-                                                                                    }
-                                                                                ?>
-                                                                            </tbody>
-                                                                        </table>
-                                                                </div>
+                                                                                foreach($rankKH as $kh){
+                                                                                    echo'
+                                                                                        <tr>
+                                                                                            <td>'.$kh['name_dd'].'</td>
+                                                                                            <td>'.$kh['ngaydi'].'</td>
+                                                                                            <td>'.$kh['ngayve'].'</td>
+                                                                                            <td>'.$kh['gia'].'</td>
+                                                                                            <td>'.$kh['view'].'</td>
+                                                                                        </tr>
+                                                                                    ';
+                                                                                }
+                                                                            ?>
+                                                                           
+                                                                        </tbody>
+                                                                    </table>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
