@@ -553,7 +553,7 @@
                                 echo'
                         <div class="box_tips1">
                             <div class="box_img_tips">
-                                <img src="img/bana2.jpg" alt="">
+                                <img src="img/'.$t1['img_tip'].'" alt="">
                             </div>
 
                             <div class="name_tips">
@@ -573,7 +573,7 @@
                                 echo'
                                 <div class="box_tips2">
                                     <div class="box_img_tips">
-                                        <img src="img/bana2.jpg" alt="">
+                                    <img src="img/'.$t2['img_tip'].'" alt="">
                                     </div>
 
                                     <div class="name_tips">
@@ -592,7 +592,7 @@
                                     echo'
                                 <div class="box_tips3">
                                     <div class="box_img_tips3">
-                                        <img src="img/bana2.jpg" alt="">
+                                    <img src="img/'.$t3['img_tip'].'" alt="">
                                     </div>
         
                                     <div class="name_tips">
@@ -611,7 +611,7 @@
                                echo'
                                <div class="box_tips4">
                                     <div class="box_img_tips4">
-                                        <img src="img/bana2.jpg" alt="">
+                                    <img src="img/'.$t4['img_tip'].'" alt="">
                                     </div>
 
                                     <div class="name_tips">
@@ -629,7 +629,7 @@
                                 echo'
                                 <div class="box_tips5">
                                 <div class="box_img_tips">
-                                    <img src="img/bana2.jpg" alt="">
+                                <img src="img/'.$t5['img_tip'].'" alt="">
                                 </div>
     
                                 <div class="name_tips">
