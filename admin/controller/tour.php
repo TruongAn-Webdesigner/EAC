@@ -68,16 +68,16 @@
         $date = date('Y-m-d H:i:s');
          updateDiaDiemTrangThai($id);
        if($img1!="" || $img2!="" || $imgfood1!="" || $imgfood2!="" || $imgfood3!=""){
-            move_uploaded_file($_FILES['hinh1']['tmp_name'],$path);
-            move_uploaded_file($_FILES['hinh2']['tmp_name'],$path2);
+            move_uploaded_file($_FILES['hinhnd1']['tmp_name'],$path);
+            move_uploaded_file($_FILES['hinhnd2']['tmp_name'],$path2);
             move_uploaded_file($_FILES['hinhfood1']['tmp_name'],$pathfood1);
             move_uploaded_file($_FILES['hinhfood2']['tmp_name'],$pathfood2);
             move_uploaded_file($_FILES['hinhfood3']['tmp_name'],$pathfood3);
             move_uploaded_file($_FILES['hinhright1']['tmp_name'],$pathright1);
             move_uploaded_file($_FILES['hinhright2']['tmp_name'],$pathright2);
-            addContentTour($id,$noidung1,$noidung2,$noidung3,$img1,$img2,$imgright1, $imgright2,$imgfood1,$imgfood2,$imgfood3,$loaifood1,$tenfood1,$noidungfood1,$loaifood2,$tenfood2,$noidungfood2,$loaifood3,$tenfood3,$noidungfood3);//them vao databse
+            addContentTour($id,$noidung1,$noidung2,$noidung3,$img1,$img2,$imgright1,$imgright2,$imgfood1,$imgfood2,$imgfood3,$loaifood1,$tenfood1,$noidungfood1,$loaifood2,$tenfood2,$noidungfood2,$loaifood3,$tenfood3,$noidungfood3, $date);//them vao databse
         }
-          
+          /* include 'view/tour/addcontenttip.php'; */
        echo'<script>window.location="index.php?ctrl=tour&act=addcontenttour&id='.$id.'";</script>'; 
     break;
 
