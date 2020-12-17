@@ -19,7 +19,7 @@
                                 <div class="text_logo">
                                     <a href="index.php?ctrl=home&act=index">EAC</a>
                                     <a href="index.php?ctrl=wewillgo&act=index">Where will we go?</a>
-                                    <a href="http://">Tip</a>
+                                    <a href="index.php?ctrl=content-tip&act=index">Tip</a>
                                 </div>
                             </div>
                 
@@ -27,38 +27,44 @@
                         </nav>
                         <div class="left_login">
                             <div class="float_text">
-                                <?php
-                                                    if(!isset($_SESSION['user']))//kiem tra xem co dang nhap chua
-                                                        {
-                                                            echo'<a href="view/login/login.php">login</a>';
-                                                        } else{
-                                                                include_once 'model/login.php';
-                                                                $kh_login=$_SESSION['user'];
-                                                                $khachhang=getkh($kh_login);
+                            <?php
+                                                if(!isset($_SESSION['user']))//kiem tra xem co dang nhap chua
+                                                    {
+                                                        echo'<a href="view/login/login.php">login</a>';
+                                                    } else{
+                                                            include_once 'model/login.php';
+                                                            $kh_login=$_SESSION['user'];
+                                                            $khachhang=getkh($kh_login);
 
-                                                                /* foreach($khachhang as $ad){
-                                                                    echo''.$ad['name_ad'].'';
-                                                                } */
-                                                                foreach ($khachhang as $ad) {
-                                                                    echo'
-                                                                    <div class="dropdown">
-                                                                        <ul>
-                                                                            <li><a href="#">'.$ad['name_kh'].' <i class="fa fa-caret-down" style="font-size:17px;color:black"></i></a>
-                                                                                <div class="nav_ad_con">
-                                                                                        <ul>
-                                                                                            <li><a href="changespass.php">Đổi Mật Khẩu</a></li>
-                                                                                            <li><a href="view/login/logout.php">Đăng Xuất</a></li>
-                                                                                        </ul>
-                                                                                </div>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    ';
-                                                                }
+                                                            /* foreach($khachhang as $ad){
+                                                                echo''.$ad['name_ad'].'';
+                                                            } */
+                                                            foreach ($khachhang as $ad) {
+                                                                    $id_kh=$ad['id_kh'];
+                                                                    $nameKH=$ad['name_kh'];
+                                                                    $emailKH=$ad['email_kh'];
+                                                                    $sdtKH=$ad['sdt_kh'];
+                                                                echo'
+                                                                <div class="dropdown">
+                                                                    <ul>
+                                                                        <li>
+                                                                        
+
+                                                                            <a href="#">'.$ad['name_kh'].' <i class="fa fa-caret-down" style="font-size:17px;color:black"></i></a>
+                                                                 
+                                                                            <div class="nav_ad_con">
+                                                                                    <ul>
+                                                                                        <li><a href="index.php?ctrl=usertourlist&id_kh='.$ad['id_kh'].'">Danh sách tour</a></li>
+                                                                                        <li><a href="view/login/logout.php">Đăng Xuất</a></li>
+                                                                                    </ul>
+                                                                            </div>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                ';
+                                                            }
                                                         }
                                                 ?>
-
-
                             </div>
                         </div>
                         
@@ -256,7 +262,7 @@
         <div class="boxcenter_content_tip">
             <div class="box_choose">
                 <div class="text_choose">
-                    Choose us choose fun
+                    Chọn chúng tôi chọn niềm tin
                 </div>
                 <div class="line_comment"></div>
                 <div class="small_text_choose">
@@ -275,13 +281,13 @@
                         </div>
                         <div class="box_choose_infor">
                         <div class="text_title_choose">
-                                Place
+                            Địa điểm
                                 <div class="line_title_choose"></div>
                         </div>
                         
                         <div class="box_text_choose">     
-                                waoefk weofkewo fw eofk ew ofewkfo ewof wiaje awuefnwefwef we e
-                                erafuygerygfyerugfy ery geryg 
+                        Luôn cập nhập những điều thú vị nâng cao trải nghiệm khám phá khi sử dụng dịch vụ tour EAC.
+
                                 
                         </div>
                         </div>
@@ -295,13 +301,12 @@
                         </div>
                         <div class="box_choose_infor">
                         <div class="text_title_choose">
-                            plan
+                        Kế hoạch
                             <div class="line_title_choose"></div>
                         </div>
                        
                         <div class="box_text_choose">     
-                            waoefk weofkewo fw eofk ew ofewkfo ewof wiaje awuefnwefwef we e
-                            erafuygerygfyerugfy ery geryg 
+                        Liệt kê các địa điểm chuẩn bị các bước trải nghiệm kỹ lưỡng để du khách có thể tận hưởng một cách thoải mái nhất.
                             
                         </div>
                         </div>
@@ -312,13 +317,12 @@
                         </div>
                         <div class="box_choose_infor">
                         <div class="text_title_choose">
-                            safe
+                        An toàn
                             <div class="line_title_choose"></div>
                         </div>
                         
                         <div class="box_text_choose">     
-                            waoefk weofkewo fw eofk ew ofewkfo ewof wiaje awuefnwefwef we e
-                            erafuygerygfyerugfy ery geryg 
+                        Chúng tôi cam kết không chia sẻ thông tin du khách cho bất kì ai hoặc buôn bán thông tin trái phép nhằm trục lợi.
                             </div>
                             
                     </div>
