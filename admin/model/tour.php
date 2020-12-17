@@ -19,9 +19,9 @@
       }
 
       /* them noi dung tour*/
-      function addContentTour($id,$noidung1,$noidung2,$noidung3,$img1,$img2,$imgright1,$imgright2,$imgfood1,$imgfood2,$imgfood3, $date){
-        $sql="INSERT INTO `noidungbocuc` (`noidung`, `noidung2`, `noidung3`, `img_noidung1`, `img_noidung2`, `img_right1`, `img_right2`, `img_food1`, `img_food2`, `img_food3`, `ngaydang`, `id_dd`) 
-        VALUES ('$noidung1', '$noidung2', '$noidung3', '$img1', '$img2', '$imgfood1', '$imgfood2', '$imgfood3', '$imgright1', '$imgright2', ' $date', '$id');";
+      function addContentTour($id,$noidung1,$noidung2,$noidung3,$img1,$img2,$imgright1,$imgright2,$imgfood1,$imgfood2,$imgfood3,$loaifood1,$tenfood1,$noidungfood1,$loaifood2,$tenfood2,$noidungfood2,$loaifood3,$tenfood3,$noidungfood3, $date){
+        $sql="INSERT INTO `noidungbocuc` (`noidung`, `noidung2`, `noidung3`, `img_noidung1`, `img_noidung2`, `img_right1`, `img_right2`, `img_food1`, `img_food2`, `img_food3`,`loaifood1`, `tenfood1`, `noidungfood1`, `loaifood2`, `tenfood2`, `noidungfood2`, `loaifood3`, `tenfood3`, `noidungfood3`, `ngaydang`, `id_dd`) 
+        VALUES ('$noidung1', '$noidung2', '$noidung3', '$img1', '$img2', '$imgfood1', '$imgfood2', '$imgfood3','$loaifood1','$tenfood1','$noidungfood1','$loaifood2','$tenfood2','$noidungfood2','$loaifood3','$tenfood3','$noidungfood3', '$imgright1', '$imgright2', ' $date', '$id');";
         execute($sql);
       }
 
