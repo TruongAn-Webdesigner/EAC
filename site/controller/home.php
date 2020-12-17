@@ -16,6 +16,9 @@
         $tip3= getTipNote3();
         $tip4= getTipNote4();
         $tip5= getTipNote5();
+        $gv= getluotxem();
+        $view = $gv['view']+1;
+        updateluotxem($view);
         include 'view/home/index.php';
         break;
 
