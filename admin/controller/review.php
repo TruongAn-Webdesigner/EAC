@@ -1,4 +1,5 @@
 <?php
+    include_once 'model/review.php';
     
     $action='index';
     if(isset($_GET['act'])){
@@ -7,7 +8,10 @@
 
     switch($action){
         case 'index':
-            include_once 'view/review/index.php';
+            $dd=getAlldd();
+            $gt=getCTTourById_DD();
+            var_dump($gt);
+            /* include_once 'view/review/index.php'; */
         break;
     }
 ?>
